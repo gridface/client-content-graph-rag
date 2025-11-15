@@ -1,0 +1,66 @@
+# This is the list of services current clients offer
+# It contains a collection of service entities.
+
+# Field	                  Type	          Details / Notes
+# service_id	            string	        Unique ID
+# name	                  string	        "Seal Coating", "Tree Removal", etc.
+# service_type	          string	        Taxonomy: "residential", "commercial", "municipal"
+# description	            text	          SEO-optimized description
+# related_keyword_ids   	array	          Links to Keyword file for RAG guidance
+# customer_id	            string	        ID of the provider (references Customer)
+# location_id	            string	        Where it's offered/specialized
+# expertise_signals	      array	          ["licensed", "15 years experience", ...]
+# pricing_info	          string	        Range or structure, freeform
+# regulatory_standards	  array	          ["NAPA", "local ordinance xyz"]
+# content_topic_ids	      array	          Links to content topic taxonomies
+# notes	                  text	          Any relevant expert commentary
+
+services:
+# Service Example
+- service_id: srv-sealcoating
+  name: Seal Coating
+  service_type: commercial
+  description: Protective layer for asphalt surfaces extending lifespan and reducing weather-related damage.
+  related_keyword_ids:
+    - kw-sealcoating
+    - kw-asphalt
+  customer_id: apc-001
+  location_id: loc-davenport
+  expertise_signals:
+    - licensed
+    - certified
+    - 20 years experience
+  pricing_info: Typical project range $2,000 - $20,000 for parking lots.
+  regulatory_standards:
+    - NAPA
+    - local ordinance 204
+  content_topic_ids:
+    - ct-guide
+    - ct-local-advisory
+  notes: Spring is optimal; rainy season impacts drying times.
+  
+# Service Example
+- service_id: srv-sealcoating2
+  name: Seal Coating
+  service_type: commercial
+  description: Protective layer for asphalt surfaces extending lifespan and reducing weather-related damage.
+  related_keyword_ids:
+    - kw-sealcoating
+    - kw-asphalt
+  customer_id: apc-001
+  location_id: loc-davenport
+  expertise_signals:
+    - licensed
+    - certified
+    - 20 years experience
+  pricing_info: Typical project range $2,000 - $20,000 for parking lots.
+  regulatory_standards:
+    - NAPA
+    - local ordinance 204
+  content_topic_ids:
+    - ct-guide
+    - ct-local-advisory
+  notes: Spring is optimal; rainy season impacts drying times.
+  
+
+# This is a comment at the end of the file.

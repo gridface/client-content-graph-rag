@@ -1,0 +1,72 @@
+# This is the locations list that existing clients serve
+# It contains a collection of location entities.
+
+# Field	                    Type	        Details / Notes
+# location_id	              string	      Unique ID
+# name	                    string	      City/town/area name
+# region	                  string	      County, metro, or region
+# state	                    string	      Two-letter code
+# postal_code	              string	      Postal/ZIP code
+# country	                  string	      Country code
+# geo_latitude	            float	        Lat value
+# geo_longitude	            float	        Long value
+# population	              int	          Estimated population
+# climate_zone	            string	      "humid_subtropical", etc.
+# landmark_ids	            array	        References to list of key landmarks/entities
+# economic_profile	        string	      Major industries, economic notes
+# local_challenges	        array	        "freeze_thaw", "heavy_truck", etc.
+# nearby_location_ids	      array	        References to adjacent city/town IDs
+# flavor_notes	            text	        Local flavor facts for hyperlocal content
+
+
+locations:
+# Location Example
+  - location_id: loc-davenport
+    name: Davenport
+    region: Polk County
+    state: FL
+    postal_code: "33896"
+    country: USA
+    geo_latitude: 28.2590
+    geo_longitude: -81.6010
+    population: 35000
+    climate_zone: humid_subtropical
+    landmark_ids:
+      - lmkt-mousemtn
+      - lmkt-mainst
+    economic_profile: Tourism, construction, local retail
+    local_challenges:
+      - heavy_truck_traffic
+      - hot_weather
+      - seasonal_rain
+    nearby_location_ids:
+      - loc-jacksonville
+      - loc-ocala
+    flavor_notes: Known for Mouse Mountain Dr and proximity to Orlando. Asphalt wears faster due to high summer temps.
+  
+  # Location Example 2
+  - location_id: loc-davenport2
+    name: Davenport
+    region: Polk County
+    state: FL
+    postal_code: "33896"
+    country: USA
+    geo_latitude: 28.2590
+    geo_longitude: -81.6010
+    population: 35000
+    climate_zone: humid_subtropical
+    landmark_ids:
+      - lmkt-mousemtn
+      - lmkt-mainst
+    economic_profile: Tourism, construction, local retail
+    local_challenges:
+      - heavy_truck_traffic
+      - hot_weather
+      - seasonal_rain
+    nearby_location_ids:
+      - loc-jacksonville
+      - loc-ocala
+    flavor_notes: Known for Mouse Mountain Dr and proximity to Orlando. Asphalt wears faster due to high summer temps.
+  
+
+# This is a comment at the end of the file.

@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YAML Entity Editor</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            padding: 20px 30px;
+            border-bottom: 2px solid #e0e0e0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        h1 {
+            color: #333;
+            font-size: 24px;
+        }
+        
+        .tabs {
+            display: flex;
+            gap: 0;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 0 30px;
+            background: #fafafa;
+        }
+        
+        .tab {
+            padding: 15px 25px;
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-size: 14px;
+            font-weight: 500;
+            color: #666;
+            border-bottom: 3px solid transparent;
+            transition: all 0.2s;
+        }
+        
+        .tab:hover {
+            color: #333;
+            background: #f0f0f0;
+        }
+        
+        .tab.active {
+            color: #2563eb;
+            border-bottom-color: #2563eb;
+            background: white;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .btn-primary {
+            background: #2563eb;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #1d4ed8;
+        }
+        
+        .btn-success {
+            background: #16a34a;
+            color: white;
+        }
+        
+        .btn-success:hover {
+            background: #15803d;
+        }
+        
+        .btn-secondary {
+            background: #6b7280;
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            background: #4b5563;
+        }
+        
+        .btn-danger {
+            background: #dc2626;
+            color: white;
+            padding: 5px 10px;
+            font-size: 12px;
+        }
+        
+        .btn-danger:hover {
+            background: #b91c1c;
+        }
+        
+        .btn-edit {
+            background: #f59e0b;
+            color: white;
+            padding: 5px 10px;
+            font-size: 12px;
+        }
+        
+        .btn-edit:hover {
+            background: #d97706;
+        }
+        
+        input[type="file"] {
+            display: none;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 13px;
+        }
+        
+        th {
+            background: #f9fafb;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            color: #374151;
+            border-bottom: 2px solid #e5e7eb;
+            position: sticky;
+            top: 0;
+        }
+        
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #e5e7eb;
+            color: #4b5563;
+        }
+        
+        tr:hover {
+            background: #f9fafb;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 1000;
+            overflow-y: auto;
+        }
+        
+        .modal.active {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        
+        .modal-content {
+            background: white;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 800px;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+        }
+        
+        .modal-header {
+            padding: 20px 30px;
+            border-bottom: 1px solid #e5e7eb;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .modal-header h2 {
+            font-size: 18px;
+            color: #111827;
+        }
+        
+        .close {
+            font-size: 28px;
+            font-weight: bold;
+            color: #9ca3af;
+            cursor: pointer;
+            border: none;
+            background: none;
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            line-height: 1;
+        }
+        
+        .close:hover {
+            color: #4b5563;
+        }
+        
+        .modal-body {
+            padding: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+            color: #374151;
+            font-size: 14px;
+        }
+        
+        input[type="text"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid #d1d5db;
+            border-radius: 5px;
+            font-size: 14px;
+            font-family: inherit;
+        }
+        
+        textarea {
+            min-height: 80px;
+            resize: vertical;
+        }
+        
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+        
+        .form-actions {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e5e7eb;
+        }
+        
+        .array-input {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .array-item {
+            display: flex;
+            gap: 8px;
+        }
+        
+        .array-item input {
+            flex: 1;
+        }
+        
+        .btn-small {
+            padding: 5px 12px;
+            font-size: 12px;
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #9ca3af;
+        }
+        
+        .empty-state svg {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 20px;
+            opacity: 0.3;
+        }
+        
+        .table-wrapper {
+            overflow-x: auto;
+        }
+        
+        .search-box {
+            margin-bottom: 20px;
+        }
+        
+        .search-box input {
+            width: 300px;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>YAML Entity Editor</h1>
+            <div style="display: flex; gap: 10px;">
+                <label for="file-input" class="btn-secondary" style="display: inline-block; cursor: pointer; margin: 0;">
+                    Load YAML Files
+                </label>
+                <input type="file" id="file-input" accept=".yaml,.yml" multiple>
+            </div>
+        </div>
+        
+        <div class="tabs">
+            <button class="tab active" data-tab="clients">Clients</button>
+            <button class="tab" data-tab="locations">Locations</button>
+            <button class="tab" data-tab="services">Services</button>
+        </div>
+        
+        <div class="content">
+            <div id="clients-tab" class="tab-content active">
+                <div class="controls">
+                    <button class="btn-primary" onclick="addRecord('clients')">+ Add Client</button>
+                    <button class="btn-success" onclick="downloadYAML('clients')">Download clients.yaml</button>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Search clients..." onkeyup="filterTable('clients', this.value)">
+                </div>
+                <div class="table-wrapper">
+                    <table id="clients-table">
+                        <thead id="clients-header"></thead>
+                        <tbody id="clients-body"></tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div id="locations-tab" class="tab-content">
+                <div class="controls">
+                    <button class="btn-primary" onclick="addRecord('locations')">+ Add Location</button>
+                    <button class="btn-success" onclick="downloadYAML('locations')">Download locations.yaml</button>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Search locations..." onkeyup="filterTable('locations', this.value)">
+                </div>
+                <div class="table-wrapper">
+                    <table id="locations-table">
+                        <thead id="locations-header"></thead>
+                        <tbody id="locations-body"></tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div id="services-tab" class="tab-content">
+                <div class="controls">
+                    <button class="btn-primary" onclick="addRecord('services')">+ Add Service</button>
+                    <button class="btn-success" onclick="downloadYAML('services')">Download services.yaml</button>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Search services..." onkeyup="filterTable('services', this.value)">
+                </div>
+                <div class="table-wrapper">
+                    <table id="services-table">
+                        <thead id="services-header"></thead>
+                        <tbody id="services-body"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="edit-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Edit Record</h2>
+                <button class="close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="edit-form"></form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Data storage
+        let data = {
+            clients: { users: [] },
+            locations: { locations: [] },
+            services: { services: [] }
+        };
+        
+        // Schemas for each type
+        const schemas = {
+            clients: {
+                key: 'users',
+                fields: {
+                    customer_id: { type: 'text', label: 'Customer ID', required: true },
+                    name: { type: 'text', label: 'Name', required: true },
+                    business_type: { type: 'text', label: 'Business Type' },
+                    owner: { type: 'text', label: 'Owner' },
+                    industry: { type: 'text', label: 'Industry' },
+                    website_url: { type: 'text', label: 'Website URL' },
+                    contact_phone: { type: 'text', label: 'Contact Phone' },
+                    main_address_id: { type: 'text', label: 'Main Address ID' },
+                    service_area_ids: { type: 'array', label: 'Service Area IDs' },
+                    active_services: { type: 'array', label: 'Active Services' },
+                    client_size: { type: 'select', label: 'Client Size', options: ['small', 'medium', 'large', 'x-large'] },
+                    onboarding_date: { type: 'text', label: 'Onboarding Date' },
+                    notes: { type: 'textarea', label: 'Notes' }
+                }
+            },
+            locations: {
+                key: 'locations',
+                fields: {
+                    location_id: { type: 'text', label: 'Location ID', required: true },
+                    name: { type: 'text', label: 'Name', required: true },
+                    region: { type: 'text', label: 'Region' },
+                    state: { type: 'text', label: 'State' },
+                    postal_code: { type: 'text', label: 'Postal Code' },
+                    country: { type: 'text', label: 'Country' },
+                    geo_latitude: { type: 'text', label: 'Latitude' },
+                    geo_longitude: { type: 'text', label: 'Longitude' },
+                    population: { type: 'text', label: 'Population' },
+                    climate_zone: { type: 'text', label: 'Climate Zone' },
+                    landmark_ids: { type: 'array', label: 'Landmark IDs' },
+                    economic_profile: { type: 'text', label: 'Economic Profile' },
+                    local_challenges: { type: 'array', label: 'Local Challenges' },
+                    nearby_location_ids: { type: 'array', label: 'Nearby Location IDs' },
+                    flavor_notes: { type: 'textarea', label: 'Flavor Notes' }
+                }
+            },
+            services: {
+                key: 'services',
+                fields: {
+                    service_id: { type: 'text', label: 'Service ID', required: true },
+                    name: { type: 'text', label: 'Name', required: true },
+                    service_type: { type: 'select', label: 'Service Type', options: ['residential', 'commercial', 'municipal'] },
+                    description: { type: 'textarea', label: 'Description' },
+                    related_keyword_ids: { type: 'array', label: 'Related Keyword IDs' },
+                    customer_id: { type: 'text', label: 'Customer ID' },
+                    location_id: { type: 'text', label: 'Location ID' },
+                    expertise_signals: { type: 'array', label: 'Expertise Signals' },
+                    pricing_info: { type: 'text', label: 'Pricing Info' },
+                    regulatory_standards: { type: 'array', label: 'Regulatory Standards' },
+                    content_topic_ids: { type: 'array', label: 'Content Topic IDs' },
+                    notes: { type: 'textarea', label: 'Notes' }
+                }
+            }
+        };
+        
+        // Initialize with empty data
+        renderTable('clients');
+        renderTable('locations');
+        renderTable('services');
+        
+        // Tab switching
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                const tabName = this.dataset.tab;
+                
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                
+                this.classList.add('active');
+                document.getElementById(tabName + '-tab').classList.add('active');
+            });
+        });
+        
+        // File upload
+        document.getElementById('file-input').addEventListener('change', function(e) {
+            const files = Array.from(e.target.files);
+            
+            files.forEach(file => {
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    try {
+                        const yamlData = jsyaml.load(event.target.result);
+                        
+                        if (file.name.includes('client')) {
+                            data.clients = yamlData;
+                            renderTable('clients');
+                        } else if (file.name.includes('location')) {
+                            data.locations = yamlData;
+                            renderTable('locations');
+                        } else if (file.name.includes('service')) {
+                            data.services = yamlData;
+                            renderTable('services');
+                        }
+                    } catch (error) {
+                        alert('Error parsing YAML file: ' + error.message);
+                    }
+                };
+                reader.readAsText(file);
+            });
+            
+            e.target.value = ''; // Reset file input
+        });
+        
+        function renderTable(type) {
+            const schema = schemas[type];
+            const records = data[type][schema.key] || [];
+            const headerEl = document.getElementById(type + '-header');
+            const bodyEl = document.getElementById(type + '-body');
+            
+            if (records.length === 0) {
+                headerEl.innerHTML = '';
+                bodyEl.innerHTML = `
+                    <tr>
+                        <td colspan="100" class="empty-state">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                            <div>No records yet. Add one to get started or load a YAML file.</div>
+                        </td>
+                    </tr>
+                `;
+                return;
+            }
+            
+            // Create header
+            const fields = Object.keys(schema.fields);
+            const displayFields = fields.slice(0, 5); // Show first 5 fields in table
+            
+            headerEl.innerHTML = `
+                <tr>
+                    ${displayFields.map(f => `<th>${schema.fields[f].label}</th>`).join('')}
+                    <th style="width: 150px;">Actions</th>
+                </tr>
+            `;
+            
+            // Create body
+            bodyEl.innerHTML = records.map((record, index) => `
+                <tr data-index="${index}">
+                    ${displayFields.map(f => {
+                        let value = record[f];
+                        if (Array.isArray(value)) {
+                            value = value.join(', ');
+                        }
+                        if (value && value.length > 50) {
+                            value = value.substring(0, 50) + '...';
+                        }
+                        return `<td>${value || '-'}</td>`;
+                    }).join('')}
+                    <td>
+                        <button class="btn-edit" onclick="editRecord('${type}', ${index})">Edit</button>
+                        <button class="btn-danger" onclick="deleteRecord('${type}', ${index})">Delete</button>
+                    </td>
+                </tr>
+            `).join('');
+        }
+        
+        function addRecord(type) {
+            currentType = type;
+            currentIndex = -1;
+            showModal('Add ' + type.charAt(0).toUpperCase() + type.slice(1, -1), {});
+        }
+        
+        function editRecord(type, index) {
+            currentType = type;
+            currentIndex = index;
+            const schema = schemas[type];
+            const record = data[type][schema.key][index];
+            showModal('Edit ' + type.charAt(0).toUpperCase() + type.slice(1, -1), record);
+        }
+        
+        function deleteRecord(type, index) {
+            if (confirm('Are you sure you want to delete this record?')) {
+                const schema = schemas[type];
+                data[type][schema.key].splice(index, 1);
+                renderTable(type);
+            }
+        }
+        
+        let currentType = '';
+        let currentIndex = -1;
+        
+        function showModal(title, record) {
+            document.getElementById('modal-title').textContent = title;
+            const schema = schemas[currentType];
+            const form = document.getElementById('edit-form');
+            
+            let formHTML = '';
+            
+            Object.keys(schema.fields).forEach(fieldName => {
+                const field = schema.fields[fieldName];
+                const value = record[fieldName] || '';
+                
+                if (field.type === 'array') {
+                    const arrayValues = Array.isArray(value) ? value : [];
+                    formHTML += `
+                        <div class="form-group">
+                            <label>${field.label}</label>
+                            <div class="array-input" id="array-${fieldName}">
+                                ${arrayValues.map((v, i) => `
+                                    <div class="array-item">
+                                        <input type="text" value="${v}" data-array="${fieldName}" data-index="${i}">
+                                        <button type="button" class="btn-danger btn-small" onclick="removeArrayItem('${fieldName}', ${i})">Remove</button>
+                                    </div>
+                                `).join('')}
+                                <button type="button" class="btn-secondary btn-small" onclick="addArrayItem('${fieldName}')">+ Add Item</button>
+                            </div>
+                        </div>
+                    `;
+                } else if (field.type === 'select') {
+                    formHTML += `
+                        <div class="form-group">
+                            <label>${field.label}${field.required ? ' *' : ''}</label>
+                            <select name="${fieldName}" ${field.required ? 'required' : ''}>
+                                <option value="">Select...</option>
+                                ${field.options.map(opt => `
+                                    <option value="${opt}" ${value === opt ? 'selected' : ''}>${opt}</option>
+                                `).join('')}
+                            </select>
+                        </div>
+                    `;
+                } else if (field.type === 'textarea') {
+                    formHTML += `
+                        <div class="form-group">
+                            <label>${field.label}${field.required ? ' *' : ''}</label>
+                            <textarea name="${fieldName}" ${field.required ? 'required' : ''}>${value}</textarea>
+                        </div>
+                    `;
+                } else {
+                    formHTML += `
+                        <div class="form-group">
+                            <label>${field.label}${field.required ? ' *' : ''}</label>
+                            <input type="${field.type}" name="${fieldName}" value="${value}" ${field.required ? 'required' : ''}>
+                        </div>
+                    `;
+                }
+            });
+            
+            formHTML += `
+                <div class="form-actions">
+                    <button type="button" class="btn-secondary" onclick="closeModal()">Cancel</button>
+                    <button type="submit" class="btn-primary">Save</button>
+                </div>
+            `;
+            
+            form.innerHTML = formHTML;
+            form.onsubmit = saveRecord;
+            
+            document.getElementById('edit-modal').classList.add('active');
+        }
+        
+        function closeModal() {
+            document.getElementById('edit-modal').classList.remove('active');
+        }
+        
+        function addArrayItem(fieldName) {
+            const container = document.getElementById('array-' + fieldName);
+            const items = container.querySelectorAll('.array-item');
+            const index = items.length;
+            
+            const newItem = document.createElement('div');
+            newItem.className = 'array-item';
+            newItem.innerHTML = `
+                <input type="text" value="" data-array="${fieldName}" data-index="${index}">
+                <button type="button" class="btn-danger btn-small" onclick="removeArrayItem('${fieldName}', ${index})">Remove</button>
+            `;
+            
+            container.insertBefore(newItem, container.querySelector('button'));
+        }
+        
+        function removeArrayItem(fieldName, index) {
+            const container = document.getElementById('array-' + fieldName);
+            const items = container.querySelectorAll('.array-item');
+            items[index].remove();
+        }
+        
+        function saveRecord(e) {
+            e.preventDefault();
+            
+            const schema = schemas[currentType];
+            const formData = new FormData(e.target);
+            const record = {};
+            
+            // Get regular fields
+            for (let [key, value] of formData.entries()) {
+                if (value) {
+                    // Try to parse as number
+                    if (!isNaN(value) && value !== '') {
+                        record[key] = Number(value);
+                    } else {
+                        record[key] = value;
+                    }
+                }
+            }
+            
+            // Get array fields
+            Object.keys(schema.fields).forEach(fieldName => {
+                if (schema.fields[fieldName].type === 'array') {
+                    const inputs = document.querySelectorAll(`input[data-array="${fieldName}"]`);
+                    const values = Array.from(inputs)
+                        .map(input => input.value.trim())
+                        .filter(v => v !== '');
+                    if (values.length > 0) {
+                        record[fieldName] = values;
+                    }
+                }
+            });
+            
+            if (currentIndex === -1) {
+                // Add new record
+                if (!data[currentType][schema.key]) {
+                    data[currentType][schema.key] = [];
+                }
+                data[currentType][schema.key].push(record);
+            } else {
+                // Update existing record
+                data[currentType][schema.key][currentIndex] = record;
+            }
+            
+            renderTable(currentType);
+            closeModal();
+        }
+        
+        function downloadYAML(type) {
+            const yamlStr = jsyaml.dump(data[type], {
+                indent: 2,
+                lineWidth: -1,
+                noRefs: true
+            });
+            
+            const blob = new Blob([yamlStr], { type: 'text/yaml' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = type + '.yaml';
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+        
+        function filterTable(type, searchTerm) {
+            const tbody = document.getElementById(type + '-body');
+            const rows = tbody.querySelectorAll('tr');
+            
+            searchTerm = searchTerm.toLowerCase();
+            
+            rows.forEach(row => {
+                const text = row.textContent.toLowerCase();
+                row.style.display = text.includes(searchTerm) ? '' : 'none';
+            });
+        }
+    </script>
+</body>
+</html>

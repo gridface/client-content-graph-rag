@@ -1,0 +1,67 @@
+# This is the current centaur client list
+# It contains a collection of client entities.
+
+# Field	            Type	      Details / Notes
+# customer_id	      string	    Unique UUID or slug
+# name	            string	    Display name (e.g., "APC Asphalt Paving")
+# business_type	    string	    "asphalt_contractor", "arborist", etc.
+# owner	            string	    Business owner name
+# industry	        string	    NAICS or industry slug
+# website_url	      string	    Homepage
+# contact_phone	    string	    Main phone number
+# main_address_id	  string	    Location node ID (see Location file)
+# service_area_ids	array	      List of location IDs served
+# active_services	  array	      List of service IDs
+# client_size	      string	    small,medium,large,x-large estimated revenue size
+# onboarding_date	  date	      Date added to system
+# notes	            text	      Freeform annotations
+
+
+users:
+  # client list starts here
+  - customer_id: client-apc
+    name: APC Asphalt Paving
+    business_type: asphalt_contractor
+    owner: John Wells
+    industry: asphalt
+    website_url: https://apcasphaltpaving.com
+    contact_phone: 800-779-0767
+    main_address_id: loc-davenport-fl
+    service_area_ids:
+    # there are more
+      - loc-davenport-fl
+      - loc-jacksonville-fl
+      - loc-ocala-fl
+    active_services:
+    # there are more
+      - srv-sealcoating
+      - srv-patching
+      - srv-parkinglot
+    client_size: small
+    onboarding_date: "11-15-2025"
+    notes: Specializes in horse paving. sub account of AArow asphalt
+  
+  - customer_id: client-midwest-wi
+    name: Midwest Asphalt
+    business_type: asphalt_contractor
+    owner: Justin Williams
+    industry: asphalt
+    website_url: https://midwestasphaltwi.com/
+    contact_phone: 715-710-1172
+    main_address_id: loc-marshfield-wi
+    service_area_ids:
+    # there are more
+      - loc-abbotsford-wi
+      - loc-colby-wi
+      - loc-edgar-wi
+    active_services:
+    # there are more
+      - srv-sealcoating
+      - srv-patching
+      - srv-parkinglot
+    client_size: small
+    onboarding_date: "07-15-2025"
+    notes: startup expanding into multiple offseason states and trying to grow
+  
+
+# This is a comment at the end of the file.

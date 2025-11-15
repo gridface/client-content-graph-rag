@@ -1,0 +1,632 @@
+# Midwest Asphalt Locations - Wisconsin & Ozarks Service Areas
+# This file contains location data for Midwest Asphalt service areas
+# Structured for eventual Neo4j graph database integration
+
+locations:
+  # ==========================================
+  # WISCONSIN LOCATIONS
+  # Climate Zone: humid_continental (cold winters, warm summers, freeze-thaw cycles)
+  # ==========================================
+  
+  - location_id: loc-abbotsford-wi
+    name: Abbotsford
+    region: Clark County
+    state: WI
+    postal_code: "54405"
+    country: USA
+    geo_latitude: 44.9461
+    geo_longitude: -90.3168
+    population: 2100
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Agriculture, dairy farming, small manufacturing
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - agricultural_heavy_loads
+    nearby_location_ids:
+      - loc-colby-wi
+      - loc-marshfield-wi
+    flavor_notes: Small rural community in Clark County's dairy country. Short paving season (May-October) requires careful project scheduling. Heavy agricultural equipment traffic demands durable base design.
+  
+  - location_id: loc-colby-wi
+    name: Colby
+    region: Clark County & Marathon County
+    state: WI
+    postal_code: "54421"
+    country: USA
+    geo_latitude: 44.9091
+    geo_longitude: -90.3154
+    population: 1900
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Agriculture, cheese production, small business
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - moisture_damage
+    nearby_location_ids:
+      - loc-abbotsford-wi
+      - loc-marshfield-wi
+    flavor_notes: Known as 'The City of Colby Cheese.' Frost depth reaches 4+ feet requiring proper base thickness. Freeze-thaw cycles are primary pavement enemy.
+  
+  - location_id: loc-edgar-wi
+    name: Edgar
+    region: Marathon County
+    state: WI
+    postal_code: "54426"
+    country: USA
+    geo_latitude: 44.9252
+    geo_longitude: -89.9580
+    population: 1500
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Agriculture, lumber, local retail
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - studded_tires
+    nearby_location_ids:
+      - loc-marshfield-wi
+      - loc-mosinee-wi
+      - loc-wausau-wi
+    flavor_notes: Small Marathon County community. Winter studded tire usage can cause premature rutting. Requires PG 64-34 or PG 58-40 binders for low-temp performance.
+  
+  - location_id: loc-kronenwetter-wi
+    name: Kronenwetter
+    region: Marathon County
+    state: WI
+    postal_code: "54455"
+    country: USA
+    geo_latitude: 44.8255
+    geo_longitude: -89.5876
+    population: 7500
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Residential growth, retail, suburban development
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - residential_development
+    nearby_location_ids:
+      - loc-wausau-wi
+      - loc-mosinee-wi
+      - loc-weston-wi
+    flavor_notes: Fast-growing Wausau suburb with new residential and commercial development. High demand for parking lots and driveways. Spring thaw weakening requires careful scheduling.
+  
+  - location_id: loc-marshfield-wi
+    name: Marshfield
+    region: Wood County & Marathon County
+    state: WI
+    postal_code: "54449"
+    country: USA
+    geo_latitude: 44.6688
+    geo_longitude: -90.1718
+    population: 18900
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Healthcare (Marshfield Clinic), manufacturing, retail, regional hub
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - hospital_traffic
+      - commercial_heavy_use
+    nearby_location_ids:
+      - loc-wisconsin-rapids-wi
+      - loc-spencer-wi
+      - loc-colby-wi
+      - loc-abbotsford-wi
+    flavor_notes: Regional healthcare hub with Marshfield Clinic bringing significant traffic. High-traffic hospital/clinic areas need polymer-modified binders for durability. Central Wisconsin's largest city requires year-round planning for limited paving window.
+  
+  - location_id: loc-mosinee-wi
+    name: Mosinee
+    region: Marathon County
+    state: WI
+    postal_code: "54455"
+    country: USA
+    geo_latitude: 44.7930
+    geo_longitude: -89.7043
+    population: 4100
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Paper mills, regional airport, manufacturing
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - industrial_traffic
+      - airport_proximity
+    nearby_location_ids:
+      - loc-wausau-wi
+      - loc-kronenwetter-wi
+      - loc-weston-wi
+    flavor_notes: Home to Central Wisconsin Airport. Industrial paper mill traffic creates heavy load demands. Airport access roads see frequent winter maintenance requiring abrasion-resistant mixes.
+  
+  - location_id: loc-neillsville-wi
+    name: Neillsville
+    region: Clark County
+    state: WI
+    postal_code: "54456"
+    country: USA
+    geo_latitude: 44.5597
+    geo_longitude: -90.5960
+    population: 2400
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Agriculture, county seat, local government
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - rural_isolation
+    nearby_location_ids:
+      - loc-marshfield-wi
+      - loc-black-river-falls-wi
+    flavor_notes: Clark County seat. Rural location means extended haul distances from asphalt plants. Warm-mix asphalt (WMA) technology extends working window on cooler days.
+  
+  - location_id: loc-plover-wi
+    name: Plover
+    region: Portage County
+    state: WI
+    postal_code: "54467"
+    country: USA
+    geo_latitude: 44.4564
+    geo_longitude: -89.5368
+    population: 12900
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Retail, residential growth, suburban development
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - retail_traffic
+      - residential_development
+    nearby_location_ids:
+      - loc-stevens-point-wi
+      - loc-wisconsin-rapids-wi
+    flavor_notes: Growing Stevens Point suburb with active retail development. Shopping centers and residential subdivisions drive paving demand. Spring moisture issues require excellent drainage design.
+  
+  - location_id: loc-spencer-wi
+    name: Spencer
+    region: Marathon County
+    state: WI
+    postal_code: "54479"
+    country: USA
+    geo_latitude: 44.7511
+    geo_longitude: -90.2968
+    population: 1900
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Agriculture, small manufacturing, rural services
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - agricultural_traffic
+    nearby_location_ids:
+      - loc-marshfield-wi
+      - loc-stratford-wi
+    flavor_notes: Small Marathon County community along Highway 13. Heavy farm equipment traffic during harvest season requires robust pavement design.
+  
+  - location_id: loc-stevens-point-wi
+    name: Stevens Point
+    region: Portage County
+    state: WI
+    postal_code: "54481"
+    country: USA
+    geo_latitude: 44.5236
+    geo_longitude: -89.5746
+    population: 26000
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: University (UW-Stevens Point), healthcare, manufacturing, retail
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - university_traffic
+      - commercial_development
+    nearby_location_ids:
+      - loc-plover-wi
+      - loc-wisconsin-rapids-wi
+      - loc-wausau-wi
+    flavor_notes: University city with significant student traffic and campus parking needs. Municipal contracts for street maintenance. Portage County's largest city offers year-round project opportunities.
+  
+  - location_id: loc-stratford-wi
+    name: Stratford
+    region: Marathon County
+    state: WI
+    postal_code: "54484"
+    country: USA
+    geo_latitude: 44.8022
+    geo_longitude: -90.0790
+    population: 1600
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Agriculture, small business, rural community
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - agricultural_loads
+    nearby_location_ids:
+      - loc-marshfield-wi
+      - loc-spencer-wi
+    flavor_notes: Small agricultural community. Short construction season demands efficient project execution. Dairy and agricultural equipment creates unique loading patterns.
+  
+  - location_id: loc-wausau-wi
+    name: Wausau
+    region: Marathon County
+    state: WI
+    postal_code: "54401"
+    country: USA
+    geo_latitude: 44.9591
+    geo_longitude: -89.6301
+    population: 39300
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Insurance (Employers Insurance), manufacturing, healthcare, retail, regional center
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - urban_heat_island
+      - commercial_traffic
+    nearby_location_ids:
+      - loc-weston-wi
+      - loc-mosinee-wi
+      - loc-kronenwetter-wi
+      - loc-stevens-point-wi
+    flavor_notes: Marathon County seat and regional economic center. Major commercial and industrial paving opportunities. Urban heat island effect in downtown can influence mix design. Winter plowing creates surface wear requiring periodic maintenance.
+  
+  - location_id: loc-weston-wi
+    name: Weston
+    region: Marathon County
+    state: WI
+    postal_code: "54476"
+    country: USA
+    geo_latitude: 44.8905
+    geo_longitude: -89.5490
+    population: 15100
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Commercial retail hub, suburban residential, office parks
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - retail_traffic
+      - parking_lot_demand
+    nearby_location_ids:
+      - loc-wausau-wi
+      - loc-kronenwetter-wi
+      - loc-mosinee-wi
+    flavor_notes: Wausau's primary retail suburb with extensive shopping centers. Heavy parking lot maintenance and new construction market. Big box retail creates high-volume commercial opportunities.
+  
+  - location_id: loc-wisconsin-rapids-wi
+    name: Wisconsin Rapids
+    region: Wood County
+    state: WI
+    postal_code: "54494"
+    country: USA
+    geo_latitude: 44.3836
+    geo_longitude: -89.8173
+    population: 17700
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Paper industry, manufacturing, county services
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - industrial_traffic
+      - paper_mill_loads
+    nearby_location_ids:
+      - loc-marshfield-wi
+      - loc-stevens-point-wi
+      - loc-plover-wi
+    flavor_notes: Historic paper industry city with heavy industrial traffic. Mill access roads require high-durability designs. Wisconsin River creates moisture management challenges for pavement near riverfront areas.
+  
+  # ==========================================
+  # OZARKS LOCATIONS - ARKANSAS
+  # Climate Zone: humid_subtropical (transitional, milder winters but still freeze-thaw)
+  # ==========================================
+  
+  - location_id: loc-fayetteville-ar
+    name: Fayetteville
+    region: Washington County
+    state: AR
+    postal_code: "72701"
+    country: USA
+    geo_latitude: 36.0626
+    geo_longitude: -94.1574
+    population: 95000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: University of Arkansas, technology, retail, healthcare, regional center
+    local_challenges:
+      - freeze_thaw
+      - temperature_fluctuation
+      - seasonal_moisture
+      - university_traffic
+      - hillside_drainage
+      - commercial_growth
+    nearby_location_ids:
+      - loc-springdale-ar
+      - loc-rogers-ar
+      - loc-bentonville-ar
+    flavor_notes: Northwest Arkansas regional hub with University of Arkansas driving economy. Ozark terrain creates drainage challenges. Mild winters still see freeze-thaw cycles requiring PG 64-22 minimum. Growing tech sector fuels commercial development.
+  
+  - location_id: loc-springdale-ar
+    name: Springdale
+    region: Washington County
+    state: AR
+    postal_code: "72762"
+    country: USA
+    geo_latitude: 36.1867
+    geo_longitude: -94.1288
+    population: 85000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Poultry processing (Tyson Foods HQ), manufacturing, distribution
+    local_challenges:
+      - freeze_thaw
+      - temperature_fluctuation
+      - seasonal_moisture
+      - industrial_traffic
+      - heavy_truck_loads
+      - rapid_growth
+    nearby_location_ids:
+      - loc-fayetteville-ar
+      - loc-rogers-ar
+      - loc-bentonville-ar
+    flavor_notes: Home to Tyson Foods headquarters with significant industrial traffic. Heavy truck traffic to processing plants requires rutting-resistant designs. Rapid population growth drives residential and commercial paving demand.
+  
+  - location_id: loc-rogers-ar
+    name: Rogers
+    region: Benton County
+    state: AR
+    postal_code: "72756"
+    country: USA
+    geo_latitude: 36.3320
+    geo_longitude: -94.1185
+    population: 70000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Retail, corporate offices, residential growth, distribution centers
+    local_challenges:
+      - freeze_thaw
+      - temperature_fluctuation
+      - seasonal_moisture
+      - commercial_traffic
+      - retail_development
+      - hillside_construction
+    nearby_location_ids:
+      - loc-bentonville-ar
+      - loc-springdale-ar
+      - loc-fayetteville-ar
+    flavor_notes: Fast-growing Northwest Arkansas city with major retail and corporate presence. Walmart Stores Inc. proximity drives commercial activity. Ozark topography requires careful grading and drainage in pavement design.
+  
+  - location_id: loc-bentonville-ar
+    name: Bentonville
+    region: Benton County
+    state: AR
+    postal_code: "72712"
+    country: USA
+    geo_latitude: 36.3729
+    geo_longitude: -94.2088
+    population: 55000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Walmart headquarters, corporate offices, retail, museums
+    local_challenges:
+      - freeze_thaw
+      - temperature_fluctuation
+      - seasonal_moisture
+      - corporate_traffic
+      - high_end_commercial
+      - rapid_development
+    nearby_location_ids:
+      - loc-rogers-ar
+      - loc-springdale-ar
+      - loc-fayetteville-ar
+    flavor_notes: Walmart Inc. global headquarters creates unique high-end commercial market. Crystal Bridges Museum and corporate campus development. Northwest Arkansas's wealthiest city with premium paving expectations and higher-spec projects.
+  
+  # ==========================================
+  # OZARKS LOCATIONS - MISSOURI
+  # Climate Zone: humid_subtropical (transitional, hot summers, mild winters)
+  # ==========================================
+  
+  - location_id: loc-springfield-mo
+    name: Springfield
+    region: Greene County
+    state: MO
+    postal_code: "65801"
+    country: USA
+    geo_latitude: 37.2090
+    geo_longitude: -93.2923
+    population: 170000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Healthcare, education (Missouri State University), manufacturing, retail, regional center
+    local_challenges:
+      - freeze_thaw
+      - temperature_fluctuation
+      - seasonal_moisture
+      - heavy_rainfall
+      - karst_geology
+      - commercial_traffic
+    nearby_location_ids:
+      - loc-republic-mo
+      - loc-nixa-mo
+      - loc-strafford-mo
+      - loc-willard-mo
+    flavor_notes: Southwest Missouri's largest city and regional hub. Karst limestone geology creates sinkhole risks requiring geotechnical investigation. More moderate winters than northern states but still experiences freeze-thaw. Heavy spring rainfall demands excellent drainage systems.
+  
+  - location_id: loc-republic-mo
+    name: Republic
+    region: Greene County
+    state: MO
+    postal_code: "65738"
+    country: USA
+    geo_latitude: 37.1195
+    geo_longitude: -93.4758
+    population: 18000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Suburban residential, retail, schools
+    local_challenges:
+      - freeze_thaw
+      - temperature_fluctuation
+      - seasonal_moisture
+      - heavy_rainfall
+      - residential_development
+      - school_traffic
+    nearby_location_ids:
+      - loc-springfield-mo
+      - loc-willard-mo
+      - loc-nixa-mo
+    flavor_notes: Fast-growing Springfield suburb with strong school system. Residential subdivision and school parking lot projects common. Excellent Springfield access makes material delivery efficient.
+  
+  - location_id: loc-neosho-mo
+    name: Neosho
+    region: Newton County
+    state: MO
+    postal_code: "64850"
+    country: USA
+    geo_latitude: 36.8690
+    geo_longitude: -94.3680
+    population: 12000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Manufacturing, agriculture, retail, county seat
+    local_challenges:
+      - freeze_thaw
+      - temperature_fluctuation
+      - seasonal_moisture
+      - heavy_rainfall
+      - rural_access
+    nearby_location_ids:
+      - loc-joplin-mo
+      - loc-springfield-mo
+    flavor_notes: Newton County seat near Oklahoma and Arkansas borders. Tri-state area creates diverse market opportunities. Spring through fall paving season extends longer than Wisconsin locations. Occasional ice storms require weather monitoring.
+  
+  - location_id: loc-willard-mo
+    name: Willard
+    region: Greene County
+    state: MO
+    postal_code: "65781"
+    country: USA
+    geo_latitude: 37.3042
+    geo_longitude: -93.4288
+    population: 6000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Suburban residential, small retail, bedroom community
+    local_challenges:
+      - freeze_thaw
+      - temperature_fluctuation
+      - seasonal_moisture
+      - heavy_rainfall
+      - residential_growth
+    nearby_location_ids:
+      - loc-springfield-mo
+      - loc-republic-mo
+      - loc-strafford-mo
+    flavor_notes: Small Springfield suburb experiencing steady growth. Highway 160 corridor development. Residential driveways and small commercial projects. Close proximity to Springfield asphalt plants reduces haul costs.
+  
+  - location_id: loc-strafford-mo
+    name: Strafford
+    region: Greene County
+    state: MO
+    postal_code: "65757"
+    country: USA
+    geo_latitude: 37.2681
+    geo_longitude: -93.1185
+    population: 2400
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Small town, residential, agriculture
+    local_challenges:
+      - freeze_thaw
+      - temperature_fluctuation
+      - seasonal_moisture
+      - heavy_rainfall
+      - rural_community
+    nearby_location_ids:
+      - loc-springfield-mo
+      - loc-republic-mo
+    flavor_notes: Small town northeast of Springfield on Highway 65 corridor. Rural character with some suburban growth. Projects typically smaller residential and municipal maintenance work.
+  
+  - location_id: loc-nixa-mo
+    name: Nixa
+    region: Christian County
+    state: MO
+    postal_code: "65714"
+    country: USA
+    geo_latitude: 37.0434
+    geo_longitude: -93.2974
+    population: 23000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Suburban residential, retail growth, schools
+    local_challenges:
+      - freeze_thaw
+      - temperature_fluctuation
+      - seasonal_moisture
+      - heavy_rainfall
+      - rapid_residential_growth
+      - retail_development
+    nearby_location_ids:
+      - loc-springfield-mo
+      - loc-republic-mo
+      - loc-ozark-mo
+    flavor_notes: Rapidly expanding Springfield suburb with major residential development. One of Missouri's fastest-growing cities creates strong paving demand. Shopping center development along Highway 160. Mix of residential subdivisions and commercial retail projects.
+  
+  - location_id: loc-joplin-mo
+    name: Joplin
+    region: Jasper County
+    state: MO
+    postal_code: "64801"
+    country: USA
+    geo_latitude: 37.0842
+    geo_longitude: -94.5133
+    population: 51000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Healthcare, retail, distribution, regional center, post-tornado rebuilding
+    local_challenges:
+      - freeze_thaw
+      - temperature_fluctuation
+      - seasonal_moisture
+      - heavy_rainfall
+      - tornado_recovery
+      - commercial_development
+      - heavy_truck_traffic
+    nearby_location_ids:
+      - loc-neosho-mo
+      - loc-webb-city-mo
+      - loc-carthage-mo
+    flavor_notes: Southwest Missouri regional center rebuilding from 2011 EF5 tornado. Significant reconstruction and new development opportunities. I-44 corridor creates heavy truck traffic. Tri-state location (Missouri/Kansas/Oklahoma) expands market reach. Lead and zinc mining history creates occasional subgrade challenges requiring investigation.
+
+# End of Midwest Asphalt locations file

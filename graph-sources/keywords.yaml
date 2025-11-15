@@ -1,0 +1,1346 @@
+# Keywords Database for SEO and Content Generation
+# This file contains keyword clusters with primary keywords, semantic equivalents,
+# and long-tail variations for asphalt paving services.
+#
+# Link keywords to services using the keyword_id in services.yaml (related_keyword_ids field)
+
+keywords:
+  # ============================================
+  # CORE PAVING SERVICES
+  # ============================================
+  
+  - keyword_id: kw-asphalt-paving
+    primary_keyword: "asphalt paving"
+    search_intent: transactional
+    customer_type: both
+    semantic_equivalents:
+      - "asphalt installation"
+      - "asphalt surfacing"
+      - "hot mix paving"
+      - "blacktop paving"
+      - "pavement installation"
+      - "asphalt work"
+    related_terms:
+      - "paving contractor"
+      - "pavement construction"
+      - "paving services"
+      - "asphalt contractor"
+    long_tail_variations:
+      - "asphalt paving near me"
+      - "residential asphalt paving services"
+      - "commercial asphalt paving contractor"
+      - "new asphalt paving installation"
+      - "affordable asphalt paving"
+      - "quality asphalt paving company"
+      - "asphalt paving for driveways"
+      - "asphalt paving for parking lots"
+      - "professional asphalt paving"
+      - "licensed asphalt paving contractor"
+    search_volume_tier: high
+    conversion_potential: high
+    content_topics:
+      - "what-is-asphalt-paving"
+      - "paving-process"
+      - "choosing-contractor"
+      - "cost-guide"
+    technical_level: basic
+
+  - keyword_id: kw-paving-contractor
+    primary_keyword: "paving contractor"
+    search_intent: transactional
+    customer_type: both
+    semantic_equivalents:
+      - "asphalt contractor"
+      - "paving company"
+      - "pavement contractor"
+      - "asphalt paving company"
+      - "professional paver"
+      - "licensed contractor"
+    related_terms:
+      - "local paving contractor"
+      - "paving specialist"
+      - "certified contractor"
+      - "reputable paver"
+    long_tail_variations:
+      - "paving contractor near me"
+      - "best paving contractor in [city]"
+      - "licensed asphalt contractor"
+      - "reputable paving company"
+      - "experienced paving contractor"
+      - "local asphalt paving contractor"
+      - "professional paving services"
+      - "top rated paving contractor"
+      - "trusted paving company"
+    search_volume_tier: high
+    conversion_potential: very-high
+    content_topics:
+      - "choosing-contractor"
+      - "qualifications"
+      - "questions-to-ask"
+      - "contractor-credentials"
+    technical_level: basic
+
+  - keyword_id: kw-sealcoating
+    primary_keyword: "sealcoating"
+    search_intent: transactional
+    customer_type: both
+    semantic_equivalents:
+      - "seal coating"
+      - "asphalt sealing"
+      - "pavement sealing"
+      - "driveway sealing"
+      - "asphalt seal coating"
+      - "surface sealing"
+    related_terms:
+      - "asphalt protection"
+      - "pavement preservation"
+      - "surface treatment"
+      - "preventative maintenance"
+    long_tail_variations:
+      - "driveway sealcoating cost"
+      - "parking lot sealcoating services"
+      - "when to sealcoat asphalt"
+      - "how often to sealcoat driveway"
+      - "commercial sealcoating contractor"
+      - "residential sealcoating near me"
+      - "asphalt sealcoating and crack sealing"
+      - "professional sealcoating services"
+      - "sealcoating for parking lots"
+      - "driveway seal coating near me"
+    search_volume_tier: high
+    conversion_potential: high
+    content_topics:
+      - "sealcoating-benefits"
+      - "maintenance-schedule"
+      - "cost-guide"
+      - "application-process"
+    technical_level: basic
+
+  - keyword_id: kw-asphalt-driveway
+    primary_keyword: "asphalt driveway"
+    search_intent: transactional
+    customer_type: residential
+    semantic_equivalents:
+      - "blacktop driveway"
+      - "paved driveway"
+      - "residential driveway"
+      - "home driveway"
+      - "asphalt drive"
+    related_terms:
+      - "driveway paving"
+      - "driveway installation"
+      - "driveway replacement"
+      - "residential paving"
+    long_tail_variations:
+      - "new asphalt driveway cost"
+      - "asphalt driveway installation near me"
+      - "asphalt driveway vs concrete"
+      - "how long does asphalt driveway last"
+      - "residential asphalt driveway contractor"
+      - "asphalt driveway repair and maintenance"
+      - "replace old driveway with asphalt"
+      - "asphalt driveway for home"
+      - "install new asphalt driveway"
+      - "best asphalt for driveway"
+    search_volume_tier: high
+    conversion_potential: high
+    content_topics:
+      - "driveway-design"
+      - "cost-comparison"
+      - "maintenance-tips"
+      - "installation-process"
+    technical_level: basic
+
+  - keyword_id: kw-parking-lot-paving
+    primary_keyword: "parking lot paving"
+    search_intent: transactional
+    customer_type: commercial
+    semantic_equivalents:
+      - "parking lot construction"
+      - "parking area paving"
+      - "commercial parking lot"
+      - "lot paving"
+      - "parking lot asphalt"
+    related_terms:
+      - "parking lot installation"
+      - "parking lot repair"
+      - "parking area resurfacing"
+      - "commercial paving"
+    long_tail_variations:
+      - "commercial parking lot paving cost"
+      - "parking lot paving contractor near me"
+      - "new parking lot installation"
+      - "parking lot resurfacing services"
+      - "asphalt parking lot maintenance"
+      - "parking lot striping and paving"
+      - "small business parking lot paving"
+      - "church parking lot paving"
+      - "retail parking lot paving"
+      - "office parking lot construction"
+    search_volume_tier: medium
+    conversion_potential: high
+    content_topics:
+      - "parking-lot-design"
+      - "ada-compliance"
+      - "maintenance-plans"
+      - "commercial-services"
+    technical_level: basic
+
+  # ============================================
+  # REPAIR & MAINTENANCE SERVICES
+  # ============================================
+
+  - keyword_id: kw-crack-filling
+    primary_keyword: "crack filling"
+    search_intent: transactional
+    customer_type: both
+    semantic_equivalents:
+      - "crack sealing"
+      - "crack repair"
+      - "asphalt crack filling"
+      - "pavement crack repair"
+      - "crack treatment"
+    related_terms:
+      - "driveway crack sealing"
+      - "preventive crack treatment"
+      - "crack maintenance"
+      - "crack sealing services"
+    long_tail_variations:
+      - "asphalt crack filling cost"
+      - "driveway crack sealing near me"
+      - "when to fill asphalt cracks"
+      - "parking lot crack sealing services"
+      - "crack filling and sealcoating"
+      - "professional crack repair services"
+      - "prevent asphalt cracks from spreading"
+      - "how to seal driveway cracks"
+      - "crack sealing contractor"
+    search_volume_tier: medium
+    conversion_potential: high
+    content_topics:
+      - "crack-types"
+      - "prevention"
+      - "repair-methods"
+      - "timing"
+    technical_level: basic
+
+  - keyword_id: kw-pothole-repair
+    primary_keyword: "pothole repair"
+    search_intent: transactional
+    customer_type: both
+    semantic_equivalents:
+      - "pothole patching"
+      - "pothole filling"
+      - "hole repair"
+      - "pavement repair"
+      - "asphalt patching"
+    related_terms:
+      - "surface repair"
+      - "damage repair"
+      - "pavement patching"
+      - "hole filling"
+    long_tail_variations:
+      - "driveway pothole repair cost"
+      - "emergency pothole repair services"
+      - "parking lot pothole repair"
+      - "permanent pothole repair"
+      - "pothole repair near me"
+      - "fix potholes in asphalt"
+      - "commercial pothole repair"
+      - "how to repair potholes"
+      - "pothole patching services"
+    search_volume_tier: medium
+    conversion_potential: high
+    content_topics:
+      - "causes-of-potholes"
+      - "repair-methods"
+      - "prevention"
+      - "emergency-service"
+    technical_level: basic
+
+  - keyword_id: kw-asphalt-repair
+    primary_keyword: "asphalt repair"
+    search_intent: transactional
+    customer_type: both
+    semantic_equivalents:
+      - "asphalt restoration"
+      - "pavement repair"
+      - "blacktop repair"
+      - "driveway repair"
+      - "surface repair"
+    related_terms:
+      - "parking lot repair"
+      - "patch work"
+      - "damage repair"
+      - "pavement restoration"
+    long_tail_variations:
+      - "asphalt driveway repair cost"
+      - "parking lot asphalt repair"
+      - "emergency asphalt repair services"
+      - "residential asphalt repair"
+      - "commercial asphalt repair contractor"
+      - "fix damaged asphalt"
+      - "asphalt repair and maintenance"
+      - "asphalt repair near me"
+      - "professional asphalt repair"
+    search_volume_tier: high
+    conversion_potential: high
+    content_topics:
+      - "common-problems"
+      - "repair-options"
+      - "cost-guide"
+      - "when-to-repair-vs-replace"
+    technical_level: basic
+
+  - keyword_id: kw-patching
+    primary_keyword: "asphalt patching"
+    search_intent: transactional
+    customer_type: both
+    semantic_equivalents:
+      - "pavement patching"
+      - "patch work"
+      - "localized repair"
+      - "spot repair"
+      - "pothole patching"
+    related_terms:
+      - "patch repair"
+      - "small area repair"
+      - "quick repair"
+      - "temporary patching"
+    long_tail_variations:
+      - "asphalt patching services"
+      - "driveway patching cost"
+      - "parking lot patching"
+      - "temporary asphalt patch"
+      - "permanent asphalt patching"
+      - "asphalt patch repair near me"
+      - "professional patching services"
+      - "cold patch vs hot patch"
+    search_volume_tier: medium
+    conversion_potential: high
+    content_topics:
+      - "patching-methods"
+      - "materials"
+      - "temporary-vs-permanent"
+      - "cost-guide"
+    technical_level: basic
+
+  - keyword_id: kw-asphalt-resurfacing
+    primary_keyword: "asphalt resurfacing"
+    search_intent: transactional
+    customer_type: both
+    semantic_equivalents:
+      - "asphalt overlay"
+      - "pavement resurfacing"
+      - "mill and overlay"
+      - "surface renewal"
+      - "repaving"
+    related_terms:
+      - "driveway resurfacing"
+      - "parking lot resurfacing"
+      - "pavement rehabilitation"
+      - "surface restoration"
+    long_tail_variations:
+      - "asphalt driveway resurfacing cost"
+      - "parking lot resurfacing services"
+      - "when to resurface asphalt"
+      - "resurfacing vs replacement"
+      - "commercial asphalt resurfacing"
+      - "residential driveway resurfacing"
+      - "mill and overlay services"
+      - "asphalt overlay near me"
+      - "how much to resurface driveway"
+    search_volume_tier: medium
+    conversion_potential: high
+    content_topics:
+      - "resurfacing-process"
+      - "timing"
+      - "cost-vs-replacement"
+      - "benefits"
+    technical_level: basic
+
+  - keyword_id: kw-mill-overlay
+    primary_keyword: "mill and overlay"
+    search_intent: transactional
+    customer_type: both
+    semantic_equivalents:
+      - "milling and resurfacing"
+      - "remove and replace surface"
+      - "asphalt overlay"
+      - "surface milling"
+      - "pavement rehabilitation"
+    related_terms:
+      - "milling services"
+      - "overlay installation"
+      - "surface removal"
+      - "pavement renewal"
+    long_tail_variations:
+      - "mill and overlay cost"
+      - "parking lot mill and overlay"
+      - "driveway milling and overlay"
+      - "what is mill and overlay"
+      - "mill and pave services"
+      - "asphalt milling and resurfacing"
+      - "commercial mill and overlay"
+    search_volume_tier: low
+    conversion_potential: medium
+    content_topics:
+      - "process-explanation"
+      - "benefits"
+      - "cost-guide"
+      - "ideal-applications"
+    technical_level: intermediate
+
+  # ============================================
+  # SPECIALTY SERVICES
+  # ============================================
+
+  - keyword_id: kw-chip-seal
+    primary_keyword: "chip seal"
+    search_intent: informational
+    customer_type: both
+    semantic_equivalents:
+      - "chip sealing"
+      - "tar and chip"
+      - "seal chip"
+      - "chip seal paving"
+      - "surface chip seal"
+    related_terms:
+      - "surface treatment"
+      - "aggregate sealing"
+      - "stone seal"
+      - "chip seal coating"
+    long_tail_variations:
+      - "what is chip seal paving"
+      - "chip seal driveway cost"
+      - "chip seal vs asphalt cost"
+      - "chip seal for parking lot"
+      - "chip seal paving contractor"
+      - "benefits of chip seal"
+      - "residential chip seal"
+      - "tar and chip driveway"
+      - "is chip seal good"
+    search_volume_tier: low
+    conversion_potential: medium
+    content_topics:
+      - "what-is-chip-seal"
+      - "cost-comparison"
+      - "best-applications"
+      - "pros-and-cons"
+    technical_level: intermediate
+
+  - keyword_id: kw-grading-excavation
+    primary_keyword: "grading and excavation"
+    search_intent: transactional
+    customer_type: both
+    semantic_equivalents:
+      - "site grading"
+      - "land grading"
+      - "excavation work"
+      - "earthwork"
+      - "site preparation"
+    related_terms:
+      - "base work"
+      - "subgrade preparation"
+      - "site prep"
+      - "land clearing"
+    long_tail_variations:
+      - "driveway grading services"
+      - "parking lot grading and excavation"
+      - "site prep for paving"
+      - "grading for asphalt installation"
+      - "excavation and grading contractor"
+      - "land grading before paving"
+      - "site excavation for driveway"
+      - "grading work near me"
+    search_volume_tier: low
+    conversion_potential: medium
+    content_topics:
+      - "importance-of-grading"
+      - "site-preparation"
+      - "drainage"
+      - "process"
+    technical_level: intermediate
+
+  - keyword_id: kw-base-work
+    primary_keyword: "base work"
+    search_intent: informational
+    customer_type: commercial
+    semantic_equivalents:
+      - "gravel base"
+      - "aggregate base"
+      - "base installation"
+      - "foundation work"
+      - "subbase preparation"
+    related_terms:
+      - "base preparation"
+      - "gravel work"
+      - "stone base"
+      - "base construction"
+    long_tail_variations:
+      - "gravel base for driveway"
+      - "asphalt base preparation"
+      - "proper base for paving"
+      - "aggregate base installation"
+      - "importance of proper base work"
+      - "how thick should gravel base be"
+      - "base work for parking lot"
+    search_volume_tier: low
+    conversion_potential: low
+    content_topics:
+      - "base-importance"
+      - "materials"
+      - "proper-installation"
+      - "specifications"
+    technical_level: intermediate
+
+  - keyword_id: kw-porous-asphalt
+    primary_keyword: "porous asphalt"
+    search_intent: informational
+    customer_type: commercial
+    semantic_equivalents:
+      - "permeable asphalt"
+      - "pervious pavement"
+      - "porous pavement"
+      - "permeable paving"
+      - "drainage asphalt"
+    related_terms:
+      - "stormwater management"
+      - "pervious concrete"
+      - "green infrastructure"
+      - "sustainable paving"
+    long_tail_variations:
+      - "porous asphalt parking lot"
+      - "permeable pavement cost"
+      - "porous asphalt driveway"
+      - "benefits of porous asphalt"
+      - "porous pavement installation"
+      - "pervious asphalt maintenance"
+      - "what is porous asphalt"
+    search_volume_tier: low
+    conversion_potential: low
+    content_topics:
+      - "stormwater-benefits"
+      - "applications"
+      - "maintenance"
+      - "sustainability"
+    technical_level: advanced
+
+  - keyword_id: kw-recycled-asphalt
+    primary_keyword: "recycled asphalt"
+    search_intent: informational
+    customer_type: both
+    semantic_equivalents:
+      - "reclaimed asphalt"
+      - "RAP"
+      - "recycled asphalt pavement"
+      - "reclaimed materials"
+      - "asphalt recycling"
+    related_terms:
+      - "sustainable paving"
+      - "eco-friendly asphalt"
+      - "reclaimed pavement"
+      - "green paving"
+    long_tail_variations:
+      - "recycled asphalt driveway"
+      - "benefits of recycled asphalt"
+      - "is recycled asphalt good"
+      - "recycled asphalt pavement cost"
+      - "sustainable asphalt options"
+      - "environmentally friendly paving"
+      - "RAP asphalt driveway"
+      - "reclaimed asphalt pavement"
+    search_volume_tier: low
+    conversion_potential: medium
+    content_topics:
+      - "sustainability"
+      - "cost-benefits"
+      - "quality"
+      - "environmental-impact"
+    technical_level: intermediate
+
+  # ============================================
+  # PROJECT TYPES
+  # ============================================
+
+  - keyword_id: kw-residential-paving
+    primary_keyword: "residential paving"
+    search_intent: transactional
+    customer_type: residential
+    semantic_equivalents:
+      - "home paving"
+      - "residential asphalt"
+      - "homeowner paving services"
+      - "residential driveway installation"
+      - "home improvement paving"
+    related_terms:
+      - "driveway paving"
+      - "residential contractor"
+      - "house paving"
+      - "home asphalt services"
+    long_tail_variations:
+      - "residential asphalt paving contractor"
+      - "home driveway installation"
+      - "residential paving services near me"
+      - "paving for homeowners"
+      - "residential asphalt contractor"
+      - "home paving cost"
+      - "residential driveway paving"
+      - "paving services for homes"
+    search_volume_tier: medium
+    conversion_potential: high
+    content_topics:
+      - "residential-services"
+      - "homeowner-guide"
+      - "cost-guide"
+      - "design-options"
+    technical_level: basic
+
+  - keyword_id: kw-commercial-paving
+    primary_keyword: "commercial paving"
+    search_intent: transactional
+    customer_type: commercial
+    semantic_equivalents:
+      - "commercial asphalt"
+      - "business paving"
+      - "commercial asphalt services"
+      - "commercial property paving"
+      - "commercial pavement"
+    related_terms:
+      - "parking lot paving"
+      - "commercial contractor"
+      - "business parking lot"
+      - "retail paving"
+    long_tail_variations:
+      - "commercial asphalt paving contractor"
+      - "business parking lot paving"
+      - "commercial property maintenance"
+      - "retail parking lot paving"
+      - "office building paving services"
+      - "commercial asphalt repair"
+      - "small business paving services"
+      - "industrial paving contractor"
+    search_volume_tier: medium
+    conversion_potential: high
+    content_topics:
+      - "commercial-services"
+      - "business-benefits"
+      - "maintenance-plans"
+      - "ada-requirements"
+    technical_level: basic
+
+  - keyword_id: kw-new-paving
+    primary_keyword: "new paving"
+    search_intent: transactional
+    customer_type: both
+    semantic_equivalents:
+      - "new asphalt installation"
+      - "new pavement"
+      - "fresh paving"
+      - "new construction paving"
+      - "greenfield paving"
+    related_terms:
+      - "new driveway"
+      - "new parking lot"
+      - "first time paving"
+      - "ground-up construction"
+    long_tail_variations:
+      - "new asphalt driveway installation"
+      - "new parking lot paving"
+      - "new asphalt pavement installation"
+      - "install new asphalt"
+      - "new construction asphalt"
+      - "paving new driveway cost"
+      - "new commercial paving"
+    search_volume_tier: medium
+    conversion_potential: high
+    content_topics:
+      - "new-installation-process"
+      - "planning"
+      - "cost-guide"
+      - "design-considerations"
+    technical_level: basic
+
+  - keyword_id: kw-driveway-paving
+    primary_keyword: "driveway paving"
+    search_intent: transactional
+    customer_type: residential
+    semantic_equivalents:
+      - "driveway installation"
+      - "new driveway"
+      - "driveway construction"
+      - "residential driveway paving"
+      - "home driveway installation"
+    related_terms:
+      - "driveway replacement"
+      - "driveway repair"
+      - "asphalt driveway"
+      - "paved driveway"
+    long_tail_variations:
+      - "driveway paving cost"
+      - "driveway paving near me"
+      - "asphalt driveway paving contractor"
+      - "residential driveway paving services"
+      - "how much to pave driveway"
+      - "best material for driveway paving"
+      - "driveway paving installation"
+      - "pave my driveway"
+    search_volume_tier: high
+    conversion_potential: high
+    content_topics:
+      - "driveway-options"
+      - "cost-guide"
+      - "installation-process"
+      - "material-selection"
+    technical_level: basic
+
+  - keyword_id: kw-parking-lot
+    primary_keyword: "parking lot"
+    search_intent: informational
+    customer_type: commercial
+    semantic_equivalents:
+      - "parking area"
+      - "parking facility"
+      - "commercial parking"
+      - "parking lot surface"
+      - "parking structure"
+    related_terms:
+      - "lot maintenance"
+      - "parking lot repair"
+      - "parking lot construction"
+      - "lot resurfacing"
+    long_tail_variations:
+      - "parking lot maintenance"
+      - "parking lot repair near me"
+      - "parking lot paving cost"
+      - "commercial parking lot services"
+      - "parking lot resurfacing"
+      - "parking lot sealcoating"
+      - "parking lot striping"
+      - "asphalt parking lot"
+    search_volume_tier: medium
+    conversion_potential: medium
+    content_topics:
+      - "maintenance"
+      - "repair-options"
+      - "design"
+      - "compliance"
+    technical_level: basic
+
+  # ============================================
+  # MAINTENANCE ACTIVITIES
+  # ============================================
+
+  - keyword_id: kw-preventative-maintenance
+    primary_keyword: "preventative maintenance"
+    search_intent: informational
+    customer_type: both
+    semantic_equivalents:
+      - "preventive maintenance"
+      - "pavement maintenance"
+      - "routine maintenance"
+      - "maintenance plan"
+      - "proactive maintenance"
+    related_terms:
+      - "pavement preservation"
+      - "maintenance program"
+      - "scheduled maintenance"
+      - "care and maintenance"
+    long_tail_variations:
+      - "asphalt preventative maintenance plan"
+      - "parking lot maintenance schedule"
+      - "how to maintain asphalt driveway"
+      - "preventive asphalt maintenance services"
+      - "pavement maintenance program"
+      - "commercial pavement maintenance"
+      - "driveway maintenance plan"
+      - "preventive parking lot maintenance"
+    search_volume_tier: low
+    conversion_potential: medium
+    content_topics:
+      - "maintenance-schedule"
+      - "cost-savings"
+      - "service-plans"
+      - "long-term-benefits"
+    technical_level: basic
+
+  - keyword_id: kw-sealcoating-crack-sealing
+    primary_keyword: "sealcoating and crack sealing"
+    search_intent: transactional
+    customer_type: both
+    semantic_equivalents:
+      - "seal coating and crack filling"
+      - "maintenance combo"
+      - "preventive treatment"
+      - "surface protection"
+    related_terms:
+      - "pavement maintenance"
+      - "combo service"
+      - "bundled maintenance"
+      - "complete care"
+    long_tail_variations:
+      - "sealcoating and crack sealing cost"
+      - "parking lot sealcoating and crack repair"
+      - "driveway maintenance package"
+      - "seal coat and crack fill services"
+      - "combined maintenance services"
+      - "preventive maintenance package"
+    search_volume_tier: low
+    conversion_potential: high
+    content_topics:
+      - "bundled-services"
+      - "cost-savings"
+      - "maintenance-timing"
+      - "benefits"
+    technical_level: basic
+
+  - keyword_id: kw-pavement-marking
+    primary_keyword: "pavement marking"
+    search_intent: transactional
+    customer_type: commercial
+    semantic_equivalents:
+      - "striping"
+      - "line striping"
+      - "parking lot striping"
+      - "pavement striping"
+      - "lot marking"
+    related_terms:
+      - "parking lot lines"
+      - "traffic markings"
+      - "stall marking"
+      - "handicap marking"
+    long_tail_variations:
+      - "parking lot striping services"
+      - "pavement marking contractor"
+      - "parking lot line painting"
+      - "commercial striping services"
+      - "parking lot striping cost"
+      - "restripe parking lot"
+      - "ADA compliant striping"
+      - "parking lot marking near me"
+    search_volume_tier: low
+    conversion_potential: medium
+    content_topics:
+      - "striping-standards"
+      - "ada-compliance"
+      - "maintenance"
+      - "types-of-markings"
+    technical_level: basic
+
+  - keyword_id: kw-surface-cleaning
+    primary_keyword: "surface cleaning"
+    search_intent: transactional
+    customer_type: commercial
+    semantic_equivalents:
+      - "sweeping"
+      - "parking lot sweeping"
+      - "pavement cleaning"
+      - "debris removal"
+      - "lot cleaning"
+    related_terms:
+      - "power sweeping"
+      - "lot maintenance"
+      - "surface maintenance"
+      - "cleaning services"
+    long_tail_variations:
+      - "parking lot sweeping services"
+      - "commercial lot cleaning"
+      - "parking lot maintenance cleaning"
+      - "pavement sweeping contractor"
+      - "lot sweeping near me"
+      - "regular parking lot cleaning"
+    search_volume_tier: low
+    conversion_potential: low
+    content_topics:
+      - "maintenance-importance"
+      - "cleaning-frequency"
+      - "benefits"
+      - "services"
+    technical_level: basic
+
+  # ============================================
+  # MATERIALS & TECHNICAL TERMS
+  # ============================================
+
+  - keyword_id: kw-hot-mix-asphalt
+    primary_keyword: "hot mix asphalt"
+    search_intent: informational
+    customer_type: commercial
+    semantic_equivalents:
+      - "hot mix"
+      - "HMA"
+      - "hot asphalt"
+      - "asphalt concrete"
+      - "bituminous concrete"
+    related_terms:
+      - "asphalt mix"
+      - "paving mix"
+      - "hot asphalt paving"
+      - "standard mix"
+    long_tail_variations:
+      - "what is hot mix asphalt"
+      - "hot mix asphalt installation"
+      - "hot mix vs cold patch"
+      - "hot mix asphalt paving"
+      - "types of hot mix asphalt"
+      - "HMA pavement"
+      - "hot asphalt mix"
+    search_volume_tier: low
+    conversion_potential: low
+    content_topics:
+      - "materials-overview"
+      - "quality-standards"
+      - "applications"
+      - "specifications"
+    technical_level: intermediate
+
+  - keyword_id: kw-warm-mix-asphalt
+    primary_keyword: "warm mix asphalt"
+    search_intent: informational
+    customer_type: commercial
+    semantic_equivalents:
+      - "warm mix"
+      - "WMA"
+      - "warm asphalt technology"
+      - "energy-efficient asphalt"
+      - "low-temp asphalt"
+    related_terms:
+      - "sustainable paving"
+      - "eco-friendly asphalt"
+      - "modern paving"
+      - "green asphalt"
+    long_tail_variations:
+      - "what is warm mix asphalt"
+      - "warm mix asphalt benefits"
+      - "WMA vs HMA"
+      - "warm mix technology"
+      - "environmental benefits warm mix"
+      - "warm mix asphalt cost"
+    search_volume_tier: low
+    conversion_potential: low
+    content_topics:
+      - "technology-overview"
+      - "environmental-benefits"
+      - "cost-comparison"
+      - "applications"
+    technical_level: advanced
+
+  - keyword_id: kw-cold-mix-asphalt
+    primary_keyword: "cold mix asphalt"
+    search_intent: informational
+    customer_type: both
+    semantic_equivalents:
+      - "cold patch"
+      - "cold mix"
+      - "temporary asphalt"
+      - "cold asphalt"
+      - "emulsion mix"
+    related_terms:
+      - "temporary repair"
+      - "emergency patch"
+      - "quick fix"
+      - "interim repair"
+    long_tail_variations:
+      - "cold patch asphalt repair"
+      - "temporary asphalt patch"
+      - "cold mix vs hot mix"
+      - "when to use cold patch"
+      - "cold asphalt repair"
+      - "emergency pothole repair cold mix"
+    search_volume_tier: low
+    conversion_potential: low
+    content_topics:
+      - "temporary-repairs"
+      - "applications"
+      - "limitations"
+      - "when-to-use"
+    technical_level: basic
+
+  # ============================================
+  # PROBLEM AREAS / ISSUES
+  # ============================================
+
+  - keyword_id: kw-cracking
+    primary_keyword: "asphalt cracking"
+    search_intent: informational
+    customer_type: both
+    semantic_equivalents:
+      - "pavement cracks"
+      - "asphalt cracks"
+      - "surface cracking"
+      - "crack damage"
+      - "crack deterioration"
+    related_terms:
+      - "crack repair"
+      - "crack types"
+      - "crack causes"
+      - "crack prevention"
+    long_tail_variations:
+      - "why is my asphalt cracking"
+      - "types of asphalt cracks"
+      - "prevent driveway cracking"
+      - "repair asphalt cracks"
+      - "causes of pavement cracking"
+      - "driveway crack problems"
+      - "parking lot cracks"
+    search_volume_tier: medium
+    conversion_potential: medium
+    content_topics:
+      - "crack-types"
+      - "causes"
+      - "repair-options"
+      - "prevention"
+    technical_level: basic
+
+  - keyword_id: kw-potholes
+    primary_keyword: "potholes"
+    search_intent: informational
+    customer_type: both
+    semantic_equivalents:
+      - "holes in pavement"
+      - "pavement holes"
+      - "surface holes"
+      - "cavity damage"
+      - "depression failures"
+    related_terms:
+      - "pothole repair"
+      - "hole damage"
+      - "pavement failure"
+      - "water damage"
+    long_tail_variations:
+      - "why do potholes form"
+      - "prevent potholes in driveway"
+      - "fix potholes in parking lot"
+      - "causes of potholes"
+      - "pothole prevention"
+      - "how to repair potholes"
+    search_volume_tier: medium
+    conversion_potential: high
+    content_topics:
+      - "causes"
+      - "prevention"
+      - "repair-methods"
+      - "emergency-repair"
+    technical_level: basic
+
+  - keyword_id: kw-drainage-issues
+    primary_keyword: "drainage issues"
+    search_intent: informational
+    customer_type: both
+    semantic_equivalents:
+      - "water problems"
+      - "poor drainage"
+      - "standing water"
+      - "drainage failure"
+      - "water damage"
+    related_terms:
+      - "drainage solutions"
+      - "water management"
+      - "ponding water"
+      - "drainage repair"
+    long_tail_variations:
+      - "drainage problems in driveway"
+      - "fix standing water on pavement"
+      - "parking lot drainage issues"
+      - "improve asphalt drainage"
+      - "water pooling on asphalt"
+      - "drainage solutions for pavement"
+    search_volume_tier: low
+    conversion_potential: medium
+    content_topics:
+      - "causes"
+      - "solutions"
+      - "prevention"
+      - "importance"
+    technical_level: intermediate
+
+  # ============================================
+  # CUSTOMER INTENT KEYWORDS
+  # ============================================
+
+  - keyword_id: kw-free-quote
+    primary_keyword: "free quote"
+    search_intent: transactional
+    customer_type: both
+    semantic_equivalents:
+      - "free estimate"
+      - "no obligation quote"
+      - "free inspection"
+      - "cost estimate"
+      - "price quote"
+    related_terms:
+      - "estimate"
+      - "consultation"
+      - "assessment"
+      - "bid"
+    long_tail_variations:
+      - "get free paving quote"
+      - "free asphalt estimate near me"
+      - "free driveway quote"
+      - "free parking lot estimate"
+      - "request free paving quote"
+      - "no obligation paving estimate"
+      - "free quote for asphalt work"
+      - "free consultation paving"
+    search_volume_tier: medium
+    conversion_potential: very-high
+    content_topics:
+      - "how-to-get-quote"
+      - "what-to-expect"
+      - "cost-factors"
+      - "process"
+    technical_level: basic
+
+  - keyword_id: kw-cost
+    primary_keyword: "asphalt paving cost"
+    search_intent: commercial
+    customer_type: both
+    semantic_equivalents:
+      - "price"
+      - "pricing"
+      - "how much"
+      - "cost estimate"
+      - "affordable"
+    related_terms:
+      - "budget"
+      - "expense"
+      - "investment"
+      - "quote"
+    long_tail_variations:
+      - "how much does asphalt paving cost"
+      - "driveway paving cost"
+      - "parking lot paving cost"
+      - "cost per square foot asphalt"
+      - "asphalt driveway cost calculator"
+      - "affordable paving services"
+      - "paving cost estimate"
+      - "average cost to pave driveway"
+    search_volume_tier: high
+    conversion_potential: high
+    content_topics:
+      - "cost-factors"
+      - "pricing-guide"
+      - "budgeting"
+      - "cost-comparison"
+    technical_level: basic
+
+  - keyword_id: kw-near-me
+    primary_keyword: "asphalt paving near me"
+    search_intent: transactional
+    customer_type: both
+    semantic_equivalents:
+      - "local paving"
+      - "nearby paving"
+      - "paving in my area"
+      - "close by paving"
+      - "local contractor"
+    related_terms:
+      - "local services"
+      - "area contractor"
+      - "nearby contractor"
+      - "regional services"
+    long_tail_variations:
+      - "asphalt paving contractor near me"
+      - "driveway paving near me"
+      - "parking lot paving near me"
+      - "local asphalt contractor"
+      - "paving services in my area"
+      - "find paving contractor near me"
+    search_volume_tier: high
+    conversion_potential: very-high
+    content_topics:
+      - "local-services"
+      - "service-area"
+      - "coverage"
+      - "finding-contractor"
+    technical_level: basic
+
+  - keyword_id: kw-best-contractor
+    primary_keyword: "best paving contractor"
+    search_intent: commercial
+    customer_type: both
+    semantic_equivalents:
+      - "top contractor"
+      - "reputable company"
+      - "quality contractor"
+      - "experienced paver"
+      - "trusted contractor"
+    related_terms:
+      - "top rated"
+      - "highly rated"
+      - "five star"
+      - "professional"
+    long_tail_variations:
+      - "best asphalt contractor in [city]"
+      - "top rated paving company"
+      - "highly rated asphalt contractor"
+      - "reputable paving contractor"
+      - "experienced paving company"
+      - "best reviewed paving contractor"
+      - "quality asphalt paving company"
+    search_volume_tier: medium
+    conversion_potential: high
+    content_topics:
+      - "choosing-contractor"
+      - "qualifications"
+      - "reviews"
+      - "what-to-look-for"
+    technical_level: basic
+
+  # ============================================
+  # ADDITIONAL SERVICES
+  # ============================================
+
+  - keyword_id: kw-land-clearing
+    primary_keyword: "land clearing"
+    search_intent: transactional
+    customer_type: both
+    semantic_equivalents:
+      - "site clearing"
+      - "lot clearing"
+      - "vegetation removal"
+      - "brush clearing"
+      - "tree removal for paving"
+    related_terms:
+      - "site preparation"
+      - "clearing services"
+      - "land prep"
+      - "site development"
+    long_tail_variations:
+      - "land clearing for paving"
+      - "site clearing services"
+      - "lot clearing for driveway"
+      - "clearing land for parking lot"
+      - "vegetation removal paving prep"
+    search_volume_tier: low
+    conversion_potential: medium
+    content_topics:
+      - "site-preparation"
+      - "clearing-process"
+      - "services"
+      - "planning"
+    technical_level: basic
+
+  - keyword_id: kw-excavating-work
+    primary_keyword: "excavating work"
+    search_intent: transactional
+    customer_type: both
+    semantic_equivalents:
+      - "excavation"
+      - "digging"
+      - "earthmoving"
+      - "trenching"
+      - "site work"
+    related_terms:
+      - "excavation services"
+      - "earth work"
+      - "site excavation"
+      - "digging services"
+    long_tail_variations:
+      - "excavation for paving"
+      - "site excavation services"
+      - "excavating for driveway"
+      - "parking lot excavation"
+      - "excavation and grading"
+    search_volume_tier: low
+    conversion_potential: medium
+    content_topics:
+      - "excavation-process"
+      - "site-prep"
+      - "services"
+      - "importance"
+    technical_level: intermediate
+
+  - keyword_id: kw-gravel-work
+    primary_keyword: "gravel work"
+    search_intent: transactional
+    customer_type: both
+    semantic_equivalents:
+      - "gravel installation"
+      - "stone base"
+      - "aggregate work"
+      - "gravel base installation"
+      - "crushed stone work"
+    related_terms:
+      - "base installation"
+      - "gravel services"
+      - "aggregate placement"
+      - "stone work"
+    long_tail_variations:
+      - "gravel base for paving"
+      - "gravel installation services"
+      - "crushed stone base work"
+      - "aggregate base installation"
+      - "gravel work for driveway"
+    search_volume_tier: low
+    conversion_potential: low
+    content_topics:
+      - "base-work"
+      - "materials"
+      - "installation"
+      - "importance"
+    technical_level: intermediate
+
+  - keyword_id: kw-concrete-work
+    primary_keyword: "concrete work"
+    search_intent: transactional
+    customer_type: both
+    semantic_equivalents:
+      - "concrete paving"
+      - "concrete driveway"
+      - "concrete repairs"
+      - "concrete installation"
+      - "cement work"
+    related_terms:
+      - "concrete services"
+      - "concrete contractor"
+      - "cement paving"
+      - "concrete construction"
+    long_tail_variations:
+      - "concrete driveway installation"
+      - "concrete paving services"
+      - "concrete repair contractor"
+      - "concrete vs asphalt"
+      - "concrete paving cost"
+    search_volume_tier: medium
+    conversion_potential: medium
+    content_topics:
+      - "concrete-services"
+      - "comparison-to-asphalt"
+      - "applications"
+      - "cost-comparison"
+    technical_level: basic
+
+  - keyword_id: kw-tear-out
+    primary_keyword: "asphalt tear out"
+    search_intent: transactional
+    customer_type: both
+    semantic_equivalents:
+      - "removal"
+      - "demolition"
+      - "existing pavement removal"
+      - "demo work"
+      - "rip out"
+    related_terms:
+      - "pavement removal"
+      - "demolition services"
+      - "removal services"
+      - "tear out and replace"
+    long_tail_variations:
+      - "asphalt removal services"
+      - "driveway tear out"
+      - "parking lot demolition"
+      - "remove old asphalt"
+      - "tear out and replace asphalt"
+      - "pavement removal cost"
+    search_volume_tier: low
+    conversion_potential: medium
+    content_topics:
+      - "removal-process"
+      - "when-needed"
+      - "cost"
+      - "preparation"
+    technical_level: basic
+
+# End of keywords database
+# Total keywords: 65+ primary keyword clusters with semantic equivalents and long-tail variations

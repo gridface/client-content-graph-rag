@@ -13,11 +13,11 @@
 # service_area_ids	array	      List of location IDs served
 # active_services	  array	      List of service IDs
 # client_size	      string	    small,medium,large,x-large estimated revenue size
-# onboarding_date	  date	      Date added to system
+# onboarding_date	  date	      Date client added to system
 # notes	            text	      Freeform annotations
 
 
-users:
+clients:
   # client list starts here
   - customer_id: client-apc
     name: APC Asphalt Paving
@@ -28,21 +28,15 @@ users:
     contact_phone: 800-779-0767
     main_address_id: loc-davenport-fl
     service_area_ids:
-    # there are more
-      - loc-davenport-fl
-      - loc-jacksonville-fl
-      - loc-ocala-fl
+    # tbd
     active_services:
-    # there are more
-      - srv-sealcoating
-      - srv-patching
-      - srv-parkinglot
+    # tbd
     client_size: small
     onboarding_date: "11-15-2025"
-    notes: Specializes in horse paving. sub account of AArow asphalt
+    notes: Specializes in horse paving. sub account of Aarow asphalt
   
   - customer_id: client-midwest-wi
-    name: Midwest Asphalt
+    name: Midwest Asphalt Wisconsin
     business_type: asphalt_contractor
     owner: Justin Williams
     industry: asphalt
@@ -50,18 +44,76 @@ users:
     contact_phone: 715-710-1172
     main_address_id: loc-marshfield-wi
     service_area_ids:
-    # there are more
-      - loc-abbotsford-wi
-      - loc-colby-wi
-      - loc-edgar-wi
+    # tbd
     active_services:
-    # there are more
-      - srv-sealcoating
-      - srv-patching
-      - srv-parkinglot
+    # tbd
     client_size: small
     onboarding_date: "07-15-2025"
     notes: startup expanding into multiple offseason states and trying to grow
+    
+  - customer_id: client-midwest-mo
+    name: Midwest Asphalt Missouri
+    business_type: asphalt_contractor
+    owner: Justin Williams
+    industry: asphalt
+    website_url: https://midwestasphaltwi.com/
+    contact_phone: 417-623-9472
+    main_address_id: loc-carthage-mo
+    service_area_ids:
+    # tbd
+    active_services:
+    # tbd
+    client_size: small
+    onboarding_date: "07-15-2025"
+    notes: off season Ozarks expansion of midwest asphalt wisconsin
+
+  - customer_id: client-aarow-wi
+    name: Aarow Asphalt
+    business_type: asphalt_contractor
+    owner: Bob Wells
+    industry: asphalt
+    website_url: https://www.aarowasphalt.com/
+    contact_phone: 507-316-6265
+    main_address_id: loc-rochester-mn
+    service_area_ids:
+    # tbd
+    active_services:
+    # tbd
+    client_size: medium
+    onboarding_date: "12-15-2024"
+    notes: Established asphalt company, only takes medium to large jobs. will not do small jobs like crack filling and seal coating
+
+  - customer_id: client-wells-wi
+    name: Wells Asphalt Paving
+    business_type: asphalt_contractor
+    owner: Louie Wells
+    industry: asphalt
+    website_url: https://www.wellsasphaltpaving.com/
+    contact_phone: 608-912-3772
+    main_address_id: loc-madison-wi
+    service_area_ids:
+    # tbd
+    active_services:
+    # tbd
+    client_size: large
+    onboarding_date: "11-15-2024"
+    notes: family business located out of baraboo, wi. has two google my business locations - madison and baraboo
+
+  - customer_id: client-wells-fl
+    name: Wells Asphalt Paving Florida
+    business_type: asphalt_contractor
+    owner: Louie Wells
+    industry: asphalt
+    website_url: http://www.wellsasphaltpavingflorida.com
+    contact_phone: 813-519-4382
+    main_address_id: loc-tampa-fl
+    service_area_ids:
+    # tbd
+    active_services:
+    # tbd
+    client_size: small
+    onboarding_date: "11-15-2024"
+    notes: Expansion of wells asphalt paving in madison. small startup in the tampa bay area
   
 
 # This is a comment at the end of the file.

@@ -1,0 +1,1105 @@
+# Comprehensive Asphalt Services Database
+# This file contains all asphalt paving services that clients may offer across the United States
+# Services are categorized and linked to keywords.yaml for SEO and content generation
+# 
+# Field Definitions:
+# service_id:              Unique identifier for the service
+# name:                    Service display name
+# service_type:            "residential", "commercial", "municipal", or "specialty"
+# description:             SEO-optimized service description
+# related_keyword_ids:     Array of keyword IDs from keywords.yaml
+# expertise_signals:       Array of qualifications, certifications, experience
+# regulatory_standards:    Array of industry standards and regulations
+# seasonal_considerations: Notes on optimal timing and weather requirements
+# equipment_required:      Key equipment needed for this service
+# typical_duration:        General timeframe for service completion
+# notes:                   Additional technical or business notes
+
+services:
+
+# ============================================
+# CORE PAVING SERVICES - NEW INSTALLATION
+# ============================================
+
+- service_id: srv-new-asphalt-paving-residential
+  name: New Residential Asphalt Paving
+  service_type: residential
+  description: Professional installation of new asphalt driveways and private roads for homeowners. Includes site preparation, proper base installation, and hot mix asphalt placement designed for 10-20 year service life with proper maintenance.
+  related_keyword_ids:
+    - kw-asphalt-paving
+    - kw-asphalt-driveway
+    - kw-driveway-paving
+    - kw-new-paving
+    - kw-residential-paving
+  expertise_signals:
+    - Licensed and insured contractor
+    - 15+ years residential paving experience
+    - Proper equipment and skilled operators
+    - Quality materials from certified suppliers
+  regulatory_standards:
+    - Local building codes
+    - ASTM standards for materials
+    - Proper drainage requirements
+  seasonal_considerations: Best performed April-October when air temperatures are above 50°F and ground is not frozen. Avoid rainy periods. Warm mix technology can extend season in moderate climates.
+  equipment_required: Small to mid-size paver, vibratory compactor or small roller, hand tools, base compaction equipment
+  typical_duration: 1-3 days for typical residential driveway (includes base prep)
+  notes: Typical design is 2-3 inches asphalt over 4-6 inches compacted aggregate base. Price-sensitive market requires customer education on value. Fast return to service (same day) is major selling point.
+
+- service_id: srv-new-asphalt-paving-commercial
+  name: New Commercial Asphalt Paving
+  service_type: commercial
+  description: Complete asphalt paving installation for commercial parking lots, business access drives, and industrial yards. Engineered design based on traffic loads, proper drainage integration, ADA compliance, and long-term performance specifications.
+  related_keyword_ids:
+    - kw-asphalt-paving
+    - kw-parking-lot-paving
+    - kw-commercial-paving
+    - kw-new-paving
+  expertise_signals:
+    - NAPA certified contractor
+    - Commercial project portfolio
+    - Engineering design capability
+    - Quality control procedures in place
+    - Bonding and insurance adequate for large projects
+  regulatory_standards:
+    - AASHTO design standards
+    - ADA compliance requirements
+    - Local stormwater management regulations
+    - NAPA Quality Improvement Program (QIP) guidelines
+  seasonal_considerations: Prefer April-October for optimal conditions. Large projects may span multiple seasons with phased construction.
+  equipment_required: Commercial-grade tracked or wheeled paver with grade control, pneumatic and vibratory rollers, material transfer vehicle (for larger projects), compaction testing equipment
+  typical_duration: 1-4 weeks depending on size and complexity
+  notes: Typical design is 3-5 inches asphalt over 6-10 inches aggregate base for standard parking. Loading dock areas and heavy traffic require 6-8 inches asphalt with higher grade binder. Emphasize proper drainage, ADA compliance, and maintenance plans in proposals.
+
+- service_id: srv-new-asphalt-paving-municipal
+  name: New Municipal Asphalt Paving
+  service_type: municipal
+  description: Construction of new municipal streets, roads, bike paths, and public parking facilities following state DOT specifications and AASHTO design standards. Includes traffic management, utility coordination, and compliance documentation.
+  related_keyword_ids:
+    - kw-asphalt-paving
+    - kw-paving-contractor
+    - kw-commercial-paving
+  expertise_signals:
+    - Pre-qualified with local agencies
+    - State DOT approved contractor
+    - Experience with public bidding process
+    - Davis-Bacon prevailing wage compliance
+    - Bonding capacity for public work
+  regulatory_standards:
+    - AASHTO design and construction standards
+    - State DOT specifications
+    - MUTCD traffic control requirements
+    - Davis-Bacon wage requirements
+    - Local public works standards
+  seasonal_considerations: Follow agency restrictions on paving season. Typically April-November in northern states, year-round in southern states with warm mix.
+  equipment_required: Full commercial paving spread with grade control systems, sufficient roller fleet, material transfer vehicles, traffic control equipment
+  typical_duration: Varies widely by project scope (2 weeks to 6 months)
+  notes: Formal bid process with lowest responsible bidder typically awarded. More oversight, stricter specifications, extensive documentation required. Payment is reliable but margins are typically lower due to competitive bidding. Traffic management and public coordination critical.
+
+- service_id: srv-subdivision-paving
+  name: Subdivision and Private Road Paving
+  service_type: commercial
+  description: Installation of asphalt streets in residential subdivisions and private road developments. Phased construction to accommodate building traffic, with base installation followed by final surface after home construction complete.
+  related_keyword_ids:
+    - kw-asphalt-paving
+    - kw-new-paving
+    - kw-residential-paving
+  expertise_signals:
+    - Experience with multi-phase projects
+    - Developer relationships
+    - Understanding of construction traffic impacts
+  regulatory_standards:
+    - Local subdivision standards
+    - State DOT standards for private roads
+    - Utility coordination requirements
+  seasonal_considerations: Base work can often be done year-round. Final surface should wait until construction traffic is complete.
+  equipment_required: Standard commercial paving equipment
+  typical_duration: Phased over several months to years depending on development
+  notes: Typical design 3-4 inches asphalt over 6-8 inches base for residential streets. Consider heavier base construction initially to handle construction traffic, then final surface after homes are built. Payment terms and construction damage liability should be clearly specified in contract.
+
+- service_id: srv-horse-farm-paving
+  name: Horse Farm and Equestrian Facility Paving
+  service_type: specialty
+  description: Specialized asphalt paving for horse farms, riding arenas access roads, stable yards, and equestrian facilities. Designed to handle heavy equipment, manure spreaders, and trailer traffic while providing smooth surfaces safe for horses and easy to maintain.
+  related_keyword_ids:
+    - kw-asphalt-paving
+    - kw-commercial-paving
+    - kw-residential-paving
+  expertise_signals:
+    - Experience with agricultural facilities
+    - Understanding of equestrian facility requirements
+    - Knowledge of heavy agricultural equipment loads
+  regulatory_standards:
+    - Agricultural facility standards
+    - Local building codes
+    - Proper drainage for animal facilities
+  seasonal_considerations: Standard paving season considerations apply. Plan around farm operations and weather.
+  equipment_required: Standard paving equipment suitable for rural access
+  typical_duration: 1-5 days depending on scope
+  notes: Horse farm paving requires attention to drainage (manure and wash water), durability for heavy equipment, and smooth surfaces. Common applications include stable yards, access roads, parking areas for trailers, and arena perimeters. Farm owners appreciate contractors who understand their unique needs and work around feeding schedules and horse routines.
+
+# ============================================
+# REPAIR AND RESTORATION SERVICES
+# ============================================
+
+- service_id: srv-asphalt-patching-full-depth
+  name: Full-Depth Asphalt Patching
+  service_type: both
+  description: Permanent repair of failed asphalt sections using proper removal and replacement techniques. Square-cut removal to sound pavement, tack coat application, hot mix asphalt placement, and proper compaction for long-lasting repairs.
+  related_keyword_ids:
+    - kw-asphalt-repair
+    - kw-patching
+    - kw-pothole-repair
+  expertise_signals:
+    - Proper saw-cutting equipment
+    - Hot mix asphalt access
+    - Understanding of failure mechanisms
+    - Quality compaction procedures
+  regulatory_standards:
+    - ASTM standards for materials
+    - Industry best practices for permanent repairs
+  seasonal_considerations: Requires hot mix asphalt availability (typically April-November in northern climates). Emergency cold patch available year-round but not permanent.
+  equipment_required: Saw cutter or pavement breaker, vibratory plate compactor or hand tamper, tack coat application equipment, hand tools
+  typical_duration: Small patches 1-4 hours, larger areas 1-2 days
+  notes: Always cut square or rectangular patches extending at least 6-12 inches beyond visible distress. Remove to stable base, tack coat all vertical faces, compact thoroughly. Emphasize this is permanent repair vs. temporary cold patch.
+
+- service_id: srv-pothole-repair
+  name: Pothole Repair Services
+  service_type: both
+  description: Emergency and permanent pothole repair using hot mix asphalt or temporary cold mix. Proper cleaning, tack coat application, material placement, and compaction to restore surface integrity and eliminate safety hazards.
+  related_keyword_ids:
+    - kw-pothole-repair
+    - kw-asphalt-repair
+    - kw-patching
+    - kw-potholes
+  expertise_signals:
+    - Rapid response capability
+    - Both hot mix and cold mix options
+    - Proper repair techniques
+  regulatory_standards:
+    - Safety standards for work zones
+    - Industry best practices
+  seasonal_considerations: Hot mix repairs preferred but require warm weather. Cold mix available for emergency winter repairs but should be redone with hot mix in spring.
+  equipment_required: Compaction equipment, cleaning tools, tack coat application, hot or cold mix materials
+  typical_duration: 30 minutes to 2 hours per pothole
+  notes: Potholes are urgent safety issues creating customer liability. Fast response builds relationships. Clean pothole completely, remove loose material, tack coat, fill slightly high, compact thoroughly. Educate customers that cold patch is temporary and needs hot mix follow-up.
+
+- service_id: srv-surface-patching
+  name: Surface Patching (Skin Patching)
+  service_type: both
+  description: Shallow asphalt repair for surface-level distress without base failure. Quick repairs for minor surface damage, suitable for temporary or semi-permanent solutions where full-depth repair is not yet needed.
+  related_keyword_ids:
+    - kw-asphalt-repair
+    - kw-patching
+  expertise_signals:
+    - Understanding of when surface vs full-depth is appropriate
+    - Proper surface preparation
+  regulatory_standards:
+    - Industry best practices
+  seasonal_considerations: Warm weather required for hot mix
+  equipment_required: Lute, plate compactor, tack coat equipment
+  typical_duration: 1-3 hours for small areas
+  notes: Surface patches address cosmetic issues but don't fix structural problems. Typical life 1-3 years. Be honest with customers about limitations - may fail if underlying structure is compromised. Good interim solution until budget allows full repair.
+
+- service_id: srv-asphalt-resurfacing
+  name: Asphalt Resurfacing (Overlay)
+  service_type: both
+  description: Installation of new asphalt layer over existing pavement to restore surface condition and add structural strength. Typically 1.5-4 inches thickness, extends pavement life 10-15 years when existing structure is sound.
+  related_keyword_ids:
+    - kw-asphalt-resurfacing
+    - kw-asphalt-repair
+    - kw-asphalt-paving
+  expertise_signals:
+    - Ability to assess existing pavement condition
+    - Understanding of when overlay is appropriate
+    - Proper surface preparation techniques
+  regulatory_standards:
+    - AASHTO standards for overlay design
+    - ASTM material specifications
+  seasonal_considerations: April-October optimal. Existing pavement must be dry and structurally sound.
+  equipment_required: Commercial paver, roller fleet, tack coat equipment, optional milling equipment
+  typical_duration: 1-5 days depending on size
+  notes: Pre-work repairs required - fill cracks, patch failures, ensure drainage works. Tack coat is critical for bond. Results in elevation increase unless combined with milling. Excellent option when base is sound but surface is aged. Cannot overlay over structural failures.
+
+- service_id: srv-mill-and-overlay
+  name: Mill and Overlay
+  service_type: both
+  description: Combined milling (removal) of existing surface layer followed by new asphalt overlay. Maintains existing elevations, removes surface distress, provides fresh wearing surface. Most common rehabilitation technique for aged pavements.
+  related_keyword_ids:
+    - kw-mill-overlay
+    - kw-asphalt-resurfacing
+    - kw-asphalt-repair
+  expertise_signals:
+    - Milling equipment and expertise
+    - Coordination of milling and paving operations
+    - Quality control for thickness and smoothness
+  regulatory_standards:
+    - AASHTO rehabilitation standards
+    - ASTM material specifications
+  seasonal_considerations: Requires warm weather for paving operations
+  equipment_required: Cold planer/milling machine, commercial paver, roller fleet, material hauling
+  typical_duration: 2-10 days depending on size
+  notes: Typical mill 1.5-2 inches and replace with 1.5-2 inches new HMA. Removes surface distress (rutting, cracking, roughness) while maintaining curb/gutter elevations. Milled material (RAP) is valuable and can be recycled. Standard treatment for parking lots and roads at 10-15 year intervals.
+
+- service_id: srv-full-depth-reclamation
+  name: Full-Depth Reclamation (FDR)
+  service_type: commercial
+  description: In-place pulverization of existing asphalt and base materials, mixing with stabilizing agents (cement, lime, or emulsion), and placing new asphalt surface. Alternative to complete reconstruction when base has failed.
+  related_keyword_ids:
+    - kw-asphalt-repair
+    - kw-asphalt-resurfacing
+    - kw-recycled-asphalt
+  expertise_signals:
+    - FDR equipment operation
+    - Stabilization material knowledge
+    - Mix design for reclaimed base
+  regulatory_standards:
+    - AASHTO standards for FDR
+    - State DOT specifications
+    - Stabilization material requirements
+  seasonal_considerations: Similar to new construction. Cement or lime stabilization requires proper curing conditions.
+  equipment_required: Reclaimer/pulverizer, cement spreader, compaction equipment, paver and rollers
+  typical_duration: 1-3 weeks for typical projects
+  notes: Recycles existing materials in place, reducing hauling and disposal. Creates new stable base layer from old pavement and base. Requires new asphalt surface layer on top. Excellent for pavements with base failure where complete reconstruction would otherwise be needed. Environmental benefits from material recycling.
+
+# ============================================
+# CRACK REPAIR AND SEALING
+# ============================================
+
+- service_id: srv-crack-sealing
+  name: Professional Crack Sealing
+  service_type: both
+  description: Hot-pour rubberized crack sealant application to prevent water infiltration and extend pavement life. Includes proper crack cleaning, routing (when needed), and application of flexible, durable sealant material.
+  related_keyword_ids:
+    - kw-crack-filling
+    - kw-asphalt-repair
+    - kw-preventative-maintenance
+  expertise_signals:
+    - Hot-pour equipment and materials
+    - Understanding of crack types and treatment methods
+    - Proper surface preparation techniques
+  regulatory_standards:
+    - Industry best practices for crack sealing
+    - Material specifications for hot-pour sealants
+  seasonal_considerations: Pavement temperature 40°F minimum, air temperature 50°F+ preferred. No rain expected for 24 hours. Spring and fall are optimal seasons.
+  equipment_required: Crack sealing melter/applicator, air compressor with lance, optional router, hand tools
+  typical_duration: 500-1000 linear feet per day typical crew production
+  notes: Single most cost-effective maintenance activity. Water infiltration through cracks is primary cause of pavement deterioration. Hot-pour sealants (not cold-pour) are standard for quality work. Clean cracks thoroughly before sealing. Route wider cracks for better performance. Annual or biannual treatment prevents structural damage.
+
+- service_id: srv-crack-filling
+  name: Crack Filling
+  service_type: both
+  description: Basic crack treatment using cold-pour or hot-pour materials without routing. Less durable than crack sealing but faster and more economical for minor cracks in low-traffic areas.
+  related_keyword_ids:
+    - kw-crack-filling
+    - kw-asphalt-repair
+  expertise_signals:
+    - Basic crack treatment capabilities
+    - Material application techniques
+  regulatory_standards:
+    - Basic industry practices
+  seasonal_considerations: Warm, dry weather required
+  equipment_required: Application tools, cleaning equipment
+  typical_duration: Faster than crack sealing
+  notes: Adequate for minor cracks in low-traffic residential applications. Not as durable as proper crack sealing with routing. Requires more frequent re-treatment.
+
+- service_id: srv-crack-routing
+  name: Crack Routing and Sealing
+  service_type: both
+  description: Advanced crack treatment including routing to create reservoir, followed by hot-pour sealant application. Provides superior long-term performance for wider cracks and high-traffic applications.
+  related_keyword_ids:
+    - kw-crack-filling
+    - kw-asphalt-repair
+  expertise_signals:
+    - Crack routing equipment operation
+    - Understanding of reservoir design
+    - Advanced crack treatment techniques
+  regulatory_standards:
+    - Industry best practices for crack routing
+    - Router depth and width specifications
+  seasonal_considerations: Same as crack sealing - warm, dry conditions required
+  equipment_required: Walk-behind router with carbide blades, crack sealing equipment, cleaning equipment
+  typical_duration: Slower than basic crack filling but provides longer-lasting results
+  notes: Routing creates a reservoir that holds more sealant and provides better adhesion. Recommended for cracks wider than 1/4 inch or in high-traffic areas. Significantly extends sealant life compared to non-routed applications.
+
+# ============================================
+# PREVENTATIVE MAINTENANCE SERVICES
+# ============================================
+
+- service_id: srv-sealcoating-residential
+  name: Residential Driveway Sealcoating
+  service_type: residential
+  description: Coal tar or asphalt emulsion sealcoat application for homeowner driveways. Provides UV protection, water resistance, and enhances appearance. Applied every 2-3 years to extend pavement life and maintain aesthetic appeal.
+  related_keyword_ids:
+    - kw-sealcoating
+    - kw-asphalt-driveway
+    - kw-preventative-maintenance
+  expertise_signals:
+    - Proper surface preparation techniques
+    - Quality material selection
+    - Even application methods
+  regulatory_standards:
+    - Local environmental regulations for sealcoat materials
+    - Proper cure time before traffic
+  seasonal_considerations: Air temp 50°F+, pavement temp 50°F+, no rain for 24 hours. Best in spring through early fall. Avoid extreme heat (>90°F).
+  equipment_required: Spray equipment or squeegee application tools, mixing equipment, edge tools
+  typical_duration: 1 day including prep and application (2-3 hours work time for typical driveway)
+  notes: Asphalt should cure 6-12 months before first sealcoat, then every 2-3 years thereafter. Fill cracks before sealcoating. Two coats preferred. Creates recurring revenue and customer relationships. Major aesthetic improvement that sells easily.
+
+- service_id: srv-sealcoating-commercial
+  name: Commercial Parking Lot Sealcoating
+  service_type: commercial
+  description: Professional-grade sealcoating for commercial parking lots using coal tar or asphalt emulsion. Protects investment, improves appearance, reduces oxidation and water damage. Typically applied every 2-3 years as part of preventative maintenance program.
+  related_keyword_ids:
+    - kw-sealcoating
+    - kw-parking-lot-paving
+    - kw-commercial-paving
+    - kw-preventative-maintenance
+  expertise_signals:
+    - Large-area application experience
+    - Commercial-grade equipment
+    - Traffic management during application
+    - Material specification knowledge
+  regulatory_standards:
+    - Environmental regulations for sealcoat products
+    - VOC compliance
+    - Traffic control requirements
+  seasonal_considerations: Warm, dry weather required. Need 24-48 hours with no rain. Avoid extreme temperatures.
+  equipment_required: Commercial spray systems, squeegee equipment, mixing equipment, traffic control equipment
+  typical_duration: 1-3 days for typical parking lot (including prep, application, cure time, restriping)
+  notes: First application typically 1-2 years after paving, then every 2-3 years. Surface must be clean, dry, and free of oil/grease. Fills surface voids and minor imperfections. Bundle with crack sealing and striping for complete service. Creates recurring revenue contracts.
+
+- service_id: srv-crack-seal-and-sealcoat-package
+  name: Crack Sealing & Sealcoating Package
+  service_type: both
+  description: Comprehensive maintenance package combining crack sealing and sealcoating services. Optimal preventative maintenance approach that addresses water infiltration (crack sealing) and surface protection (sealcoating) in coordinated application.
+  related_keyword_ids:
+    - kw-sealcoating-crack-sealing
+    - kw-preventative-maintenance
+    - kw-crack-filling
+    - kw-sealcoating
+  expertise_signals:
+    - Understanding of proper sequencing
+    - Both crack sealing and sealcoating capabilities
+    - Comprehensive maintenance program knowledge
+  regulatory_standards:
+    - Best practices for both services
+    - Proper cure time between services
+  seasonal_considerations: Crack seal first, wait 30 days, then sealcoat. Both require warm, dry conditions.
+  equipment_required: Both crack sealing and sealcoating equipment
+  typical_duration: Two-phase process over 30+ days
+  notes: Gold standard for preventative maintenance. Crack seal first to stop water infiltration, wait for cure, then sealcoat for surface protection. Package provides value to customer and efficiency from combined mobilization. Annual crack sealing with sealcoating every 2-3 years is ideal schedule.
+
+# ============================================
+# SURFACE TREATMENT SERVICES
+# ============================================
+
+- service_id: srv-fog-seal
+  name: Fog Seal Application
+  service_type: municipal
+  description: Diluted asphalt emulsion sprayed on aged pavement surfaces to seal minor cracks, reduce oxidation, and slow raveling. Maintenance option for lightly distressed pavements not yet needing more extensive treatment.
+  related_keyword_ids:
+    - kw-preventative-maintenance
+  expertise_signals:
+    - Distributor truck operation
+    - Understanding of application rates
+    - Timing and traffic control
+  regulatory_standards:
+    - ASTM standards for fog seal materials
+    - Agency specifications
+  seasonal_considerations: Warm, dry weather required. Surface must be dry.
+  equipment_required: Distributor truck or spray equipment
+  typical_duration: Very fast application (hours for large areas)
+  notes: Thin application of diluted emulsion (CSS-1 or similar diluted 1:1 to 3:1 with water). Expected life 2-3 years. Best for aged but structurally sound pavements showing early oxidation. Not suitable for heavily cracked or distressed pavements. Common on municipal roads with tight maintenance budgets.
+
+- service_id: srv-chip-seal
+  name: Chip Seal (Seal Coat)
+  service_type: both
+  description: Surface treatment combining asphalt binder application with aggregate chip spreading and compaction. Creates durable, textured, weather-resistant surface. Excellent for parking lots, driveways, and low-volume roads. Expected service life 5-7 years.
+  related_keyword_ids:
+    - kw-chip-seal
+    - kw-preventative-maintenance
+  expertise_signals:
+    - Distributor truck operation
+    - Aggregate spreading equipment
+    - Pneumatic roller operation
+    - Timing and coordination skills
+  regulatory_standards:
+    - Aggregate specifications (size, quality, gradation)
+    - Binder application rates
+    - ASTM material standards
+  seasonal_considerations: Requires warm weather (air temp 70°F+). No rain for 24 hours minimum.
+  equipment_required: Asphalt distributor truck, aggregate spreader, pneumatic tire roller, rotary broom
+  typical_duration: 1-3 days including application and cure
+  notes: Application sequence critical - spray binder, immediately spread aggregate chips, compact with pneumatic roller, sweep loose stones. Creates textured surface (not smooth like sealcoat). Excellent skid resistance. Single chip seal lasts 5-7 years, double chip seal 7-10 years. Good for driveways, parking lots, residential streets. Some customers prefer textured appearance, others don't.
+
+- service_id: srv-cape-seal
+  name: Cape Seal Application
+  service_type: commercial
+  description: Combined treatment of chip seal followed by slurry seal or microsurfacing application. The slurry coat seals voids and locks in aggregate for superior performance. High-quality surface treatment with 10-12+ year expected life.
+  related_keyword_ids:
+    - kw-chip-seal
+    - kw-preventative-maintenance
+  expertise_signals:
+    - Chip seal expertise
+    - Slurry seal or microsurfacing capability
+    - Multi-phase application coordination
+  regulatory_standards:
+    - Specifications for both chip seal and slurry/microsurfacing
+    - ASTM material standards
+  seasonal_considerations: Requires warm weather for both applications. Timing between applications is critical.
+  equipment_required: Chip seal equipment plus slurry seal or microsurfacing equipment
+  typical_duration: 3-5 days including both applications and cure times
+  notes: Superior performance compared to chip seal alone. The slurry/microsurfacing layer fills voids left in chip seal and locks aggregate in place. Significantly longer service life. Excellent for high-value commercial properties and municipal roads.
+
+- service_id: srv-slurry-seal
+  name: Slurry Seal Application
+  service_type: both
+  description: Cold-applied mixture of asphalt emulsion, fine aggregate, mineral filler, and water creating smooth, uniform surface treatment. Fills minor cracks and surface imperfections, prevents water infiltration, extends pavement life 5-7 years.
+  related_keyword_ids:
+    - kw-preventative-maintenance
+  expertise_signals:
+    - Slurry seal machine operation
+    - Mix design knowledge
+    - Application uniformity
+  regulatory_standards:
+    - ASTM standards for slurry seal materials
+    - Mix design specifications (Type I, II, or III)
+  seasonal_considerations: Warm weather required (air temp 50°F+). Surface must be dry. Humidity affects cure time.
+  equipment_required: Continuous mixer/applicator truck, squeegee spreading device, traffic control equipment
+  typical_duration: 1-2 days including application and cure
+  notes: Self-contained mobile mixer produces consistent quality. Smooth finish (unlike chip seal texture). Three types - Type I (fine, light traffic), Type II (medium, most common), Type III (coarse, heavy distress). Thickness 1/8-3/8 inch. Polymer modification improves performance. Cure time 1-4 hours initial, 24-48 hours full cure. Excellent for residential streets and parking lots showing early aging.
+
+- service_id: srv-microsurfacing
+  name: Microsurfacing
+  service_type: commercial
+  description: Advanced polymer-modified surface treatment with quick-setting properties. Can correct minor rutting and surface deformations while providing durable wearing surface. Higher performance than slurry seal, suitable for high-traffic applications. Expected life 7-10 years.
+  related_keyword_ids:
+    - kw-preventative-maintenance
+  expertise_signals:
+    - Specialized equipment operation
+    - Advanced mix design knowledge
+    - Quality control procedures
+    - Multiple-layer application techniques
+  regulatory_standards:
+    - ASTM standards for microsurfacing
+    - Agency specifications
+    - Polymer modification requirements
+  seasonal_considerations: Warm weather required. Quick-setting allows shorter road closures than slurry seal.
+  equipment_required: Specialized microsurfacing machine, quality control testing equipment
+  typical_duration: 1-3 days depending on area and number of layers
+  notes: Always polymer-modified for improved performance. Quick-set formulation (30-60 minutes vs hours for slurry seal). Can fill ruts up to 1.5 inches with multiple applications. Thickness 1/4-1/2 inch per layer. Superior to slurry seal for high-traffic areas. Common on highways, arterials, and high-traffic commercial parking. Requires significant equipment investment and training.
+
+# ============================================
+# SPECIALTY PAVING SERVICES
+# ============================================
+
+- service_id: srv-porous-asphalt
+  name: Porous Asphalt Installation
+  service_type: specialty
+  description: Permeable pavement system allowing water to drain through surface into engineered stone reservoir below. Reduces stormwater runoff, eliminates need for detention ponds in many applications. Requires specialized mix design and installation procedures.
+  related_keyword_ids:
+    - kw-porous-asphalt
+    - kw-commercial-paving
+  expertise_signals:
+    - Porous asphalt training and certification
+    - Understanding of drainage requirements
+    - Specialized construction techniques
+    - Vacuum sweeping maintenance knowledge
+  regulatory_standards:
+    - NAPA porous asphalt design guidelines
+    - Local stormwater management requirements
+    - ASTM specifications for pervious pavements
+  seasonal_considerations: Similar to conventional paving but requires special attention to base drainage
+  equipment_required: Modified paver for porous mix, specialized compaction procedures, vacuum sweeper for maintenance
+  typical_duration: Similar to conventional paving plus additional base preparation time
+  notes: Open-graded mix with high air void content (15-20%). Allows water infiltration at rates of 100+ inches per hour. Requires stone reservoir base (12-36 inches typical), underlying soil must drain adequately or underdrain needed. Vacuum sweeping maintenance required 2-4 times per year to prevent clogging. Not suitable for areas with high sediment loads, cold climates with freeze-thaw issues, or heavy truck traffic.
+
+- service_id: srv-warm-mix-asphalt
+  name: Warm Mix Asphalt Installation
+  service_type: specialty
+  description: Asphalt production and placement at reduced temperatures (225-275°F vs 300-350°F for conventional HMA) using special additives or processes. Extends paving season, reduces emissions, allows longer haul distances while maintaining quality.
+  related_keyword_ids:
+    - kw-warm-mix-asphalt
+    - kw-asphalt-paving
+    - kw-recycled-asphalt
+  expertise_signals:
+    - Knowledge of warm mix technologies
+    - Experience with temperature-reduced placement
+    - Understanding of compaction requirements
+  regulatory_standards:
+    - AASHTO standards for warm mix asphalt
+    - ASTM specifications
+    - Agency approval for warm mix use
+  seasonal_considerations: Allows paving in cooler weather than conventional HMA. Can extend season by several weeks in spring and fall.
+  equipment_required: Standard paving equipment. Mix plant must have warm mix additive capability.
+  typical_duration: Similar to conventional paving
+  notes: Several technologies available - chemical additives, foaming processes, organic additives. Reduces energy consumption, lowers emissions, improves worker safety (lower temperatures). Allows placement at lower ambient temperatures. Can incorporate higher RAP percentages. Growing acceptance and use across industry. Particularly valuable in northern climates for extending season.
+
+- service_id: srv-high-rap-mixes
+  name: High-RAP Content Mixes
+  service_type: specialty
+  description: Asphalt mixes containing 25-40% or more reclaimed asphalt pavement (RAP). Sustainable option that reduces virgin material use and provides excellent performance when properly designed. Requires careful mix design and often rejuvenators or softer binders.
+  related_keyword_ids:
+    - kw-recycled-asphalt
+    - kw-asphalt-paving
+  expertise_signals:
+    - Mix design expertise
+    - RAP quality control knowledge
+    - Understanding of binder blending
+  regulatory_standards:
+    - AASHTO specifications for RAP use
+    - Agency limitations on RAP percentage
+    - Quality control requirements
+  seasonal_considerations: Standard paving season considerations apply
+  equipment_required: Standard paving equipment. Plant must have RAP handling and proportioning capability.
+  typical_duration: Similar to conventional mixes
+  notes: RAP is most recycled material in America. Properly designed high-RAP mixes perform as well as virgin mixes. May require rejuvenators or softer binders to compensate for stiff aged binder in RAP. Warm mix technology often used with high-RAP to improve workability. Environmental and economic benefits. Some agencies limit RAP percentage (20-30% common limits), others allow higher percentages with proper mix design.
+
+- service_id: srv-colored-asphalt
+  name: Colored Asphalt Installation
+  service_type: specialty
+  description: Decorative asphalt using colored binders and aggregates to create surfaces in red, green, terra cotta, and other colors. Used for aesthetic appeal, wayfinding, bike lanes, crosswalks, and decorative applications.
+  related_keyword_ids:
+    - kw-asphalt-paving
+  expertise_signals:
+    - Experience with specialty mixes
+    - Understanding of color stability
+    - Aesthetic design knowledge
+  regulatory_standards:
+    - Standard pavement specifications plus color requirements
+    - Colorfastness specifications
+  seasonal_considerations: Standard paving season, protect from traffic until fully cured
+  equipment_required: Standard paving equipment, clean equipment to avoid color contamination
+  typical_duration: Similar to conventional paving
+  notes: Uses synthetic binders or clear binders with colored aggregates instead of black asphalt. Colors fade over time but can be restored with surface treatments. Common applications include bike lanes, crosswalks, plazas, theme parks, and high-end residential or commercial properties. Requires clean equipment to avoid contaminating color.
+
+- service_id: srv-rubberized-asphalt
+  name: Rubberized Asphalt (Crumb Rubber Modified)
+  service_type: specialty
+  description: Asphalt incorporating ground tire rubber into the binder. Provides enhanced flexibility, crack resistance, and noise reduction. Environmental benefit from tire recycling. Popular in warm climates and areas requiring noise mitigation.
+  related_keyword_ids:
+    - kw-asphalt-paving
+    - kw-recycled-asphalt
+  expertise_signals:
+    - CRM mix design knowledge
+    - Experience with rubber-modified materials
+    - Understanding of application requirements
+  regulatory_standards:
+    - State specifications for crumb rubber modified asphalt
+    - ASTM standards
+    - Environmental regulations
+  seasonal_considerations: Requires warm weather, rubber modification can affect workability
+  equipment_required: Standard paving equipment. Plant must have rubber modification capability.
+  typical_duration: Similar to conventional paving
+  notes: Uses ground tire rubber (typically 10-20% by weight of binder). Excellent crack resistance and fatigue life. Reduces traffic noise (by 3-5 decibels). More flexible than conventional asphalt. Widely used in California, Arizona, and other states with crumb rubber programs. Environmental benefit from recycling waste tires. Not ideal for cold climates or heavy truck traffic.
+
+# ============================================
+# SITE PREPARATION SERVICES
+# ============================================
+
+- service_id: srv-grading-excavation
+  name: Grading and Excavation
+  service_type: both
+  description: Site preparation including earthwork, excavation to design grade, cut and fill operations, and establishment of proper drainage slopes. Creates stable foundation for pavement installation.
+  related_keyword_ids:
+    - kw-grading-excavation
+    - kw-base-work
+  expertise_signals:
+    - Heavy equipment operation expertise
+    - Understanding of drainage principles
+    - Grade control and surveying
+    - Soil identification skills
+  regulatory_standards:
+    - Local grading permits
+    - Erosion control requirements
+    - OSHA excavation safety standards
+  seasonal_considerations: Can be performed year-round in most climates. Wet weather complicates earthwork. Frozen ground prevents winter work in northern climates.
+  equipment_required: Excavators, bulldozers, motor graders, dump trucks, compaction equipment
+  typical_duration: 1-5 days for typical projects, weeks for large sites
+  notes: Proper grading is foundation of good pavement. Minimum 2% slope required for drainage. Remove organic topsoil before paving. Establish design elevations carefully - errors are expensive to fix. Proof roll subgrade to identify soft spots requiring remediation.
+
+- service_id: srv-land-clearing
+  name: Land Clearing and Site Preparation
+  service_type: both
+  description: Removal of vegetation, trees, stumps, and debris from construction site. Includes clearing, grubbing, and preparation of site for grading and paving operations.
+  related_keyword_ids:
+    - kw-land-clearing
+    - kw-grading-excavation
+  expertise_signals:
+    - Tree removal experience
+    - Stump grinding capability
+    - Debris disposal knowledge
+  regulatory_standards:
+    - Environmental protection requirements
+    - Tree removal permits where applicable
+    - Disposal regulations
+  seasonal_considerations: Can be done year-round. Easier when ground is dry. Some jurisdictions restrict clearing during nesting season.
+  equipment_required: Bulldozers, excavators, stump grinders, chippers, hauling equipment
+  typical_duration: 1-5 days depending on density of vegetation
+  notes: Critical first step for new construction. Must remove all organic material (topsoil, roots, vegetation) from areas to be paved. Buried organic material decomposes and causes settlement. Stumps must be completely removed. Proper disposal of clearing debris required.
+
+- service_id: srv-base-installation
+  name: Aggregate Base Installation
+  service_type: both
+  description: Installation of crushed stone or gravel base course to provide stable foundation for asphalt pavement. Includes material placement, spreading, grading, moisture conditioning, and compaction to specified density.
+  related_keyword_ids:
+    - kw-base-work
+    - kw-gravel-work
+  expertise_signals:
+    - Understanding of base specifications
+    - Compaction expertise
+    - Density testing capability
+    - Proper lift thickness knowledge
+  regulatory_standards:
+    - AASHTO or ASTM base course specifications
+    - Local standards for gradation and quality
+    - Density requirements (typically 95-98% Standard Proctor)
+  seasonal_considerations: Best in warm, dry weather. Moisture content critical for compaction. Winter work challenging in freezing climates.
+  equipment_required: Dump trucks, motor grader or dozer, vibratory roller or compactor, water truck
+  typical_duration: 1-3 days for typical projects
+  notes: Base is the foundation - critical for pavement performance. Typical thickness 4-12 inches depending on application. Place and compact in lifts no thicker than 8 inches. Test density frequently. Adequate base prevents premature pavement failure. Consider recycled materials (RAP, crushed concrete) where approved. Ensure proper drainage and moisture content for compaction.
+
+- service_id: srv-subgrade-stabilization
+  name: Subgrade Stabilization
+  service_type: both
+  description: Treatment of weak or problematic subgrade soils using lime, cement, or other stabilizing agents. Improves soil strength and reduces required pavement thickness. Alternative to complete subgrade removal and replacement.
+  related_keyword_ids:
+    - kw-base-work
+    - kw-grading-excavation
+  expertise_signals:
+    - Soil testing and analysis
+    - Stabilization material knowledge
+    - Mixing and placement expertise
+    - Understanding of chemical reactions
+  regulatory_standards:
+    - AASHTO standards for soil stabilization
+    - Material specifications for stabilizers
+    - Quality control requirements
+  seasonal_considerations: Requires warm weather for proper curing. Moisture control critical. Avoid freezing conditions.
+  equipment_required: Pulverizer/mixer, cement or lime spreader, compaction equipment, water truck
+  typical_duration: 2-5 days including mixing, placement, and curing
+  notes: Used when subgrade CBR is too low (typically CBR < 5%). Lime stabilization for high-plasticity clays, cement for broader soil types. Typical application 2-8% by weight mixed 6-12 inches deep. Creates semi-rigid layer. Requires proper moisture and curing.
+
+- service_id: srv-drainage-installation
+  name: Drainage System Installation
+  service_type: both
+  description: Installation of catch basins, storm pipes, underdrains, and swales to manage stormwater and prevent water damage to pavement. Critical for long-term pavement performance.
+  related_keyword_ids:
+    - kw-grading-excavation
+    - kw-drainage-issues
+  expertise_signals:
+    - Drainage design understanding
+    - Excavation and utility installation
+    - Pipe bedding and backfill knowledge
+    - Grading for surface drainage
+  regulatory_standards:
+    - Local stormwater management regulations
+    - Utility installation standards
+    - Backfill and compaction specifications
+  seasonal_considerations: Can be done year-round but easier in dry conditions. Coordinate with paving schedule.
+  equipment_required: Excavators, bedding material, pipe, catch basins, backfill compaction equipment
+  typical_duration: 1-5 days depending on complexity
+  notes: Water is pavement's worst enemy. Proper drainage doubles pavement life. Surface drainage (slopes and swales) is first priority. Subsurface drainage (underdrains) needed for poor-draining soils or high water tables. Don't pave without adequate drainage. Coordinate catch basin grades with final pavement elevations.
+
+- service_id: srv-demolition-removal
+  name: Asphalt and Concrete Demolition
+  service_type: both
+  description: Removal of existing asphalt or concrete pavement, including full-depth removal, milling, sawcutting, and hauling of debris. Preparation for new pavement installation.
+  related_keyword_ids:
+    - kw-tear-out
+    - kw-asphalt-repair
+  expertise_signals:
+    - Demolition equipment operation
+    - Proper disposal knowledge
+    - Sawcutting expertise for partial removal
+  regulatory_standards:
+    - Disposal regulations
+    - Dust control requirements
+    - Safety regulations for demolition
+  seasonal_considerations: Can be performed year-round. Dust control required in dry conditions.
+  equipment_required: Pavement breakers, excavators, skid steers, sawcutters, dump trucks
+  typical_duration: 1-3 days for typical driveways/small lots, longer for large areas
+  notes: Full removal necessary when existing pavement and base have failed. Partial removal (milling) adequate when only surface is distressed. Recycle removed asphalt (RAP) when possible. Concrete removal more difficult than asphalt. Coordinate with local disposal facilities.
+
+# ============================================
+# PAVEMENT MARKING AND STRIPING
+# ============================================
+
+- service_id: srv-parking-lot-striping
+  name: Parking Lot Striping and Marking
+  service_type: commercial
+  description: Application of parking stall markings, traffic arrows, fire lanes, handicap spaces, and crosswalks on commercial parking lots. Ensures ADA compliance, improves traffic flow, and enhances property appearance.
+  related_keyword_ids:
+    - kw-pavement-marking
+    - kw-parking-lot-paving
+  expertise_signals:
+    - Layout design capability
+    - ADA compliance knowledge
+    - Striping equipment expertise
+    - Material selection (paint, thermoplastic, tape)
+  regulatory_standards:
+    - ADA accessibility requirements
+    - Local fire lane regulations
+    - MUTCD standards for markings
+  seasonal_considerations: New asphalt must cure 30+ days before striping. Warm, dry weather required. Avoid rain within 2-4 hours of application.
+  equipment_required: Striping machine, layout tools, stencils, quality marking materials
+  typical_duration: 1-2 days for typical parking lot
+  notes: Typical stall dimensions 9x18 feet, wider for accessible spaces. Accessible parking requires specific dimensions, access aisles, and signage. Fire lanes typically 24 feet wide with red curbs and markings. Bundle with sealcoating for complete service. Use durable materials (thermoplastic or high-quality paint) for longer life. Poor striping makes good pavement look bad.
+
+- service_id: srv-roadway-striping
+  name: Roadway Striping and Marking
+  service_type: municipal
+  description: Application of centerlines, edge lines, lane lines, crosswalks, stop bars, and legends on roadways. Must meet MUTCD standards and reflectivity requirements for nighttime visibility and safety.
+  related_keyword_ids:
+    - kw-pavement-marking
+  expertise_signals:
+    - MUTCD standards knowledge
+    - Reflectivity requirements understanding
+    - Traffic control during marking
+    - High-speed application equipment
+  regulatory_standards:
+    - MUTCD (Manual on Uniform Traffic Control Devices)
+    - FHWA reflectivity standards
+    - State DOT specifications
+  seasonal_considerations: Warm, dry weather required. New asphalt cure time needed.
+  equipment_required: Truck-mounted striping equipment, glass bead applicators, traffic control equipment
+  typical_duration: Varies by project size
+  notes: Yellow for centerlines and no-passing zones, white for lane lines and edges. Standard width 4 inches, 6 inches for emphasis areas. Reflective glass beads required for nighttime visibility. Must meet minimum retroreflectivity levels (FHWA standards). Higher traffic requires more durable materials (thermoplastic or high-performance paint). Traffic control critical for safety.
+
+- service_id: srv-thermoplastic-marking
+  name: Thermoplastic Pavement Marking
+  service_type: commercial
+  description: Application of hot-applied thermoplastic marking material providing superior durability and reflectivity. Lasts 3-5+ years compared to 1-2 years for paint. Excellent for high-traffic areas and long-term marking solutions.
+  related_keyword_ids:
+    - kw-pavement-marking
+  expertise_signals:
+    - Thermoplastic application equipment
+    - Material heating and application expertise
+    - Safety knowledge for hot materials
+  regulatory_standards:
+    - ASTM standards for thermoplastic markings
+    - Agency specifications
+    - Reflectivity requirements
+  seasonal_considerations: Requires warm, dry pavement. More weather-sensitive than paint during application.
+  equipment_required: Thermoplastic melter/applicator, propane heating system, layout tools
+  typical_duration: Similar to paint but requires more setup and heating time
+  notes: Hot-applied plastic that bonds to pavement and hardens when cooled. Extremely durable - lasts 3-5+ years in normal traffic, longer in light traffic. Excellent reflectivity with embedded glass beads. Lower lifecycle consideration due to longevity. Ideal for crosswalks, stop bars, handicap symbols, and other high-wear applications. Raised profile (1/8 inch) provides texture and wet weather visibility.
+
+- service_id: srv-ada-compliance-marking
+  name: ADA Compliance Striping and Signage
+  service_type: commercial
+  description: Installation of accessible parking spaces, access aisles, ramps, and associated signage meeting Americans with Disabilities Act requirements. Critical for commercial properties to avoid fines and ensure accessibility.
+  related_keyword_ids:
+    - kw-pavement-marking
+    - kw-parking-lot-paving
+  expertise_signals:
+    - Detailed ADA requirements knowledge
+    - Proper dimensions and slopes
+    - Signage requirements
+  regulatory_standards:
+    - Americans with Disabilities Act (ADA)
+    - State accessibility codes
+    - Local building codes
+  seasonal_considerations: Standard striping season considerations
+  equipment_required: Striping equipment, grade checking tools, proper signage
+  typical_duration: Part of overall parking lot striping project
+  notes: Accessible parking spaces require 8-foot minimum width with 5-foot access aisle (or 11-foot van-accessible with 5-foot aisle). Slopes cannot exceed 2% in any direction. Must be on shortest accessible route to entrance. International Symbol of Accessibility required on pavement and elevated signage. Number of required spaces based on total parking count. Non-compliance creates liability exposure for property owners. Review and verify compliance.
+
+# ============================================
+# MAINTENANCE PROGRAMS
+# ============================================
+
+- service_id: srv-annual-maintenance-residential
+  name: Residential Driveway Maintenance Program
+  service_type: residential
+  description: Comprehensive annual maintenance program including inspection, crack sealing, minor patching, cleaning, and periodic sealcoating. Extends driveway life to 20+ years with proper care.
+  related_keyword_ids:
+    - kw-preventative-maintenance
+    - kw-asphalt-driveway
+    - kw-sealcoating
+  expertise_signals:
+    - Long-term customer relationship management
+    - Comprehensive maintenance knowledge
+    - Scheduling and reminder systems
+  regulatory_standards:
+    - Industry best practices
+  seasonal_considerations: Annual inspection in spring, crack sealing as needed, sealcoating every 2-3 years
+  equipment_required: Full range of maintenance equipment
+  typical_duration: Ongoing annual relationship
+  notes: Annual inspection identifies problems early when they're easy to address. Crack sealing prevents water infiltration. Sealcoating every 2-3 years protects surface. Clean oil spills promptly. Minor patching as needed. Creates recurring revenue and customer loyalty. Homeowners appreciate proactive maintenance reminders.
+
+- service_id: srv-commercial-maintenance-program
+  name: Commercial Parking Lot Maintenance Program
+  service_type: commercial
+  description: Comprehensive multi-year maintenance program including regular inspections, crack sealing, patching, sealcoating, striping, and sweeping. Protects pavement investment and maintains professional appearance.
+  related_keyword_ids:
+    - kw-preventative-maintenance
+    - kw-parking-lot
+    - kw-commercial-paving
+  expertise_signals:
+    - Multi-year program development
+    - Budget planning expertise
+    - Pavement management systems knowledge
+  regulatory_standards:
+    - Pavement management best practices
+    - ADA ongoing compliance
+  seasonal_considerations: Year 1-2 monitoring, Year 3-5 first sealcoat, ongoing crack sealing and patching, Year 10-15 mill and overlay consideration
+  equipment_required: Full maintenance equipment fleet
+  typical_duration: Multi-year contract with annual services
+  notes: Prevents small problems from becoming major failures. Typical schedule - Year 1-2 monitor and minor crack sealing, Year 3-4 first sealcoat and crack sealing, Years 5-10 sealcoat every 2-3 years with annual crack sealing, Year 10-15 mill and overlay consideration. Regular sweeping removes debris and standing water. Striping every 1-2 years. Creates stable recurring revenue. Position as partner in asset management.
+
+- service_id: srv-municipal-pavement-management
+  name: Municipal Pavement Management Services
+  service_type: municipal
+  description: Comprehensive pavement management program including condition assessment, preventative maintenance, rehabilitation planning, and budget forecasting for municipal street networks.
+  related_keyword_ids:
+    - kw-preventative-maintenance
+  expertise_signals:
+    - Pavement condition assessment expertise
+    - Budget planning and forecasting
+    - Multi-year program development
+    - Agency coordination
+  regulatory_standards:
+    - Municipal pavement management best practices
+    - State and federal funding requirements
+  seasonal_considerations: Ongoing multi-year program with seasonal work schedules
+  equipment_required: Full maintenance and rehabilitation equipment capabilities
+  typical_duration: Multi-year contracts
+  notes: Systematic approach to maintaining street networks. Pavement condition surveys identify needs. Preventative maintenance (crack seal, surface treatments) extends life. Rehabilitation (mill and overlay) when preventative maintenance no longer effective. Reconstruction when structural capacity exhausted. Pavement management systems prioritize projects and forecast budgets. Right treatment at right time maximizes pavement life.
+
+# ============================================
+# SPECIALTY APPLICATIONS
+# ============================================
+
+- service_id: srv-airport-paving
+  name: Airport and Runway Paving
+  service_type: specialty
+  description: Specialized asphalt paving for airports, runways, taxiways, and aprons following FAA design standards. Heavy-duty pavements designed for aircraft loading, high tire pressures, and jet fuel resistance.
+  related_keyword_ids:
+    - kw-asphalt-paving
+    - kw-commercial-paving
+  expertise_signals:
+    - FAA specifications knowledge
+    - FAARFIELD design software
+    - P-401/P-403 mix specifications
+    - Heavy-duty pavement expertise
+  regulatory_standards:
+    - FAA AC 150/5320-6 (airport pavement design)
+    - FAA P-401 and P-403 mix specifications
+    - Quality control requirements
+    - Surface friction requirements
+  seasonal_considerations: Standard paving season. Minimal airport disruption required - fast construction critical.
+  equipment_required: Heavy-duty paving equipment, stringent quality control testing equipment
+  typical_duration: Varies widely - often requires night work to minimize airport operations impact
+  notes: Extremely heavy loads (aircraft up to 1 million+ pounds), high tire pressures (200+ PSI), and fuel spill resistance required. Typical pavement 12-24+ inches asphalt over heavy aggregate base. Mix designs use larger aggregate, modified binders, and strict quality control. Surface friction critical for aircraft braking. Requires FAA approval and specialized expertise.
+
+- service_id: srv-industrial-heavy-duty-paving
+  name: Industrial and Heavy-Duty Pavement
+  service_type: specialty
+  description: Extra-heavy-duty asphalt pavements for ports, intermodal facilities, container yards, and areas with extremely heavy equipment loads. Designed for container handlers, cranes, and loaded semi-trailers.
+  related_keyword_ids:
+    - kw-asphalt-paving
+    - kw-commercial-paving
+  expertise_signals:
+    - Heavy-duty pavement design
+    - Understanding of concentrated loads
+    - High-stability mix knowledge
+  regulatory_standards:
+    - Engineering design for heavy loads
+    - AASHTO heavy-duty pavement standards
+    - Port authority specifications
+  seasonal_considerations: Standard paving season
+  equipment_required: Heavy-duty paving equipment capable of thick lifts
+  typical_duration: Varies by project scope
+  notes: Heaviest-duty asphalt applications. Container handlers can exert high wheel loads. Requires thick asphalt sections (10-16+ inches), large aggregate mixes, modified binders, and thick aggregate base. Full-depth asphalt sometimes used. Slow-moving heavy loads create high stress. Requires specialized engineering.
+
+- service_id: srv-bike-path-trail-paving
+  name: Bike Path and Trail Paving
+  service_type: municipal
+  description: Asphalt paving for multi-use trails, bike paths, and recreational paths. Lighter structural requirements than roadways, emphasis on smooth riding surface and drainage.
+  related_keyword_ids:
+    - kw-asphalt-paving
+  expertise_signals:
+    - Understanding of trail design
+    - Smooth surface finishing
+    - Environmental sensitivity
+  regulatory_standards:
+    - Trail design guidelines
+    - ADA accessibility requirements
+    - Environmental protection during construction
+  seasonal_considerations: Standard paving season
+  equipment_required: Smaller paving equipment suitable for trail widths (8-12 feet typical)
+  typical_duration: 1-3 weeks depending on length
+  notes: Light loads (bikes and pedestrians only) allow thin pavement - 2-3 inches asphalt total over 4-6 inches base is typical. Smooth surface critical for bike comfort. Can often use recycled materials. Minimal traffic control requirements. Growing market as communities invest in active transportation. Environmental considerations for trails through sensitive areas.
+
+- service_id: srv-sports-facility-paving
+  name: Sports Facility and Court Paving
+  service_type: specialty
+  description: Specialized asphalt paving for tennis courts, basketball courts, running tracks, and other athletic facilities. Requires extremely smooth, level surface and often includes colored coatings.
+  related_keyword_ids:
+    - kw-asphalt-paving
+  expertise_signals:
+    - Precision grading and finishing
+    - Surface smoothness requirements
+    - Sport surfacing knowledge
+  regulatory_standards:
+    - USTA tennis court specifications
+    - NCAA sports facility standards
+    - Local recreation standards
+  seasonal_considerations: Standard paving season, colored coatings require warm weather
+  equipment_required: Small paver with precision controls, surface finishing tools
+  typical_duration: 1-2 weeks including base, paving, and coating
+  notes: Requires extremely flat, smooth surface. Maximum slope typically 1% for drainage. Often uses fine-graded leveling course over standard asphalt base. Acrylic or other colored coating systems applied on top. Must be free of defects. Post-tensioned edges or borders prevent cracking. Requires specialized expertise - sports facility contractors are niche market.
+
+# ============================================
+# CLIMATE-SPECIFIC SERVICES
+# ============================================
+
+- service_id: srv-cold-climate-paving
+  name: Cold Climate Asphalt Solutions
+  service_type: specialty
+  description: Specialized asphalt paving services for northern climates with freeze-thaw cycles, frost heave, and winter maintenance challenges. Includes softer binder grades, proper base drainage, and winter emergency repairs.
+  related_keyword_ids:
+    - kw-asphalt-paving
+    - kw-pothole-repair
+  expertise_signals:
+    - Understanding of freeze-thaw damage mechanisms
+    - Proper binder grade selection for cold climates
+    - Drainage expertise for frost prevention
+    - Winter maintenance capabilities
+  regulatory_standards:
+    - Northern state DOT specifications
+    - Superpave binder grade for local climate
+    - Frost depth requirements
+  seasonal_considerations: Short paving season (May-September typical in far north). Cold patch available for winter emergency repairs.
+  equipment_required: Standard paving equipment, cold patch materials for winter
+  typical_duration: Standard paving timeframes during season
+  notes: Cold climates require softer binder grades (PG 58-28, PG 52-34 in coldest areas) to resist thermal cracking. Freeze-thaw cycles are major challenge. Proper base drainage critical. Underdrains often needed. Potholes form rapidly in spring from winter freeze-thaw damage. Winter emergency repair with cold patch, then permanent hot mix repair in spring. Shorter construction season.
+
+- service_id: srv-hot-climate-paving
+  name: Hot Climate Asphalt Solutions
+  service_type: specialty
+  description: Specialized asphalt paving for hot climates with high temperatures, UV exposure, and rutting concerns. Includes stiffer binder grades, modified mixes, and reflective coatings.
+  related_keyword_ids:
+    - kw-asphalt-paving
+  expertise_signals:
+    - Understanding of rutting mechanisms
+    - Polymer modification knowledge
+    - High-temperature binder selection
+  regulatory_standards:
+    - Southern state DOT specifications
+    - High-temperature PG binder grades
+  seasonal_considerations: Year-round paving possible in warmest climates. Summer heat requires special precautions - early morning paving preferred.
+  equipment_required: Standard paving equipment
+  typical_duration: Standard paving timeframes
+  notes: Hot climates require stiffer binder grades (PG 70-22, PG 76-22 in hottest areas) to resist rutting. Polymer modification (SBS) improves high-temperature performance. Summer pavement temperatures can exceed 150°F. Early morning or evening paving preferred in extreme heat. Reflective coatings and light-colored surfaces can reduce heat absorption. Extended paving season and minimal freeze-thaw damage. Aging and oxidation from UV exposure requires regular seal coating.
+
+- service_id: srv-coastal-hurricane-zone-paving
+  name: Coastal and Hurricane Zone Paving
+  service_type: specialty
+  description: Asphalt paving for coastal areas and hurricane zones with saltwater exposure, high winds, flooding risks, and storm surge concerns. Includes enhanced drainage, modified materials for moisture resistance, and storm damage repair.
+  related_keyword_ids:
+    - kw-asphalt-paving
+    - kw-asphalt-repair
+  expertise_signals:
+    - Coastal construction experience
+    - Storm damage assessment and repair
+    - Saltwater resistant materials knowledge
+    - Enhanced drainage design
+  regulatory_standards:
+    - Coastal building codes
+    - Flood zone requirements
+    - Wind resistance standards for temporary structures
+  seasonal_considerations: Avoid hurricane season when possible (June-November). Storm damage creates emergency repair demand.
+  equipment_required: Standard paving equipment plus storm damage cleanup capabilities
+  typical_duration: Standard paving timeframes plus storm response capabilities
+  notes: Saltwater exposure accelerates pavement aging - regular maintenance critical. Storm surge flooding can undermine base and subgrade. Enhanced drainage essential. Polymer-modified binders improve moisture resistance. Hurricane season creates damage and emergency repair opportunities. Standing water from storm surge must drain quickly. Debris cleanup often needed before repairs. Storm damage assessment and repair is specialized service.
+
+# ============================================
+# EMERGENCY AND SPECIALTY SERVICES  
+# ============================================
+
+- service_id: srv-emergency-asphalt-repair
+  name: Emergency Asphalt Repair Services
+  service_type: both
+  description: 24/7 emergency response for urgent pavement failures, dangerous potholes, sinkholes, and storm damage. Rapid mobilization to restore safety and access using temporary or permanent repair methods.
+  related_keyword_ids:
+    - kw-pothole-repair
+    - kw-asphalt-repair
+  expertise_signals:
+    - 24/7 availability
+    - Rapid response capability
+    - Both temporary and permanent repair options
+    - Safety hazard assessment
+  regulatory_standards:
+    - Emergency work zone safety
+    - Temporary traffic control
+  seasonal_considerations: Year-round service. Cold patch used in winter, hot mix when available.
+  equipment_required: Mobile repair equipment, cold patch stockpile, traffic control equipment
+  typical_duration: Response within hours, repair completion same day or next day
+  notes: Emergency repairs address immediate safety hazards and liability concerns. Property owners and municipalities need rapid response when dangerous conditions develop. Cold patch provides temporary repair in winter or after-hours. Hot mix permanent repair follows when conditions allow. Builds strong customer relationships and leads to additional work.
+
+- service_id: srv-utility-cut-repair
+  name: Utility Cut and Trench Repair
+  service_type: both
+  description: Proper restoration of asphalt pavement after utility work, trenching, or excavation. Includes base replacement, proper compaction, and pavement patching to match existing surface.
+  related_keyword_ids:
+    - kw-asphalt-repair
+    - kw-patching
+  expertise_signals:
+    - Understanding of proper trench backfill
+    - Compaction in confined spaces
+    - Matching existing pavement
+  regulatory_standards:
+    - Municipal utility cut ordinances
+    - Compaction specifications for trenches
+    - Warranty requirements
+  seasonal_considerations: Performed year-round as utility work demands, hot mix preferred when available
+  equipment_required: Compaction equipment suitable for trenches, sawcutting equipment, small paver or hand tools
+  typical_duration: 1-2 days per utility cut
+  notes: Utility cuts are common cause of pavement distress when improperly restored. Must compact backfill in lifts (6-8 inch maximum). Sawcut existing pavement to create clean edges. Replace base material and compact. Patch with hot mix and compact thoroughly. Municipalities often have strict ordinances on utility cut restoration including warranty periods. Settlement of utility cuts creates customer complaints and callbacks.
+
+- service_id: srv-sinkhole-repair
+  name: Sinkhole and Subsidence Repair
+  service_type: both
+  description: Repair of pavement damage from sinkholes, underground voids, mine subsidence, or major subgrade failure. Includes void investigation, stabilization, and pavement reconstruction.
+  related_keyword_ids:
+    - kw-asphalt-repair
+    - kw-patching
+  expertise_signals:
+    - Subsurface investigation capability
+    - Void filling techniques
+    - Major excavation and reconstruction
+  regulatory_standards:
+    - Geotechnical engineering consultation
+    - Structural fill specifications
+  seasonal_considerations: Emergency response as needed, reconstruction when weather allows
+  equipment_required: Excavation equipment, void filling materials, reconstruction capabilities
+  typical_duration: Several days to weeks depending on severity
+  notes: Sinkholes and major subsidence require investigation to determine cause and extent. May need geotechnical engineer consultation. Small voids can be filled with flowable fill or grout. Large voids may require excavation to bedrock and complete reconstruction. Underground utilities must be considered. Emergency safety measures (barricades, temporary fill) followed by permanent repair.
+
+# ============================================
+# ANCILLARY SERVICES
+# ============================================
+
+- service_id: srv-surface-cleaning-sweeping
+  name: Parking Lot Sweeping and Cleaning
+  service_type: commercial
+  description: Regular parking lot sweeping, debris removal, and surface cleaning to maintain appearance, prevent drainage issues, and extend pavement life. Essential component of preventative maintenance programs.
+  related_keyword_ids:
+    - kw-surface-cleaning
+    - kw-parking-lot
+  expertise_signals:
+    - Power sweeping equipment
+    - Regular service scheduling
+    - Drainage maintenance
+  regulatory_standards:
+    - Environmental stormwater regulations
+    - Debris disposal requirements
+  seasonal_considerations: Year-round service with increased frequency in fall (leaves) and spring (winter debris)
+  equipment_required: Mechanical sweeper equipment, debris hauling
+  typical_duration: Ongoing recurring service
+  notes: Regular sweeping removes debris, prevents drainage clogs, and maintains professional appearance. Particularly important before sealcoating or striping. Creates recurring revenue stream and customer relationships. Often bundled with other maintenance services.
+
+# End of services.yaml
+# Total: 65+ comprehensive asphalt service offerings covering residential, commercial, municipal, and specialty applications across all US climates and regions

@@ -48,6 +48,58 @@ clients:
       - loc-williston-fl
     active_services:
     # tbd
+      - srv-new-asphalt-paving-residential
+      - srv-new-asphalt-paving-commercial
+      - srv-new-asphalt-paving-municipal
+      - srv-subdivision-paving
+      - srv-horse-farm-paving
+      - srv-asphalt-patching-full-depth
+      - srv-pothole-repair
+      - srv-surface-patching
+      - srv-asphalt-resurfacing
+      - srv-mill-and-overlay
+      - srv-full-depth-reclamation
+      - srv-crack-sealing
+      - srv-crack-filling
+      - srv-crack-routing
+      - srv-sealcoating-residential
+      - srv-sealcoating-commercial
+      - srv-crack-seal-and-sealcoat-package
+      - srv-fog-seal
+      - srv-chip-seal
+      - srv-cape-seal
+      - srv-slurry-seal
+      - srv-microsurfacing
+      - srv-porous-asphalt
+      - srv-warm-mix-asphalt
+      - srv-high-rap-mixes
+      - srv-colored-asphalt
+      - srv-rubberized-asphalt
+      - srv-grading-excavation
+      - srv-land-clearing
+      - srv-base-installation
+      - srv-subgrade-stabilization
+      - srv-drainage-installation
+      - srv-demolition-removal
+      - srv-parking-lot-striping
+      - srv-roadway-striping
+      - srv-thermoplastic-marking
+      - srv-ada-compliance-marking
+      - srv-annual-maintenance-residential
+      - srv-commercial-maintenance-program
+      - srv-municipal-pavement-management
+      - srv-airport-paving
+      - srv-industrial-heavy-duty-paving
+      - srv-bike-path-trail-paving
+      - srv-sports-facility-paving
+      - srv-cold-climate-paving
+      - srv-hot-climate-paving
+      - srv-coastal-hurricane-zone-paving
+      - srv-emergency-asphalt-repair
+      - srv-utility-cut-repair
+      - srv-sinkhole-repair
+      - srv-surface-cleaning-sweeping
+
     client_size: small
     onboarding_date: "11-15-2025"
     notes: Specializes in horse paving. sub account of Aarow asphalt
@@ -76,7 +128,57 @@ clients:
       - loc-weston-wi
       - loc-wisconsin-rapids-wi
     active_services:
-    # tbd
+      # - srv-new-asphalt-paving-residential
+      # - srv-new-asphalt-paving-commercial
+      # - srv-new-asphalt-paving-municipal
+      # - srv-subdivision-paving
+      # - srv-horse-farm-paving
+      # - srv-asphalt-patching-full-depth
+      - srv-pothole-repair
+      - srv-surface-patching
+      - srv-asphalt-resurfacing
+      - srv-mill-and-overlay
+      - srv-full-depth-reclamation
+      - srv-crack-sealing
+      - srv-crack-filling
+      - srv-crack-routing
+      - srv-sealcoating-residential
+      - srv-sealcoating-commercial
+      - srv-crack-seal-and-sealcoat-package
+      - srv-fog-seal
+      - srv-chip-seal
+      - srv-cape-seal
+      - srv-slurry-seal
+      - srv-microsurfacing
+      - srv-porous-asphalt
+      # - srv-warm-mix-asphalt
+      - srv-high-rap-mixes
+      # - srv-colored-asphalt
+      - srv-rubberized-asphalt
+      # - srv-grading-excavation
+      # - srv-land-clearing
+      # - srv-base-installation
+      # - srv-subgrade-stabilization
+      # - srv-drainage-installation
+      # - srv-demolition-removal
+      # - srv-parking-lot-striping
+      # - srv-roadway-striping
+      # - srv-thermoplastic-marking
+      # - srv-ada-compliance-marking
+      # - srv-annual-maintenance-residential
+      # - srv-commercial-maintenance-program
+      # - srv-municipal-pavement-management
+      # - srv-airport-paving
+      # - srv-industrial-heavy-duty-paving
+      # - srv-bike-path-trail-paving
+      # - srv-sports-facility-paving
+      # - srv-cold-climate-paving
+      # - srv-hot-climate-paving
+      # - srv-coastal-hurricane-zone-paving
+      # - srv-emergency-asphalt-repair
+      # - srv-utility-cut-repair
+      # - srv-sinkhole-repair
+      - srv-surface-cleaning-sweeping
     client_size: small
     onboarding_date: "07-15-2025"
     notes: startup expanding into multiple offseason states and trying to grow
@@ -102,7 +204,57 @@ clients:
       - loc-strafford-mo
       - loc-willard-mo
     active_services:
-    # tbd
+      # - srv-new-asphalt-paving-residential
+      # - srv-new-asphalt-paving-commercial
+      # - srv-new-asphalt-paving-municipal
+      # - srv-subdivision-paving
+      # - srv-horse-farm-paving
+      # - srv-asphalt-patching-full-depth
+      - srv-pothole-repair
+      - srv-surface-patching
+      - srv-asphalt-resurfacing
+      - srv-mill-and-overlay
+      - srv-full-depth-reclamation
+      - srv-crack-sealing
+      - srv-crack-filling
+      - srv-crack-routing
+      - srv-sealcoating-residential
+      - srv-sealcoating-commercial
+      - srv-crack-seal-and-sealcoat-package
+      - srv-fog-seal
+      - srv-chip-seal
+      - srv-cape-seal
+      - srv-slurry-seal
+      - srv-microsurfacing
+      - srv-porous-asphalt
+      # - srv-warm-mix-asphalt
+      - srv-high-rap-mixes
+      # - srv-colored-asphalt
+      - srv-rubberized-asphalt
+      # - srv-grading-excavation
+      # - srv-land-clearing
+      # - srv-base-installation
+      # - srv-subgrade-stabilization
+      # - srv-drainage-installation
+      # - srv-demolition-removal
+      # - srv-parking-lot-striping
+      # - srv-roadway-striping
+      # - srv-thermoplastic-marking
+      # - srv-ada-compliance-marking
+      # - srv-annual-maintenance-residential
+      # - srv-commercial-maintenance-program
+      # - srv-municipal-pavement-management
+      # - srv-airport-paving
+      # - srv-industrial-heavy-duty-paving
+      # - srv-bike-path-trail-paving
+      # - srv-sports-facility-paving
+      # - srv-cold-climate-paving
+      # - srv-hot-climate-paving
+      # - srv-coastal-hurricane-zone-paving
+      # - srv-emergency-asphalt-repair
+      # - srv-utility-cut-repair
+      # - srv-sinkhole-repair
+      - srv-surface-cleaning-sweeping
     client_size: small
     onboarding_date: "07-15-2025"
     notes: off season Ozarks expansion of midwest asphalt wisconsin
@@ -185,7 +337,57 @@ clients:
       - loc-windsor-wi
       - loc-wisconsin-dells-wi
     active_services:
-    # tbd
+      - srv-new-asphalt-paving-residential
+      - srv-new-asphalt-paving-commercial
+      - srv-new-asphalt-paving-municipal
+      - srv-subdivision-paving
+      - srv-horse-farm-paving
+      - srv-asphalt-patching-full-depth
+      - srv-pothole-repair
+      - srv-surface-patching
+      - srv-asphalt-resurfacing
+      - srv-mill-and-overlay
+      - srv-full-depth-reclamation
+      - srv-crack-sealing
+      - srv-crack-filling
+      - srv-crack-routing
+      - srv-sealcoating-residential
+      - srv-sealcoating-commercial
+      - srv-crack-seal-and-sealcoat-package
+      - srv-fog-seal
+      - srv-chip-seal
+      - srv-cape-seal
+      - srv-slurry-seal
+      - srv-microsurfacing
+      - srv-porous-asphalt
+      - srv-warm-mix-asphalt
+      - srv-high-rap-mixes
+      - srv-colored-asphalt
+      - srv-rubberized-asphalt
+      - srv-grading-excavation
+      - srv-land-clearing
+      - srv-base-installation
+      - srv-subgrade-stabilization
+      - srv-drainage-installation
+      - srv-demolition-removal
+      - srv-parking-lot-striping
+      - srv-roadway-striping
+      - srv-thermoplastic-marking
+      - srv-ada-compliance-marking
+      - srv-annual-maintenance-residential
+      - srv-commercial-maintenance-program
+      - srv-municipal-pavement-management
+      - srv-airport-paving
+      - srv-industrial-heavy-duty-paving
+      - srv-bike-path-trail-paving
+      - srv-sports-facility-paving
+      - srv-cold-climate-paving
+      - srv-hot-climate-paving
+      - srv-coastal-hurricane-zone-paving
+      - srv-emergency-asphalt-repair
+      - srv-utility-cut-repair
+      - srv-sinkhole-repair
+      - srv-surface-cleaning-sweeping
     client_size: large
     onboarding_date: "11-15-2024"
     notes: family business located out of baraboo, wi. has two google my business locations - madison and baraboo
@@ -216,7 +418,57 @@ clients:
       - loc-wesley-chapel-fl
       - loc-westchase-fl
     active_services:
-    # tbd
+      - srv-new-asphalt-paving-residential
+      - srv-new-asphalt-paving-commercial
+      - srv-new-asphalt-paving-municipal
+      - srv-subdivision-paving
+      - srv-horse-farm-paving
+      - srv-asphalt-patching-full-depth
+      - srv-pothole-repair
+      - srv-surface-patching
+      - srv-asphalt-resurfacing
+      - srv-mill-and-overlay
+      - srv-full-depth-reclamation
+      - srv-crack-sealing
+      - srv-crack-filling
+      - srv-crack-routing
+      - srv-sealcoating-residential
+      - srv-sealcoating-commercial
+      - srv-crack-seal-and-sealcoat-package
+      - srv-fog-seal
+      - srv-chip-seal
+      - srv-cape-seal
+      - srv-slurry-seal
+      - srv-microsurfacing
+      - srv-porous-asphalt
+      - srv-warm-mix-asphalt
+      - srv-high-rap-mixes
+      - srv-colored-asphalt
+      - srv-rubberized-asphalt
+      - srv-grading-excavation
+      # - srv-land-clearing
+      - srv-base-installation
+      - srv-subgrade-stabilization
+      - srv-drainage-installation
+      - srv-demolition-removal
+      - srv-parking-lot-striping
+      - srv-roadway-striping
+      - srv-thermoplastic-marking
+      - srv-ada-compliance-marking
+      - srv-annual-maintenance-residential
+      - srv-commercial-maintenance-program
+      - srv-municipal-pavement-management
+      - srv-airport-paving
+      - srv-industrial-heavy-duty-paving
+      - srv-bike-path-trail-paving
+      - srv-sports-facility-paving
+      - srv-cold-climate-paving
+      - srv-hot-climate-paving
+      - srv-coastal-hurricane-zone-paving
+      - srv-emergency-asphalt-repair
+      - srv-utility-cut-repair
+      - srv-sinkhole-repair
+      - srv-surface-cleaning-sweeping
     client_size: small
     onboarding_date: "11-15-2024"
     notes: Expansion of wells asphalt paving in madison. small startup in the tampa bay area

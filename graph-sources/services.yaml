@@ -5,7 +5,7 @@
 # Field Definitions:
 # service_id:              Unique identifier for the service
 # name:                    Service display name
-# service_type:            "residential", "commercial", "municipal", or "specialty"
+# service_types:           Array of applicable service types: ["residential", "commercial", "municipal", "specialty"]
 # description:             SEO-optimized service description
 # related_keyword_ids:     Array of keyword IDs from keywords.yaml
 # expertise_signals:       Array of qualifications, certifications, experience
@@ -23,7 +23,8 @@ services:
 
 - service_id: srv-new-asphalt-paving-residential
   name: New Residential Asphalt Paving
-  service_type: residential
+  service_types:
+    - residential
   description: Professional installation of new asphalt driveways and private roads for homeowners. Includes site preparation, proper base installation, and hot mix asphalt placement designed for 10-20 year service life with proper maintenance.
   related_keyword_ids:
     - kw-asphalt-paving
@@ -47,7 +48,8 @@ services:
 
 - service_id: srv-new-asphalt-paving-commercial
   name: New Commercial Asphalt Paving
-  service_type: commercial
+  service_types:
+    - commercial
   description: Complete asphalt paving installation for commercial parking lots, business access drives, and industrial yards. Engineered design based on traffic loads, proper drainage integration, ADA compliance, and long-term performance specifications.
   related_keyword_ids:
     - kw-asphalt-paving
@@ -72,7 +74,8 @@ services:
 
 - service_id: srv-new-asphalt-paving-municipal
   name: New Municipal Asphalt Paving
-  service_type: municipal
+  service_types:
+    - municipal
   description: Construction of new municipal streets, roads, bike paths, and public parking facilities following state DOT specifications and AASHTO design standards. Includes traffic management, utility coordination, and compliance documentation.
   related_keyword_ids:
     - kw-asphalt-paving
@@ -97,7 +100,9 @@ services:
 
 - service_id: srv-subdivision-paving
   name: Subdivision and Private Road Paving
-  service_type: commercial
+  service_types:
+    - residential
+    - commercial
   description: Installation of asphalt streets in residential subdivisions and private road developments. Phased construction to accommodate building traffic, with base installation followed by final surface after home construction complete.
   related_keyword_ids:
     - kw-asphalt-paving
@@ -118,7 +123,9 @@ services:
 
 - service_id: srv-horse-farm-paving
   name: Horse Farm and Equestrian Facility Paving
-  service_type: specialty
+  service_types:
+    - residential
+    - specialty
   description: Specialized asphalt paving for horse farms, riding arenas access roads, stable yards, and equestrian facilities. Designed to handle heavy equipment, manure spreaders, and trailer traffic while providing smooth surfaces safe for horses and easy to maintain.
   related_keyword_ids:
     - kw-asphalt-paving
@@ -143,7 +150,10 @@ services:
 
 - service_id: srv-asphalt-patching-full-depth
   name: Full-Depth Asphalt Patching
-  service_type: both
+  service_types:
+    - residential
+    - commercial
+    - municipal
   description: Permanent repair of failed asphalt sections using proper removal and replacement techniques. Square-cut removal to sound pavement, tack coat application, hot mix asphalt placement, and proper compaction for long-lasting repairs.
   related_keyword_ids:
     - kw-asphalt-repair
@@ -164,7 +174,10 @@ services:
 
 - service_id: srv-pothole-repair
   name: Pothole Repair Services
-  service_type: both
+  service_types:
+    - residential
+    - commercial
+    - municipal
   description: Emergency and permanent pothole repair using hot mix asphalt or temporary cold mix. Proper cleaning, tack coat application, material placement, and compaction to restore surface integrity and eliminate safety hazards.
   related_keyword_ids:
     - kw-pothole-repair
@@ -185,7 +198,10 @@ services:
 
 - service_id: srv-surface-patching
   name: Surface Patching (Skin Patching)
-  service_type: both
+  service_types:
+    - residential
+    - commercial
+    - municipal
   description: Shallow asphalt repair for surface-level distress without base failure. Quick repairs for minor surface damage, suitable for temporary or semi-permanent solutions where full-depth repair is not yet needed.
   related_keyword_ids:
     - kw-asphalt-repair
@@ -202,7 +218,10 @@ services:
 
 - service_id: srv-asphalt-resurfacing
   name: Asphalt Resurfacing (Overlay)
-  service_type: both
+  service_types:
+    - residential
+    - commercial
+    - municipal
   description: Installation of new asphalt layer over existing pavement to restore surface condition and add structural strength. Typically 1.5-4 inches thickness, extends pavement life 10-15 years when existing structure is sound.
   related_keyword_ids:
     - kw-asphalt-resurfacing
@@ -222,7 +241,10 @@ services:
 
 - service_id: srv-mill-and-overlay
   name: Mill and Overlay
-  service_type: both
+  service_types:
+    - residential
+    - commercial
+    - municipal
   description: Combined milling (removal) of existing surface layer followed by new asphalt overlay. Maintains existing elevations, removes surface distress, provides fresh wearing surface. Most common rehabilitation technique for aged pavements.
   related_keyword_ids:
     - kw-mill-overlay
@@ -242,7 +264,9 @@ services:
 
 - service_id: srv-full-depth-reclamation
   name: Full-Depth Reclamation (FDR)
-  service_type: commercial
+  service_types:
+    - commercial
+    - municipal
   description: In-place pulverization of existing asphalt and base materials, mixing with stabilizing agents (cement, lime, or emulsion), and placing new asphalt surface. Alternative to complete reconstruction when base has failed.
   related_keyword_ids:
     - kw-asphalt-repair
@@ -267,7 +291,10 @@ services:
 
 - service_id: srv-crack-sealing
   name: Professional Crack Sealing
-  service_type: both
+  service_types:
+    - residential
+    - commercial
+    - municipal
   description: Hot-pour rubberized crack sealant application to prevent water infiltration and extend pavement life. Includes proper crack cleaning, routing (when needed), and application of flexible, durable sealant material.
   related_keyword_ids:
     - kw-crack-filling
@@ -287,7 +314,10 @@ services:
 
 - service_id: srv-crack-filling
   name: Crack Filling
-  service_type: both
+  service_types:
+    - residential
+    - commercial
+    - municipal
   description: Basic crack treatment using cold-pour or hot-pour materials without routing. Less durable than crack sealing but faster and more economical for minor cracks in low-traffic areas.
   related_keyword_ids:
     - kw-crack-filling
@@ -304,7 +334,10 @@ services:
 
 - service_id: srv-crack-routing
   name: Crack Routing and Sealing
-  service_type: both
+  service_types:
+    - residential
+    - commercial
+    - municipal
   description: Advanced crack treatment including routing to create reservoir, followed by hot-pour sealant application. Provides superior long-term performance for wider cracks and high-traffic applications.
   related_keyword_ids:
     - kw-crack-filling
@@ -327,7 +360,8 @@ services:
 
 - service_id: srv-sealcoating-residential
   name: Residential Driveway Sealcoating
-  service_type: residential
+  service_types:
+    - residential
   description: Coal tar or asphalt emulsion sealcoat application for homeowner driveways. Provides UV protection, water resistance, and enhances appearance. Applied every 2-3 years to extend pavement life and maintain aesthetic appeal.
   related_keyword_ids:
     - kw-sealcoating
@@ -347,7 +381,8 @@ services:
 
 - service_id: srv-sealcoating-commercial
   name: Commercial Parking Lot Sealcoating
-  service_type: commercial
+  service_types:
+    - commercial
   description: Professional-grade sealcoating for commercial parking lots using coal tar or asphalt emulsion. Protects investment, improves appearance, reduces oxidation and water damage. Typically applied every 2-3 years as part of preventative maintenance program.
   related_keyword_ids:
     - kw-sealcoating
@@ -370,7 +405,10 @@ services:
 
 - service_id: srv-crack-seal-and-sealcoat-package
   name: Crack Sealing & Sealcoating Package
-  service_type: both
+  service_types:
+    - residential
+    - commercial
+    - municipal
   description: Comprehensive maintenance package combining crack sealing and sealcoating services. Optimal preventative maintenance approach that addresses water infiltration (crack sealing) and surface protection (sealcoating) in coordinated application.
   related_keyword_ids:
     - kw-sealcoating-crack-sealing
@@ -395,7 +433,8 @@ services:
 
 - service_id: srv-fog-seal
   name: Fog Seal Application
-  service_type: municipal
+  service_types:
+    - municipal
   description: Diluted asphalt emulsion sprayed on aged pavement surfaces to seal minor cracks, reduce oxidation, and slow raveling. Maintenance option for lightly distressed pavements not yet needing more extensive treatment.
   related_keyword_ids:
     - kw-preventative-maintenance
@@ -413,7 +452,10 @@ services:
 
 - service_id: srv-chip-seal
   name: Chip Seal (Seal Coat)
-  service_type: both
+  service_types:
+    - residential
+    - commercial
+    - municipal
   description: Surface treatment combining asphalt binder application with aggregate chip spreading and compaction. Creates durable, textured, weather-resistant surface. Excellent for parking lots, driveways, and low-volume roads. Expected service life 5-7 years.
   related_keyword_ids:
     - kw-chip-seal
@@ -434,7 +476,9 @@ services:
 
 - service_id: srv-cape-seal
   name: Cape Seal Application
-  service_type: commercial
+  service_types:
+    - commercial
+    - municipal
   description: Combined treatment of chip seal followed by slurry seal or microsurfacing application. The slurry coat seals voids and locks in aggregate for superior performance. High-quality surface treatment with 10-12+ year expected life.
   related_keyword_ids:
     - kw-chip-seal
@@ -453,7 +497,10 @@ services:
 
 - service_id: srv-slurry-seal
   name: Slurry Seal Application
-  service_type: both
+  service_types:
+    - residential
+    - commercial
+    - municipal
   description: Cold-applied mixture of asphalt emulsion, fine aggregate, mineral filler, and water creating smooth, uniform surface treatment. Fills minor cracks and surface imperfections, prevents water infiltration, extends pavement life 5-7 years.
   related_keyword_ids:
     - kw-preventative-maintenance
@@ -471,7 +518,9 @@ services:
 
 - service_id: srv-microsurfacing
   name: Microsurfacing
-  service_type: commercial
+  service_types:
+    - commercial
+    - municipal
   description: Advanced polymer-modified surface treatment with quick-setting properties. Can correct minor rutting and surface deformations while providing durable wearing surface. Higher performance than slurry seal, suitable for high-traffic applications. Expected life 7-10 years.
   related_keyword_ids:
     - kw-preventative-maintenance
@@ -495,7 +544,9 @@ services:
 
 - service_id: srv-porous-asphalt
   name: Porous Asphalt Installation
-  service_type: specialty
+  service_types:
+    - commercial
+    - specialty
   description: Permeable pavement system allowing water to drain through surface into engineered stone reservoir below. Reduces stormwater runoff, eliminates need for detention ponds in many applications. Requires specialized mix design and installation procedures.
   related_keyword_ids:
     - kw-porous-asphalt
@@ -516,7 +567,11 @@ services:
 
 - service_id: srv-warm-mix-asphalt
   name: Warm Mix Asphalt Installation
-  service_type: specialty
+  service_types:
+    - residential
+    - commercial
+    - municipal
+    - specialty
   description: Asphalt production and placement at reduced temperatures (225-275°F vs 300-350°F for conventional HMA) using special additives or processes. Extends paving season, reduces emissions, allows longer haul distances while maintaining quality.
   related_keyword_ids:
     - kw-warm-mix-asphalt
@@ -537,7 +592,11 @@ services:
 
 - service_id: srv-high-rap-mixes
   name: High-RAP Content Mixes
-  service_type: specialty
+  service_types:
+    - residential
+    - commercial
+    - municipal
+    - specialty
   description: Asphalt mixes containing 25-40% or more reclaimed asphalt pavement (RAP). Sustainable option that reduces virgin material use and provides excellent performance when properly designed. Requires careful mix design and often rejuvenators or softer binders.
   related_keyword_ids:
     - kw-recycled-asphalt
@@ -557,7 +616,10 @@ services:
 
 - service_id: srv-colored-asphalt
   name: Colored Asphalt Installation
-  service_type: specialty
+  service_types:
+    - commercial
+    - municipal
+    - specialty
   description: Decorative asphalt using colored binders and aggregates to create surfaces in red, green, terra cotta, and other colors. Used for aesthetic appeal, wayfinding, bike lanes, crosswalks, and decorative applications.
   related_keyword_ids:
     - kw-asphalt-paving
@@ -575,7 +637,11 @@ services:
 
 - service_id: srv-rubberized-asphalt
   name: Rubberized Asphalt (Crumb Rubber Modified)
-  service_type: specialty
+  service_types:
+    - residential
+    - commercial
+    - municipal
+    - specialty
   description: Asphalt incorporating ground tire rubber into the binder. Provides enhanced flexibility, crack resistance, and noise reduction. Environmental benefit from tire recycling. Popular in warm climates and areas requiring noise mitigation.
   related_keyword_ids:
     - kw-asphalt-paving
@@ -599,7 +665,10 @@ services:
 
 - service_id: srv-grading-excavation
   name: Grading and Excavation
-  service_type: both
+  service_types:
+    - residential
+    - commercial
+    - municipal
   description: Site preparation including earthwork, excavation to design grade, cut and fill operations, and establishment of proper drainage slopes. Creates stable foundation for pavement installation.
   related_keyword_ids:
     - kw-grading-excavation
@@ -620,7 +689,10 @@ services:
 
 - service_id: srv-land-clearing
   name: Land Clearing and Site Preparation
-  service_type: both
+  service_types:
+    - residential
+    - commercial
+    - municipal
   description: Removal of vegetation, trees, stumps, and debris from construction site. Includes clearing, grubbing, and preparation of site for grading and paving operations.
   related_keyword_ids:
     - kw-land-clearing
@@ -640,7 +712,10 @@ services:
 
 - service_id: srv-base-installation
   name: Aggregate Base Installation
-  service_type: both
+  service_types:
+    - residential
+    - commercial
+    - municipal
   description: Installation of crushed stone or gravel base course to provide stable foundation for asphalt pavement. Includes material placement, spreading, grading, moisture conditioning, and compaction to specified density.
   related_keyword_ids:
     - kw-base-work
@@ -661,7 +736,10 @@ services:
 
 - service_id: srv-subgrade-stabilization
   name: Subgrade Stabilization
-  service_type: both
+  service_types:
+    - residential
+    - commercial
+    - municipal
   description: Treatment of weak or problematic subgrade soils using lime, cement, or other stabilizing agents. Improves soil strength and reduces required pavement thickness. Alternative to complete subgrade removal and replacement.
   related_keyword_ids:
     - kw-base-work
@@ -682,7 +760,10 @@ services:
 
 - service_id: srv-drainage-installation
   name: Drainage System Installation
-  service_type: both
+  service_types:
+    - residential
+    - commercial
+    - municipal
   description: Installation of catch basins, storm pipes, underdrains, and swales to manage stormwater and prevent water damage to pavement. Critical for long-term pavement performance.
   related_keyword_ids:
     - kw-grading-excavation
@@ -703,7 +784,10 @@ services:
 
 - service_id: srv-demolition-removal
   name: Asphalt and Concrete Demolition
-  service_type: both
+  service_types:
+    - residential
+    - commercial
+    - municipal
   description: Removal of existing asphalt or concrete pavement, including full-depth removal, milling, sawcutting, and hauling of debris. Preparation for new pavement installation.
   related_keyword_ids:
     - kw-tear-out
@@ -727,7 +811,8 @@ services:
 
 - service_id: srv-parking-lot-striping
   name: Parking Lot Striping and Marking
-  service_type: commercial
+  service_types:
+    - commercial
   description: Application of parking stall markings, traffic arrows, fire lanes, handicap spaces, and crosswalks on commercial parking lots. Ensures ADA compliance, improves traffic flow, and enhances property appearance.
   related_keyword_ids:
     - kw-pavement-marking
@@ -748,7 +833,8 @@ services:
 
 - service_id: srv-roadway-striping
   name: Roadway Striping and Marking
-  service_type: municipal
+  service_types:
+    - municipal
   description: Application of centerlines, edge lines, lane lines, crosswalks, stop bars, and legends on roadways. Must meet MUTCD standards and reflectivity requirements for nighttime visibility and safety.
   related_keyword_ids:
     - kw-pavement-marking
@@ -768,7 +854,8 @@ services:
 
 - service_id: srv-thermoplastic-marking
   name: Thermoplastic Pavement Marking
-  service_type: commercial
+  service_types:
+    - commercial
   description: Application of hot-applied thermoplastic marking material providing superior durability and reflectivity. Lasts 3-5+ years compared to 1-2 years for paint. Excellent for high-traffic areas and long-term marking solutions.
   related_keyword_ids:
     - kw-pavement-marking
@@ -787,7 +874,8 @@ services:
 
 - service_id: srv-ada-compliance-marking
   name: ADA Compliance Striping and Signage
-  service_type: commercial
+  service_types:
+    - commercial
   description: Installation of accessible parking spaces, access aisles, ramps, and associated signage meeting Americans with Disabilities Act requirements. Critical for commercial properties to avoid fines and ensure accessibility.
   related_keyword_ids:
     - kw-pavement-marking
@@ -811,7 +899,8 @@ services:
 
 - service_id: srv-annual-maintenance-residential
   name: Residential Driveway Maintenance Program
-  service_type: residential
+  service_types:
+    - residential
   description: Comprehensive annual maintenance program including inspection, crack sealing, minor patching, cleaning, and periodic sealcoating. Extends driveway life to 20+ years with proper care.
   related_keyword_ids:
     - kw-preventative-maintenance
@@ -830,7 +919,8 @@ services:
 
 - service_id: srv-commercial-maintenance-program
   name: Commercial Parking Lot Maintenance Program
-  service_type: commercial
+  service_types:
+    - commercial
   description: Comprehensive multi-year maintenance program including regular inspections, crack sealing, patching, sealcoating, striping, and sweeping. Protects pavement investment and maintains professional appearance.
   related_keyword_ids:
     - kw-preventative-maintenance
@@ -850,7 +940,8 @@ services:
 
 - service_id: srv-municipal-pavement-management
   name: Municipal Pavement Management Services
-  service_type: municipal
+  service_types:
+    - municipal
   description: Comprehensive pavement management program including condition assessment, preventative maintenance, rehabilitation planning, and budget forecasting for municipal street networks.
   related_keyword_ids:
     - kw-preventative-maintenance
@@ -873,7 +964,8 @@ services:
 
 - service_id: srv-airport-paving
   name: Airport and Runway Paving
-  service_type: specialty
+  service_types:
+    - specialty
   description: Specialized asphalt paving for airports, runways, taxiways, and aprons following FAA design standards. Heavy-duty pavements designed for aircraft loading, high tire pressures, and jet fuel resistance.
   related_keyword_ids:
     - kw-asphalt-paving
@@ -895,7 +987,9 @@ services:
 
 - service_id: srv-industrial-heavy-duty-paving
   name: Industrial and Heavy-Duty Pavement
-  service_type: specialty
+  service_types:
+    - commercial
+    - specialty
   description: Extra-heavy-duty asphalt pavements for ports, intermodal facilities, container yards, and areas with extremely heavy equipment loads. Designed for container handlers, cranes, and loaded semi-trailers.
   related_keyword_ids:
     - kw-asphalt-paving
@@ -915,7 +1009,8 @@ services:
 
 - service_id: srv-bike-path-trail-paving
   name: Bike Path and Trail Paving
-  service_type: municipal
+  service_types:
+    - municipal
   description: Asphalt paving for multi-use trails, bike paths, and recreational paths. Lighter structural requirements than roadways, emphasis on smooth riding surface and drainage.
   related_keyword_ids:
     - kw-asphalt-paving
@@ -934,7 +1029,8 @@ services:
 
 - service_id: srv-sports-facility-paving
   name: Sports Facility and Court Paving
-  service_type: specialty
+  service_types:
+    - specialty
   description: Specialized asphalt paving for tennis courts, basketball courts, running tracks, and other athletic facilities. Requires extremely smooth, level surface and often includes colored coatings.
   related_keyword_ids:
     - kw-asphalt-paving
@@ -957,7 +1053,11 @@ services:
 
 - service_id: srv-cold-climate-paving
   name: Cold Climate Asphalt Solutions
-  service_type: specialty
+  service_types:
+    - residential
+    - commercial
+    - municipal
+    - specialty
   description: Specialized asphalt paving services for northern climates with freeze-thaw cycles, frost heave, and winter maintenance challenges. Includes softer binder grades, proper base drainage, and winter emergency repairs.
   related_keyword_ids:
     - kw-asphalt-paving
@@ -978,7 +1078,11 @@ services:
 
 - service_id: srv-hot-climate-paving
   name: Hot Climate Asphalt Solutions
-  service_type: specialty
+  service_types:
+    - residential
+    - commercial
+    - municipal
+    - specialty
   description: Specialized asphalt paving for hot climates with high temperatures, UV exposure, and rutting concerns. Includes stiffer binder grades, modified mixes, and reflective coatings.
   related_keyword_ids:
     - kw-asphalt-paving
@@ -996,7 +1100,11 @@ services:
 
 - service_id: srv-coastal-hurricane-zone-paving
   name: Coastal and Hurricane Zone Paving
-  service_type: specialty
+  service_types:
+    - residential
+    - commercial
+    - municipal
+    - specialty
   description: Asphalt paving for coastal areas and hurricane zones with saltwater exposure, high winds, flooding risks, and storm surge concerns. Includes enhanced drainage, modified materials for moisture resistance, and storm damage repair.
   related_keyword_ids:
     - kw-asphalt-paving
@@ -1021,7 +1129,10 @@ services:
 
 - service_id: srv-emergency-asphalt-repair
   name: Emergency Asphalt Repair Services
-  service_type: both
+  service_types:
+    - residential
+    - commercial
+    - municipal
   description: 24/7 emergency response for urgent pavement failures, dangerous potholes, sinkholes, and storm damage. Rapid mobilization to restore safety and access using temporary or permanent repair methods.
   related_keyword_ids:
     - kw-pothole-repair
@@ -1041,7 +1152,10 @@ services:
 
 - service_id: srv-utility-cut-repair
   name: Utility Cut and Trench Repair
-  service_type: both
+  service_types:
+    - residential
+    - commercial
+    - municipal
   description: Proper restoration of asphalt pavement after utility work, trenching, or excavation. Includes base replacement, proper compaction, and pavement patching to match existing surface.
   related_keyword_ids:
     - kw-asphalt-repair
@@ -1061,7 +1175,10 @@ services:
 
 - service_id: srv-sinkhole-repair
   name: Sinkhole and Subsidence Repair
-  service_type: both
+  service_types:
+    - residential
+    - commercial
+    - municipal
   description: Repair of pavement damage from sinkholes, underground voids, mine subsidence, or major subgrade failure. Includes void investigation, stabilization, and pavement reconstruction.
   related_keyword_ids:
     - kw-asphalt-repair
@@ -1084,7 +1201,8 @@ services:
 
 - service_id: srv-surface-cleaning-sweeping
   name: Parking Lot Sweeping and Cleaning
-  service_type: commercial
+  service_types:
+    - commercial
   description: Regular parking lot sweeping, debris removal, and surface cleaning to maintain appearance, prevent drainage issues, and extend pavement life. Essential component of preventative maintenance programs.
   related_keyword_ids:
     - kw-surface-cleaning

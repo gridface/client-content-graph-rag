@@ -28,24 +28,7 @@ clients:
     contact_phone: 800-779-0767
     main_address_id: loc-davenport-fl
     service_area_ids:
-      - loc-arcadia-fl
-      - loc-avon-park-fl
-      - loc-brandon-fl
-      - loc-bushnell-fl
-      - loc-clearwater-fl
-      - loc-crystal-river-fl
-      - loc-davenport-fl
-      - loc-fellowship-fl
-      - loc-jacksonville-fl
-      - loc-melbourne-fl
-      - loc-morriston-fl
-      - loc-newport-fl
-      - loc-ocala-fl
-      - loc-reddick-fl
-      - loc-sarasota-fl
-      - loc-spring-hill-fl
-      - loc-venice-fl
-      - loc-williston-fl
+    # tbd
     active_services:
     # tbd
     client_size: small
@@ -61,20 +44,7 @@ clients:
     contact_phone: 715-710-1172
     main_address_id: loc-marshfield-wi
     service_area_ids:
-      - loc-abbotsford-wi
-      - loc-colby-wi
-      - loc-edgar-wi
-      - loc-kronenwetter-wi
-      - loc-marshfield-wi
-      - loc-mosinee-wi
-      - loc-neillsville-wi
-      - loc-plover-wi
-      - loc-spencer-wi
-      - loc-stevens-point-wi
-      - loc-stratford-wi
-      - loc-wausau-wi
-      - loc-weston-wi
-      - loc-wisconsin-rapids-wi
+    # tbd
     active_services:
     # tbd
     client_size: small
@@ -90,17 +60,7 @@ clients:
     contact_phone: 417-623-9472
     main_address_id: loc-carthage-mo
     service_area_ids:
-      - loc-bentonville-ar
-      - loc-fayetteville-ar
-      - loc-joplin-mo
-      - loc-neosho-mo
-      - loc-nixa-mo
-      - loc-republic-mo
-      - loc-rogers-ar
-      - loc-springdale-ar
-      - loc-springfield-mo
-      - loc-strafford-mo
-      - loc-willard-mo
+    # tbd
     active_services:
     # tbd
     client_size: small
@@ -132,58 +92,7 @@ clients:
     contact_phone: 608-912-3772
     main_address_id: loc-madison-wi
     service_area_ids:
-      - loc-baraboo-wi
-      - loc-beaver-dam-wi
-      - loc-belleville-wi
-      - loc-beloit-wi
-      - loc-black-earth-wi
-      - loc-brodhead-wi
-      - loc-brooklyn-wi
-      - loc-cambridge-wi
-      - loc-clinton-wi
-      - loc-columbus-wi
-      - loc-cottage-grove-wi
-      - loc-cross-plains-wi
-      - loc-deerfield-wi
-      - loc-deforest-wi
-      - loc-dodgeville-wi
-      - loc-edgerton-wi
-      - loc-evansville-wi
-      - loc-fitchburg-wi
-      - loc-fort-atkinson-wi
-      - loc-janesville-wi
-      - loc-jefferson-wi
-      - loc-lake-delton-wi
-      - loc-lake-mills-wi
-      - loc-lodi-wi
-      - loc-madison-wi
-      - loc-marshall-wi
-      - loc-mazomanie-wi
-      - loc-mcfarland-wi
-      - loc-middleton-wi
-      - loc-milton-wi
-      - loc-monona-wi
-      - loc-monroe-wi
-      - loc-mount-horeb-wi
-      - loc-new-glarus-wi
-      - loc-oregon-wi
-      - loc-pardeeville-wi
-      - loc-portage-wi
-      - loc-poynette-wi
-      - loc-prairie-du-sac-wi
-      - loc-reedsburg-wi
-      - loc-richland-center-wi
-      - loc-sauk-city-wi
-      - loc-spring-green-wi
-      - loc-stoughton-wi
-      - loc-sun-prairie-wi
-      - loc-verona-wi
-      - loc-waterloo-wi
-      - loc-watertown-wi
-      - loc-waunakee-wi
-      - loc-whitewater-wi
-      - loc-windsor-wi
-      - loc-wisconsin-dells-wi
+    # tbd
     active_services:
     # tbd
     client_size: large
@@ -199,22 +108,7 @@ clients:
     contact_phone: 813-519-4382
     main_address_id: loc-tampa-fl
     service_area_ids:
-      - loc-apollo-beach-fl
-      - loc-beach-park-fl
-      - loc-brandon-fl
-      - loc-bushnell-fl
-      - loc-carrollwood-fl
-      - loc-davis-islands-fl
-      - loc-harbour-island-fl
-      - loc-lutz-fl
-      - loc-odessa-fl
-      - loc-plant-city-fl
-      - loc-riverview-fl
-      - loc-seffner-fl
-      - loc-tampa-fl
-      - loc-valrico-fl
-      - loc-wesley-chapel-fl
-      - loc-westchase-fl
+    # tbd
     active_services:
     # tbd
     client_size: small

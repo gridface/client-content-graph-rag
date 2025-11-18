@@ -1,72 +1,2669 @@
-# This is the locations list that existing clients serve
-# It contains a collection of location entities.
-
-# Field	                    Type	        Details / Notes
-# location_id	              string	      Unique ID
-# name	                    string	      City/town/area name
-# region	                  string	      County, metro, or region
-# state	                    string	      Two-letter code
-# postal_code	              string	      Postal/ZIP code
-# country	                  string	      Country code
-# geo_latitude	            float	        Lat value
-# geo_longitude	            float	        Long value
-# population	              int	          Estimated population
-# climate_zone	            string	      "humid_subtropical", etc.
-# landmark_ids	            array	        References to list of key landmarks/entities
-# economic_profile	        string	      Major industries, economic notes
-# local_challenges	        array	        "freeze_thaw", "heavy_truck", etc.
-# nearby_location_ids	      array	        References to adjacent city/town IDs
-# flavor_notes	            text	        Local flavor facts for hyperlocal content
-
+# Comprehensive Locations Database
+# All service area locations across Wisconsin, Arkansas, Missouri, and Florida
+# Structured for Neo4j graph database integration
+# Client-agnostic location data
 
 locations:
-# Location Example
-  - location_id: loc-davenport
+  # ==========================================
+  # WISCONSIN LOCATIONS - CENTRAL REGION
+  # Climate Zone: humid_continental (cold winters, warm summers, freeze-thaw cycles)
+  # ==========================================
+  
+  - location_id: loc-abbotsford-wi
+    name: Abbotsford
+    region: Clark County
+    state: WI
+    postal_code: "54405"
+    country: USA
+    geo_latitude: 44.9461
+    geo_longitude: -90.3168
+    population: 2100
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Agriculture, dairy farming, small manufacturing
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - agricultural_heavy_loads
+    nearby_location_ids:
+      - loc-colby-wi
+      - loc-marshfield-wi
+    flavor_notes: Small rural community in Clark County's dairy country. Short paving season (May-October) requires careful project scheduling. Heavy agricultural equipment traffic demands durable base design.
+  
+  - location_id: loc-colby-wi
+    name: Colby
+    region: Clark County & Marathon County
+    state: WI
+    postal_code: "54421"
+    country: USA
+    geo_latitude: 44.9091
+    geo_longitude: -90.3154
+    population: 1900
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Agriculture, cheese production, small business
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - moisture_damage
+    nearby_location_ids:
+      - loc-abbotsford-wi
+      - loc-marshfield-wi
+    flavor_notes: Known as 'The City of Colby Cheese.' Frost depth reaches 4+ feet requiring proper base thickness. Freeze-thaw cycles are primary pavement enemy.
+  
+  - location_id: loc-edgar-wi
+    name: Edgar
+    region: Marathon County
+    state: WI
+    postal_code: "54426"
+    country: USA
+    geo_latitude: 44.9252
+    geo_longitude: -89.9580
+    population: 1500
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Agriculture, lumber, local retail
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - studded_tires
+    nearby_location_ids:
+      - loc-marshfield-wi
+      - loc-mosinee-wi
+      - loc-wausau-wi
+    flavor_notes: Small Marathon County community. Winter studded tire usage can cause premature rutting. Requires PG 64-34 or PG 58-40 binders for low-temp performance.
+  
+  - location_id: loc-kronenwetter-wi
+    name: Kronenwetter
+    region: Marathon County
+    state: WI
+    postal_code: "54455"
+    country: USA
+    geo_latitude: 44.8255
+    geo_longitude: -89.5876
+    population: 7500
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Residential growth, retail, suburban development
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - residential_development
+    nearby_location_ids:
+      - loc-wausau-wi
+      - loc-mosinee-wi
+      - loc-weston-wi
+    flavor_notes: Fast-growing Wausau suburb with new residential and commercial development. High demand for parking lots and driveways. Spring thaw weakening requires careful scheduling.
+  
+  - location_id: loc-marshfield-wi
+    name: Marshfield
+    region: Wood County & Marathon County
+    state: WI
+    postal_code: "54449"
+    country: USA
+    geo_latitude: 44.6688
+    geo_longitude: -90.1718
+    population: 18900
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Healthcare (Marshfield Clinic), manufacturing, retail, regional hub
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - hospital_traffic
+      - commercial_heavy_use
+    nearby_location_ids:
+      - loc-wisconsin-rapids-wi
+      - loc-spencer-wi
+      - loc-colby-wi
+      - loc-abbotsford-wi
+    flavor_notes: Regional healthcare hub with Marshfield Clinic bringing significant traffic. High-traffic hospital/clinic areas need polymer-modified binders for durability. Central Wisconsin's largest city.
+  
+  - location_id: loc-mosinee-wi
+    name: Mosinee
+    region: Marathon County
+    state: WI
+    postal_code: "54455"
+    country: USA
+    geo_latitude: 44.7930
+    geo_longitude: -89.7043
+    population: 4100
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Paper mills, regional airport, manufacturing
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - industrial_traffic
+      - airport_proximity
+    nearby_location_ids:
+      - loc-wausau-wi
+      - loc-kronenwetter-wi
+      - loc-weston-wi
+    flavor_notes: Home to Central Wisconsin Airport. Industrial paper mill traffic creates heavy load demands. Airport access roads see frequent winter maintenance.
+  
+  - location_id: loc-neillsville-wi
+    name: Neillsville
+    region: Clark County
+    state: WI
+    postal_code: "54456"
+    country: USA
+    geo_latitude: 44.5597
+    geo_longitude: -90.5960
+    population: 2400
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Agriculture, county seat, local government
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - rural_isolation
+    nearby_location_ids:
+      - loc-marshfield-wi
+      - loc-black-river-falls-wi
+    flavor_notes: Clark County seat. Rural location means extended haul distances from asphalt plants. Warm-mix asphalt (WMA) technology extends working window on cooler days.
+  
+  - location_id: loc-plover-wi
+    name: Plover
+    region: Portage County
+    state: WI
+    postal_code: "54467"
+    country: USA
+    geo_latitude: 44.4564
+    geo_longitude: -89.5368
+    population: 12900
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Retail, residential growth, suburban development
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - retail_traffic
+      - residential_development
+    nearby_location_ids:
+      - loc-stevens-point-wi
+      - loc-wisconsin-rapids-wi
+    flavor_notes: Growing Stevens Point suburb with active retail development. Shopping centers and residential subdivisions drive paving demand. Spring moisture issues require excellent drainage design.
+  
+  - location_id: loc-spencer-wi
+    name: Spencer
+    region: Marathon County
+    state: WI
+    postal_code: "54479"
+    country: USA
+    geo_latitude: 44.7511
+    geo_longitude: -90.2968
+    population: 1900
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Agriculture, small manufacturing, rural services
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - agricultural_traffic
+    nearby_location_ids:
+      - loc-marshfield-wi
+      - loc-stratford-wi
+    flavor_notes: Small Marathon County community along Highway 13. Heavy farm equipment traffic during harvest season requires robust pavement design.
+  
+  - location_id: loc-stevens-point-wi
+    name: Stevens Point
+    region: Portage County
+    state: WI
+    postal_code: "54481"
+    country: USA
+    geo_latitude: 44.5236
+    geo_longitude: -89.5746
+    population: 26000
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: University (UW-Stevens Point), healthcare, manufacturing, retail
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - university_traffic
+      - commercial_development
+    nearby_location_ids:
+      - loc-plover-wi
+      - loc-wisconsin-rapids-wi
+      - loc-wausau-wi
+    flavor_notes: University city with significant student traffic and campus parking needs. Municipal contracts for street maintenance. Portage County's largest city.
+  
+  - location_id: loc-stratford-wi
+    name: Stratford
+    region: Marathon County
+    state: WI
+    postal_code: "54484"
+    country: USA
+    geo_latitude: 44.8022
+    geo_longitude: -90.0790
+    population: 1600
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Agriculture, small business, rural community
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - agricultural_loads
+    nearby_location_ids:
+      - loc-marshfield-wi
+      - loc-spencer-wi
+    flavor_notes: Small agricultural community. Short construction season demands efficient project execution. Dairy and agricultural equipment creates unique loading patterns.
+  
+  - location_id: loc-wausau-wi
+    name: Wausau
+    region: Marathon County
+    state: WI
+    postal_code: "54401"
+    country: USA
+    geo_latitude: 44.9591
+    geo_longitude: -89.6301
+    population: 39300
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Insurance (Employers Insurance), manufacturing, healthcare, retail, regional center
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - urban_heat_island
+      - commercial_traffic
+    nearby_location_ids:
+      - loc-weston-wi
+      - loc-mosinee-wi
+      - loc-kronenwetter-wi
+      - loc-stevens-point-wi
+    flavor_notes: Marathon County seat and regional economic center. Major commercial and industrial paving opportunities. Urban heat island effect in downtown can influence mix design.
+  
+  - location_id: loc-weston-wi
+    name: Weston
+    region: Marathon County
+    state: WI
+    postal_code: "54476"
+    country: USA
+    geo_latitude: 44.8905
+    geo_longitude: -89.5490
+    population: 15100
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Commercial retail hub, suburban residential, office parks
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - retail_traffic
+      - parking_lot_demand
+    nearby_location_ids:
+      - loc-wausau-wi
+      - loc-kronenwetter-wi
+      - loc-mosinee-wi
+    flavor_notes: Wausau's primary retail suburb with extensive shopping centers. Heavy parking lot maintenance and new construction market. Big box retail creates high-volume opportunities.
+  
+  - location_id: loc-wisconsin-rapids-wi
+    name: Wisconsin Rapids
+    region: Wood County
+    state: WI
+    postal_code: "54494"
+    country: USA
+    geo_latitude: 44.3836
+    geo_longitude: -89.8173
+    population: 17700
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Paper industry, manufacturing, county services
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - industrial_traffic
+      - paper_mill_loads
+    nearby_location_ids:
+      - loc-marshfield-wi
+      - loc-stevens-point-wi
+      - loc-plover-wi
+    flavor_notes: Historic paper industry city with heavy industrial traffic. Mill access roads require high-durability designs. Wisconsin River creates moisture management challenges.
+  
+  # ==========================================
+  # WISCONSIN LOCATIONS - SOUTH CENTRAL (MADISON AREA)
+  # Climate Zone: humid_continental
+  # ==========================================
+  
+  - location_id: loc-madison-wi
+    name: Madison
+    region: Dane County
+    state: WI
+    postal_code: "53703"
+    country: USA
+    geo_latitude: 43.0731
+    geo_longitude: -89.4012
+    population: 270000
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: State capital, University of Wisconsin, technology, healthcare, biotech, government
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - heavy_traffic
+      - urban_development
+      - isthmus_geography
+    nearby_location_ids:
+      - loc-middleton-wi
+      - loc-monona-wi
+      - loc-fitchburg-wi
+      - loc-sun-prairie-wi
+      - loc-verona-wi
+    flavor_notes: State capital and UW-Madison create diverse paving market from state contracts to university projects. Isthmus geography between lakes affects drainage. Strong municipal, commercial, and institutional opportunities.
+  
+  - location_id: loc-middleton-wi
+    name: Middleton
+    region: Dane County
+    state: WI
+    postal_code: "53562"
+    country: USA
+    geo_latitude: 43.0972
+    geo_longitude: -89.5043
+    population: 21000
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Suburban residential, corporate offices, retail, 'Good Neighbor City'
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - commercial_development
+      - high_end_residential
+    nearby_location_ids:
+      - loc-madison-wi
+      - loc-cross-plains-wi
+      - loc-waunakee-wi
+    flavor_notes: Affluent Madison suburb with high-quality commercial and residential development. Premium expectations for pavement quality. Strong retail corridor along University Avenue.
+  
+  - location_id: loc-sun-prairie-wi
+    name: Sun Prairie
+    region: Dane County
+    state: WI
+    postal_code: "53590"
+    country: USA
+    geo_latitude: 43.1836
+    geo_longitude: -89.2137
+    population: 35000
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Manufacturing, residential growth, retail, fastest-growing city in Wisconsin
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - rapid_development
+      - new_construction
+    nearby_location_ids:
+      - loc-madison-wi
+      - loc-cottage-grove-wi
+      - loc-deforest-wi
+    flavor_notes: Wisconsin's fastest-growing city with explosive residential and commercial development. Constant new construction creates strong market. Major manufacturing presence with Spectrum Brands.
+  
+  - location_id: loc-fitchburg-wi
+    name: Fitchburg
+    region: Dane County
+    state: WI
+    postal_code: "53711"
+    country: USA
+    geo_latitude: 42.9608
+    geo_longitude: -89.4698
+    population: 30000
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Suburban residential, retail, office parks, healthcare
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - commercial_traffic
+      - residential_development
+    nearby_location_ids:
+      - loc-madison-wi
+      - loc-verona-wi
+      - loc-oregon-wi
+    flavor_notes: Growing south Madison suburb along Beltline corridor. Mixed commercial and residential development. Major retail and office park construction.
+  
+  - location_id: loc-verona-wi
+    name: Verona
+    region: Dane County
+    state: WI
+    postal_code: "53593"
+    country: USA
+    geo_latitude: 42.9908
+    geo_longitude: -89.5332
+    population: 14000
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Epic Systems headquarters, residential growth, retail
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - corporate_campus_traffic
+      - rapid_growth
+    nearby_location_ids:
+      - loc-madison-wi
+      - loc-fitchburg-wi
+      - loc-mount-horeb-wi
+    flavor_notes: Home to Epic Systems (healthcare software giant) creating unique corporate campus market. Rapid residential growth to support Epic workforce. High-end commercial development.
+  
+  - location_id: loc-monona-wi
+    name: Monona
+    region: Dane County
+    state: WI
+    postal_code: "53716"
+    country: USA
+    geo_latitude: 43.0594
+    geo_longitude: -89.3318
+    population: 8100
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Residential, small commercial, bedroom community
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - lakefront_properties
+    nearby_location_ids:
+      - loc-madison-wi
+      - loc-cottage-grove-wi
+      - loc-mcfarland-wi
+    flavor_notes: Small residential community between Madison and Monona Lake. Established neighborhoods with maintenance and resurfacing needs. Limited new development space.
+  
+  - location_id: loc-waunakee-wi
+    name: Waunakee
+    region: Dane County
+    state: WI
+    postal_code: "53597"
+    country: USA
+    geo_latitude: 43.1919
+    geo_longitude: -89.4557
+    population: 15000
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Residential growth, retail, 'Only Waunakee in the World'
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - residential_development
+      - school_traffic
+    nearby_location_ids:
+      - loc-madison-wi
+      - loc-middleton-wi
+      - loc-deforest-wi
+    flavor_notes: Fast-growing bedroom community with strong schools and family orientation. New subdivision development drives residential paving. Village pride creates quality expectations.
+  
+  - location_id: loc-oregon-wi
+    name: Oregon
+    region: Dane County
+    state: WI
+    postal_code: "53575"
+    country: USA
+    geo_latitude: 42.9247
+    geo_longitude: -89.3848
+    population: 10500
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Residential, small manufacturing, retail
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - residential_growth
+    nearby_location_ids:
+      - loc-madison-wi
+      - loc-fitchburg-wi
+      - loc-stoughton-wi
+    flavor_notes: Growing community south of Madison with residential expansion. Mix of established neighborhoods and new development. Highway 138 corridor development.
+  
+  - location_id: loc-deforest-wi
+    name: DeForest
+    region: Dane County
+    state: WI
+    postal_code: "53532"
+    country: USA
+    geo_latitude: 43.2475
+    geo_longitude: -89.3440
+    population: 10000
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Residential, retail, I-90/94 corridor development
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - highway_development
+      - commercial_growth
+    nearby_location_ids:
+      - loc-madison-wi
+      - loc-sun-prairie-wi
+      - loc-waunakee-wi
+    flavor_notes: North Madison suburb with interstate highway access driving commercial development. Growing residential base. Distribution and warehouse development along I-90/94.
+  
+  - location_id: loc-mcfarland-wi
+    name: McFarland
+    region: Dane County
+    state: WI
+    postal_code: "53558"
+    country: USA
+    geo_latitude: 43.0136
+    geo_longitude: -89.2882
+    population: 8800
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Residential, small commercial, bedroom community
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - residential_maintenance
+    nearby_location_ids:
+      - loc-madison-wi
+      - loc-monona-wi
+      - loc-stoughton-wi
+    flavor_notes: Established residential community between Madison and Stoughton. Maintenance and resurfacing market in mature neighborhoods. Limited new development.
+  
+  - location_id: loc-stoughton-wi
+    name: Stoughton
+    region: Dane County
+    state: WI
+    postal_code: "53589"
+    country: USA
+    geo_latitude: 42.9167
+    geo_longitude: -89.2179
+    population: 13000
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Manufacturing, agriculture, Norwegian heritage tourism
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - industrial_traffic
+    nearby_location_ids:
+      - loc-madison-wi
+      - loc-oregon-wi
+      - loc-mcfarland-wi
+      - loc-edgerton-wi
+    flavor_notes: Historic manufacturing town with strong Norwegian heritage. Mix of industrial, residential, and downtown commercial paving needs. Yahara River location.
+  
+  - location_id: loc-cottage-grove-wi
+    name: Cottage Grove
+    region: Dane County
+    state: WI
+    postal_code: "53527"
+    country: USA
+    geo_latitude: 43.0761
+    geo_longitude: -89.1996
+    population: 7000
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Residential growth, small commercial
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - residential_development
+    nearby_location_ids:
+      - loc-madison-wi
+      - loc-sun-prairie-wi
+      - loc-monona-wi
+    flavor_notes: Growing residential community east of Madison. New subdivision development. Commuter bedroom community with increasing retail.
+  
+  - location_id: loc-windsor-wi
+    name: Windsor
+    region: Dane County
+    state: WI
+    postal_code: "53598"
+    country: USA
+    geo_latitude: 43.2008
+    geo_longitude: -89.3407
+    population: 7300
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Residential, small retail
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - new_residential
+    nearby_location_ids:
+      - loc-deforest-wi
+      - loc-sun-prairie-wi
+      - loc-waunakee-wi
+    flavor_notes: Small residential community north of Madison. Limited commercial development. Primarily residential maintenance and new subdivision work.
+  
+  - location_id: loc-mount-horeb-wi
+    name: Mount Horeb
+    region: Dane County
+    state: WI
+    postal_code: "53572"
+    country: USA
+    geo_latitude: 43.0086
+    geo_longitude: -89.7373
+    population: 7500
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Tourism (Trollway), small business, residential
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - tourist_traffic
+    nearby_location_ids:
+      - loc-verona-wi
+      - loc-cross-plains-wi
+      - loc-dodgeville-wi
+    flavor_notes: Known as 'Troll Capital of the World' with tourist-focused downtown. Mix of tourist, residential, and agricultural traffic. Highway 18/151 corridor location.
+  
+  - location_id: loc-belleville-wi
+    name: Belleville
+    region: Dane County & Green County
+    state: WI
+    postal_code: "53508"
+    country: USA
+    geo_latitude: 42.8614
+    geo_longitude: -89.5373
+    population: 2700
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Small town, agriculture, residential
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - rural_community
+    nearby_location_ids:
+      - loc-new-glarus-wi
+      - loc-verona-wi
+      - loc-brooklyn-wi
+    flavor_notes: Small community between Madison and Monroe. Limited commercial paving. Primarily residential and municipal maintenance work.
+  
+  - location_id: loc-new-glarus-wi
+    name: New Glarus
+    region: Green County
+    state: WI
+    postal_code: "53574"
+    country: USA
+    geo_latitude: 42.8144
+    geo_longitude: -89.6351
+    population: 2200
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Tourism (Swiss heritage), New Glarus Brewing, small business
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - tourist_traffic
+      - brewery_traffic
+    nearby_location_ids:
+      - loc-monroe-wi
+      - loc-belleville-wi
+      - loc-monticello-wi
+    flavor_notes: Swiss-themed tourist town with New Glarus Brewing Company. Tourist traffic creates seasonal demand patterns. Charming downtown requires careful aesthetic considerations.
+  
+  - location_id: loc-marshall-wi
+    name: Marshall
+    region: Dane County
+    state: WI
+    postal_code: "53559"
+    country: USA
+    geo_latitude: 43.1686
+    geo_longitude: -89.0651
+    population: 3900
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Small town, agriculture, residential
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - rural_location
+    nearby_location_ids:
+      - loc-sun-prairie-wi
+      - loc-waterloo-wi
+      - loc-columbus-wi
+    flavor_notes: Small agricultural community northeast of Madison. Rural character with limited commercial development. Primarily residential and farm access paving.
+  
+  - location_id: loc-deerfield-wi
+    name: Deerfield
+    region: Dane County
+    state: WI
+    postal_code: "53531"
+    country: USA
+    geo_latitude: 43.0525
+    geo_longitude: -89.0760
+    population: 2500
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Small town, agriculture, residential
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - rural_community
+    nearby_location_ids:
+      - loc-cottage-grove-wi
+      - loc-marshall-wi
+      - loc-cambridge-wi
+    flavor_notes: Small rural community with agricultural base. Limited commercial activity. Village and residential maintenance primary market.
+  
+  # ==========================================
+  # WISCONSIN LOCATIONS - SOUTH REGION
+  # Climate Zone: humid_continental
+  # ==========================================
+  
+  - location_id: loc-janesville-wi
+    name: Janesville
+    region: Rock County
+    state: WI
+    postal_code: "53545"
+    country: USA
+    geo_latitude: 42.6828
+    geo_longitude: -89.0187
+    population: 65000
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Manufacturing (former GM plant), healthcare, retail, Rock County seat
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - industrial_redevelopment
+      - commercial_traffic
+    nearby_location_ids:
+      - loc-beloit-wi
+      - loc-milton-wi
+      - loc-edgerton-wi
+    flavor_notes: Rock County's largest city with post-GM plant redevelopment creating opportunities. Strong manufacturing heritage. Healthcare and retail sectors growing. I-90 corridor location.
+  
+  - location_id: loc-beloit-wi
+    name: Beloit
+    region: Rock County
+    state: WI
+    postal_code: "53511"
+    country: USA
+    geo_latitude: 42.5084
+    geo_longitude: -89.0318
+    population: 37000
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Manufacturing, Beloit College, industrial redevelopment
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - industrial_traffic
+      - aging_infrastructure
+    nearby_location_ids:
+      - loc-janesville-wi
+      - loc-clinton-wi
+    flavor_notes: Border city with Illinois creating regional market. Industrial base transitioning. Beloit College provides institutional market. Rock River location with some drainage considerations.
+  
+  - location_id: loc-watertown-wi
+    name: Watertown
+    region: Jefferson County & Dodge County
+    state: WI
+    postal_code: "53094"
+    country: USA
+    geo_latitude: 43.1947
+    geo_longitude: -88.7290
+    population: 23000
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Manufacturing, agriculture equipment, retail
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - industrial_traffic
+      - river_geography
+    nearby_location_ids:
+      - loc-jefferson-wi
+      - loc-lake-mills-wi
+      - loc-fort-atkinson-wi
+    flavor_notes: Manufacturing city split between two counties. Rock River location. Mix of industrial, commercial, and residential paving needs. Regional retail center.
+  
+  - location_id: loc-beaver-dam-wi
+    name: Beaver Dam
+    region: Dodge County
+    state: WI
+    postal_code: "53916"
+    country: USA
+    geo_latitude: 43.4578
+    geo_longitude: -88.8373
+    population: 16500
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Manufacturing, agriculture, retail, county seat
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - industrial_loads
+    nearby_location_ids:
+      - loc-watertown-wi
+      - loc-columbus-wi
+      - loc-waupun-wi
+    flavor_notes: Dodge County seat with manufacturing base. Regional retail center. Beaver Dam Lake location. Mix of industrial, municipal, and commercial opportunities.
+  
+  - location_id: loc-whitewater-wi
+    name: Whitewater
+    region: Walworth County & Jefferson County
+    state: WI
+    postal_code: "53190"
+    country: USA
+    geo_latitude: 42.8336
+    geo_longitude: -88.7323
+    population: 14900
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: University (UW-Whitewater), student housing, retail
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - university_traffic
+      - student_housing
+    nearby_location_ids:
+      - loc-fort-atkinson-wi
+      - loc-milton-wi
+      - loc-elkhorn-wi
+    flavor_notes: University town with significant student population. Campus parking and student housing development. Seasonal traffic patterns based on academic calendar.
+  
+  - location_id: loc-fort-atkinson-wi
+    name: Fort Atkinson
+    region: Jefferson County
+    state: WI
+    postal_code: "53538"
+    country: USA
+    geo_latitude: 42.9286
+    geo_longitude: -88.8370
+    population: 12500
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Manufacturing, agriculture, retail
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - industrial_traffic
+    nearby_location_ids:
+      - loc-jefferson-wi
+      - loc-whitewater-wi
+      - loc-watertown-wi
+    flavor_notes: Manufacturing community along Rock River. Mix of industrial and residential development. Regional shopping destination.
+  
+  - location_id: loc-monroe-wi
+    name: Monroe
+    region: Green County
+    state: WI
+    postal_code: "53566"
+    country: USA
+    geo_latitude: 42.6011
+    geo_longitude: -89.6387
+    population: 10800
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Cheese production, agriculture, county seat
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - agricultural_traffic
+      - cheese_industry_loads
+    nearby_location_ids:
+      - loc-new-glarus-wi
+      - loc-brodhead-wi
+    flavor_notes: 'Swiss Cheese Capital of the USA' with significant cheese processing industry. Green County seat. Mix of industrial cheese plant traffic and agricultural loads.
+  
+  - location_id: loc-edgerton-wi
+    name: Edgerton
+    region: Rock County & Dane County
+    state: WI
+    postal_code: "53534"
+    country: USA
+    geo_latitude: 42.8347
+    geo_longitude: -89.0676
+    population: 5600
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Agriculture, manufacturing, tobacco heritage
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - agricultural_traffic
+    nearby_location_ids:
+      - loc-stoughton-wi
+      - loc-janesville-wi
+      - loc-milton-wi
+    flavor_notes: Historic tobacco market town transitioning to modern agriculture. Manufacturing presence. Small town character with agricultural traffic patterns.
+  
+  - location_id: loc-lake-mills-wi
+    name: Lake Mills
+    region: Jefferson County
+    state: WI
+    postal_code: "53551"
+    country: USA
+    geo_latitude: 43.0794
+    geo_longitude: -88.9098
+    population: 6000
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Small manufacturing, tourism (Rock Lake), residential
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - lake_tourism
+    nearby_location_ids:
+      - loc-watertown-wi
+      - loc-jefferson-wi
+      - loc-cambridge-wi
+    flavor_notes: Rock Lake location creates tourism element. Small manufacturing base. Mix of residential and small commercial work. Lakefront properties.
+  
+  - location_id: loc-milton-wi
+    name: Milton
+    region: Rock County
+    state: WI
+    postal_code: "53563"
+    country: USA
+    geo_latitude: 42.7747
+    geo_longitude: -88.9426
+    population: 5600
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Residential, small manufacturing, agriculture
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - residential_maintenance
+    nearby_location_ids:
+      - loc-janesville-wi
+      - loc-edgerton-wi
+      - loc-whitewater-wi
+    flavor_notes: Small town between Janesville and Madison markets. Primarily residential with some agricultural traffic. Limited commercial development.
+  
+  - location_id: loc-evansville-wi
+    name: Evansville
+    region: Rock County
+    state: WI
+    postal_code: "53536"
+    country: USA
+    geo_latitude: 42.7797
+    geo_longitude: -89.2993
+    population: 5300
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Small manufacturing, agriculture, residential
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - small_town_market
+    nearby_location_ids:
+      - loc-janesville-wi
+      - loc-stoughton-wi
+      - loc-oregon-wi
+    flavor_notes: Small community between Madison and Janesville. Limited commercial activity. Primarily residential and municipal maintenance.
+  
+  - location_id: loc-brodhead-wi
+    name: Brodhead
+    region: Green County & Rock County
+    state: WI
+    postal_code: "53520"
+    country: USA
+    geo_latitude: 42.6178
+    geo_longitude: -89.3751
+    population: 3400
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Agriculture, small manufacturing, cheese
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - rural_location
+    nearby_location_ids:
+      - loc-monroe-wi
+      - loc-janesville-wi
+    flavor_notes: Small agricultural community in cheese country. Limited paving market. Primarily village maintenance and residential work.
+  
+  - location_id: loc-clinton-wi
+    name: Clinton
+    region: Rock County
+    state: WI
+    postal_code: "53525"
+    country: USA
+    geo_latitude: 42.5572
+    geo_longitude: -88.8651
+    population: 2200
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Small town, residential, agriculture
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - very_small_market
+    nearby_location_ids:
+      - loc-beloit-wi
+      - loc-janesville-wi
+    flavor_notes: Small community near Beloit. Very limited commercial activity. Small-scale residential and village maintenance only.
+  
+  # ==========================================
+  # WISCONSIN LOCATIONS - CENTRAL/WEST REGION
+  # Climate Zone: humid_continental
+  # ==========================================
+  
+  - location_id: loc-baraboo-wi
+    name: Baraboo
+    region: Sauk County
+    state: WI
+    postal_code: "53913"
+    country: USA
+    geo_latitude: 43.4711
+    geo_longitude: -89.7443
+    population: 12000
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Tourism (Circus World, Devil's Lake), county seat, manufacturing
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - tourist_traffic
+      - seasonal_demand
+    nearby_location_ids:
+      - loc-wisconsin-dells-wi
+      - loc-reedsburg-wi
+      - loc-portage-wi
+    flavor_notes: Sauk County seat with strong tourism sector. Devil's Lake State Park and Circus World Museum drive seasonal traffic. Mix of tourist, municipal, and residential markets.
+  
+  - location_id: loc-wisconsin-dells-wi
+    name: Wisconsin Dells
+    region: Columbia County & Sauk County
+    state: WI
+    postal_code: "53965"
+    country: USA
+    geo_latitude: 43.6275
+    geo_longitude: -89.7709
+    population: 2900
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Tourism (waterparks, attractions), hospitality, retail
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - extreme_tourist_traffic
+      - seasonal_patterns
+      - parking_lot_heavy_use
+    nearby_location_ids:
+      - loc-baraboo-wi
+      - loc-lake-delton-wi
+      - loc-portage-wi
+    flavor_notes: Major tourist destination with extreme seasonal traffic variation. Massive parking lots for waterparks and attractions. Heavy summer use requires durable designs. Resort and hotel development constant.
+  
+  - location_id: loc-lake-delton-wi
+    name: Lake Delton
+    region: Sauk County
+    state: WI
+    postal_code: "53940"
+    country: USA
+    geo_latitude: 43.5875
+    geo_longitude: -89.7929
+    population: 3000
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Tourism (adjacent to Wisconsin Dells), hospitality
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - tourist_traffic
+      - seasonal_use
+    nearby_location_ids:
+      - loc-wisconsin-dells-wi
+      - loc-baraboo-wi
+    flavor_notes: Adjacent to Wisconsin Dells sharing tourism market. Waterpark and resort development. Parking lots and resort access roads primary market. Extreme seasonal variation.
+  
+  - location_id: loc-portage-wi
+    name: Portage
+    region: Columbia County
+    state: WI
+    postal_code: "53901"
+    country: USA
+    geo_latitude: 43.5391
+    geo_longitude: -89.4626
+    population: 10500
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: County seat, manufacturing, river port, agriculture
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - river_flooding_risk
+      - industrial_traffic
+    nearby_location_ids:
+      - loc-baraboo-wi
+      - loc-wisconsin-dells-wi
+      - loc-columbus-wi
+    flavor_notes: Columbia County seat at historic portage between Wisconsin and Fox Rivers. Flooding considerations for some areas. Mix of municipal, industrial, and commercial work.
+  
+  - location_id: loc-reedsburg-wi
+    name: Reedsburg
+    region: Sauk County
+    state: WI
+    postal_code: "53959"
+    country: USA
+    geo_latitude: 43.5325
+    geo_longitude: -90.0023
+    population: 9200
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Manufacturing, agriculture, tourism support
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - industrial_loads
+    nearby_location_ids:
+      - loc-baraboo-wi
+      - loc-wisconsin-dells-wi
+      - loc-spring-green-wi
+    flavor_notes: Manufacturing community in Sauk County. Benefits from proximity to Wisconsin Dells tourism. Industrial and residential paving mix.
+  
+  - location_id: loc-columbus-wi
+    name: Columbus
+    region: Columbia County & Dodge County
+    state: WI
+    postal_code: "53925"
+    country: USA
+    geo_latitude: 43.3372
+    geo_longitude: -89.0151
+    population: 5000
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Small manufacturing, agriculture, residential
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - small_market
+    nearby_location_ids:
+      - loc-beaver-dam-wi
+      - loc-portage-wi
+      - loc-marshall-wi
+    flavor_notes: Small community split between two counties. Limited commercial development. Primarily residential and small municipal work.
+  
+  - location_id: loc-jefferson-wi
+    name: Jefferson
+    region: Jefferson County
+    state: WI
+    postal_code: "53549"
+    country: USA
+    geo_latitude: 43.0058
+    geo_longitude: -88.8073
+    population: 7900
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: County seat, manufacturing, agriculture
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - county_government
+    nearby_location_ids:
+      - loc-watertown-wi
+      - loc-fort-atkinson-wi
+      - loc-lake-mills-wi
+    flavor_notes: Jefferson County seat with courthouse and county facilities. Manufacturing base. Mix of municipal, commercial, and residential opportunities.
+  
+  - location_id: loc-richland-center-wi
+    name: Richland Center
+    region: Richland County
+    state: WI
+    postal_code: "53581"
+    country: USA
+    geo_latitude: 43.3358
+    geo_longitude: -90.3868
+    population: 5200
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: County seat, agriculture, small retail
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - rural_isolation
+      - hilly_terrain
+    nearby_location_ids:
+      - loc-dodgeville-wi
+      - loc-spring-green-wi
+    flavor_notes: Richland County seat in southwestern Wisconsin hill country. Rural location with extended haul distances. Limited market primarily county and municipal.
+  
+  - location_id: loc-dodgeville-wi
+    name: Dodgeville
+    region: Iowa County
+    state: WI
+    postal_code: "53533"
+    country: USA
+    geo_latitude: 42.9603
+    geo_longitude: -90.1301
+    population: 4700
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: County seat, Lands' End headquarters, tourism (House on the Rock area)
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - rural_location
+      - tourist_traffic
+    nearby_location_ids:
+      - loc-mount-horeb-wi
+      - loc-mineral-point-wi
+      - loc-spring-green-wi
+    flavor_notes: Iowa County seat with Lands' End corporate headquarters. Tourism from House on the Rock area. Mix of corporate, county, and tourist-related work.
+  
+  - location_id: loc-spring-green-wi
+    name: Spring Green
+    region: Sauk County
+    state: WI
+    postal_code: "53588"
+    country: USA
+    geo_latitude: 43.1761
+    geo_longitude: -90.0679
+    population: 1600
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Tourism (Frank Lloyd Wright's Taliesin), arts, small business
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - tourist_traffic
+      - very_small_market
+    nearby_location_ids:
+      - loc-dodgeville-wi
+      - loc-reedsburg-wi
+      - loc-prairie-du-sac-wi
+    flavor_notes: Small tourist town centered on Frank Lloyd Wright heritage. Taliesin and American Players Theatre draw visitors. Very limited paving market.
+  
+  - location_id: loc-prairie-du-sac-wi
+    name: Prairie du Sac
+    region: Sauk County
+    state: WI
+    postal_code: "53578"
+    country: USA
+    geo_latitude: 43.2886
+    geo_longitude: -89.7243
+    population: 4200
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Small manufacturing, Wisconsin River tourism, residential
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - river_location
+    nearby_location_ids:
+      - loc-sauk-city-wi
+      - loc-baraboo-wi
+      - loc-cross-plains-wi
+    flavor_notes: Wisconsin River community forming continuous development with Sauk City. Small manufacturing and residential. River recreation brings seasonal traffic.
+  
+  - location_id: loc-sauk-city-wi
+    name: Sauk City
+    region: Sauk County
+    state: WI
+    postal_code: "53583"
+    country: USA
+    geo_latitude: 43.2708
+    geo_longitude: -89.7223
+    population: 3400
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Tourism, small business, Wisconsin River recreation
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - tourist_traffic
+      - river_location
+    nearby_location_ids:
+      - loc-prairie-du-sac-wi
+      - loc-baraboo-wi
+      - loc-cross-plains-wi
+    flavor_notes: Historic Wisconsin River town adjacent to Prairie du Sac. Tourism and recreation focus. Small market with seasonal variation.
+  
+  - location_id: loc-cross-plains-wi
+    name: Cross Plains
+    region: Dane County
+    state: WI
+    postal_code: "53528"
+    country: USA
+    geo_latitude: 43.1114
+    geo_longitude: -89.6565
+    population: 4200
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Residential, small retail, bedroom community
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - residential_growth
+    nearby_location_ids:
+      - loc-middleton-wi
+      - loc-mount-horeb-wi
+      - loc-sauk-city-wi
+    flavor_notes: Growing bedroom community west of Madison. Residential development increasing. Benefits from proximity to Madison market.
+  
+  - location_id: loc-lodi-wi
+    name: Lodi
+    region: Columbia County
+    state: WI
+    postal_code: "53555"
+    country: USA
+    geo_latitude: 43.3136
+    geo_longitude: -89.5268
+    population: 3100
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Small manufacturing, tourism (Susie the Duck), residential
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - small_market
+    nearby_location_ids:
+      - loc-prairie-du-sac-wi
+      - loc-portage-wi
+      - loc-dane-wi
+    flavor_notes: Small Columbia County community known for 'Susie the Duck' tourism. Limited commercial activity. Small-scale residential and municipal work.
+  
+  - location_id: loc-pardeeville-wi
+    name: Pardeeville
+    region: Columbia County
+    state: WI
+    postal_code: "53954"
+    country: USA
+    geo_latitude: 43.5369
+    geo_longitude: -89.3001
+    population: 2100
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Small manufacturing, agriculture, residential
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - very_small_market
+    nearby_location_ids:
+      - loc-portage-wi
+      - loc-columbus-wi
+    flavor_notes: Small rural community with limited paving opportunities. Primarily village maintenance. Very small market.
+  
+  - location_id: loc-poynette-wi
+    name: Poynette
+    region: Columbia County
+    state: WI
+    postal_code: "53955"
+    country: USA
+    geo_latitude: 43.3908
+    geo_longitude: -89.4026
+    population: 2500
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Small town, MacKenzie Environmental Education Center, residential
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - small_market
+    nearby_location_ids:
+      - loc-portage-wi
+      - loc-lodi-wi
+    flavor_notes: Small community with state education center. Limited commercial development. Small-scale municipal and residential work only.
+  
+  - location_id: loc-mazomanie-wi
+    name: Mazomanie
+    region: Dane County
+    state: WI
+    postal_code: "53560"
+    country: USA
+    geo_latitude: 43.1758
+    geo_longitude: -89.7951
+    population: 1700
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Small town, arts community, residential
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - very_small_market
+    nearby_location_ids:
+      - loc-cross-plains-wi
+      - loc-sauk-city-wi
+      - loc-black-earth-wi
+    flavor_notes: Small arts-focused community. Very limited paving market. Primarily small residential and village maintenance.
+  
+  - location_id: loc-black-earth-wi
+    name: Black Earth
+    region: Dane County
+    state: WI
+    postal_code: "53515"
+    country: USA
+    geo_latitude: 43.1344
+    geo_longitude: -89.7487
+    population: 1400
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Small town, agriculture, residential
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - very_small_market
+    nearby_location_ids:
+      - loc-cross-plains-wi
+      - loc-mazomanie-wi
+    flavor_notes: Very small community west of Madison. Minimal paving market. Small residential and village maintenance only.
+  
+  - location_id: loc-cambridge-wi
+    name: Cambridge
+    region: Dane County & Jefferson County
+    state: WI
+    postal_code: "53523"
+    country: USA
+    geo_latitude: 43.0014
+    geo_longitude: -89.0137
+    population: 1500
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Small town, agriculture, residential
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - very_small_market
+    nearby_location_ids:
+      - loc-deerfield-wi
+      - loc-lake-mills-wi
+      - loc-fort-atkinson-wi
+    flavor_notes: Small agricultural community. Very limited commercial activity. Minimal paving opportunities.
+  
+  - location_id: loc-brooklyn-wi
+    name: Brooklyn
+    region: Green County
+    state: WI
+    postal_code: "53521"
+    country: USA
+    geo_latitude: 42.8489
+    geo_longitude: -89.3709
+    population: 1500
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Small town, agriculture, residential
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - very_small_market
+    nearby_location_ids:
+      - loc-evansville-wi
+      - loc-belleville-wi
+    flavor_notes: Very small rural community. Minimal paving market. Limited to small village maintenance work.
+  
+  - location_id: loc-waterloo-wi
+    name: Waterloo
+    region: Jefferson County
+    state: WI
+    postal_code: "53594"
+    country: USA
+    geo_latitude: 43.1839
+    geo_longitude: -88.9890
+    population: 3400
+    climate_zone: humid_continental
+    landmark_ids: []
+    economic_profile: Small town, residential, agriculture
+    local_challenges:
+      - freeze_thaw
+      - snow_removal
+      - short_paving_season
+      - thermal_cracking
+      - small_market
+    nearby_location_ids:
+      - loc-marshall-wi
+      - loc-lake-mills-wi
+      - loc-columbus-wi
+    flavor_notes: Small town between Madison and Milwaukee markets. Limited commercial development. Small-scale residential and municipal work.
+  
+  # ==========================================
+  # ARKANSAS LOCATIONS - NORTHWEST REGION
+  # Climate Zone: humid_subtropical (transitional, milder winters but still freeze-thaw)
+  # ==========================================
+  
+  - location_id: loc-fayetteville-ar
+    name: Fayetteville
+    region: Washington County
+    state: AR
+    postal_code: "72701"
+    country: USA
+    geo_latitude: 36.0626
+    geo_longitude: -94.1574
+    population: 95000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: University of Arkansas, technology, retail, healthcare, regional center
+    local_challenges:
+      - freeze_thaw
+      - temperature_fluctuation
+      - seasonal_moisture
+      - university_traffic
+      - hillside_drainage
+      - commercial_growth
+    nearby_location_ids:
+      - loc-springdale-ar
+      - loc-rogers-ar
+      - loc-bentonville-ar
+    flavor_notes: Northwest Arkansas regional hub with University of Arkansas driving economy. Ozark terrain creates drainage challenges. Mild winters still see freeze-thaw cycles requiring PG 64-22 minimum. Growing tech sector fuels commercial development.
+  
+  - location_id: loc-springdale-ar
+    name: Springdale
+    region: Washington County
+    state: AR
+    postal_code: "72762"
+    country: USA
+    geo_latitude: 36.1867
+    geo_longitude: -94.1288
+    population: 85000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Poultry processing (Tyson Foods HQ), manufacturing, distribution
+    local_challenges:
+      - freeze_thaw
+      - temperature_fluctuation
+      - seasonal_moisture
+      - industrial_traffic
+      - heavy_truck_loads
+      - rapid_growth
+    nearby_location_ids:
+      - loc-fayetteville-ar
+      - loc-rogers-ar
+      - loc-bentonville-ar
+    flavor_notes: Home to Tyson Foods headquarters with significant industrial traffic. Heavy truck traffic to processing plants requires rutting-resistant designs. Rapid population growth drives residential and commercial paving demand.
+  
+  - location_id: loc-rogers-ar
+    name: Rogers
+    region: Benton County
+    state: AR
+    postal_code: "72756"
+    country: USA
+    geo_latitude: 36.3320
+    geo_longitude: -94.1185
+    population: 70000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Retail, corporate offices, residential growth, distribution centers
+    local_challenges:
+      - freeze_thaw
+      - temperature_fluctuation
+      - seasonal_moisture
+      - commercial_traffic
+      - retail_development
+      - hillside_construction
+    nearby_location_ids:
+      - loc-bentonville-ar
+      - loc-springdale-ar
+      - loc-fayetteville-ar
+    flavor_notes: Fast-growing Northwest Arkansas city with major retail and corporate presence. Walmart Stores Inc. proximity drives commercial activity. Ozark topography requires careful grading and drainage in pavement design.
+  
+  - location_id: loc-bentonville-ar
+    name: Bentonville
+    region: Benton County
+    state: AR
+    postal_code: "72712"
+    country: USA
+    geo_latitude: 36.3729
+    geo_longitude: -94.2088
+    population: 55000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Walmart headquarters, corporate offices, retail, museums
+    local_challenges:
+      - freeze_thaw
+      - temperature_fluctuation
+      - seasonal_moisture
+      - corporate_traffic
+      - high_end_commercial
+      - rapid_development
+    nearby_location_ids:
+      - loc-rogers-ar
+      - loc-springdale-ar
+      - loc-fayetteville-ar
+    flavor_notes: Walmart Inc. global headquarters creates unique high-end commercial market. Crystal Bridges Museum and corporate campus development. Northwest Arkansas's wealthiest city with premium paving expectations and higher-spec projects.
+  
+  # ==========================================
+  # MISSOURI LOCATIONS - SOUTHWEST REGION
+  # Climate Zone: humid_subtropical (transitional, hot summers, mild winters)
+  # ==========================================
+  
+  - location_id: loc-springfield-mo
+    name: Springfield
+    region: Greene County
+    state: MO
+    postal_code: "65801"
+    country: USA
+    geo_latitude: 37.2090
+    geo_longitude: -93.2923
+    population: 170000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Healthcare, education (Missouri State University), manufacturing, retail, regional center
+    local_challenges:
+      - freeze_thaw
+      - temperature_fluctuation
+      - seasonal_moisture
+      - heavy_rainfall
+      - karst_geology
+      - commercial_traffic
+    nearby_location_ids:
+      - loc-republic-mo
+      - loc-nixa-mo
+      - loc-strafford-mo
+      - loc-willard-mo
+    flavor_notes: Southwest Missouri's largest city and regional hub. Karst limestone geology creates sinkhole risks requiring geotechnical investigation. More moderate winters than northern states but still experiences freeze-thaw. Heavy spring rainfall demands excellent drainage systems.
+  
+  - location_id: loc-republic-mo
+    name: Republic
+    region: Greene County
+    state: MO
+    postal_code: "65738"
+    country: USA
+    geo_latitude: 37.1195
+    geo_longitude: -93.4758
+    population: 18000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Suburban residential, retail, schools
+    local_challenges:
+      - freeze_thaw
+      - temperature_fluctuation
+      - seasonal_moisture
+      - heavy_rainfall
+      - residential_development
+      - school_traffic
+    nearby_location_ids:
+      - loc-springfield-mo
+      - loc-willard-mo
+      - loc-nixa-mo
+    flavor_notes: Fast-growing Springfield suburb with strong school system. Residential subdivision and school parking lot projects common. Excellent Springfield access makes material delivery efficient.
+  
+  - location_id: loc-neosho-mo
+    name: Neosho
+    region: Newton County
+    state: MO
+    postal_code: "64850"
+    country: USA
+    geo_latitude: 36.8690
+    geo_longitude: -94.3680
+    population: 12000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Manufacturing, agriculture, retail, county seat
+    local_challenges:
+      - freeze_thaw
+      - temperature_fluctuation
+      - seasonal_moisture
+      - heavy_rainfall
+      - rural_access
+    nearby_location_ids:
+      - loc-joplin-mo
+      - loc-springfield-mo
+    flavor_notes: Newton County seat near Oklahoma and Arkansas borders. Tri-state area creates diverse market opportunities. Spring through fall paving season extends longer than Wisconsin locations. Occasional ice storms require weather monitoring.
+  
+  - location_id: loc-willard-mo
+    name: Willard
+    region: Greene County
+    state: MO
+    postal_code: "65781"
+    country: USA
+    geo_latitude: 37.3042
+    geo_longitude: -93.4288
+    population: 6000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Suburban residential, small retail, bedroom community
+    local_challenges:
+      - freeze_thaw
+      - temperature_fluctuation
+      - seasonal_moisture
+      - heavy_rainfall
+      - residential_growth
+    nearby_location_ids:
+      - loc-springfield-mo
+      - loc-republic-mo
+      - loc-strafford-mo
+    flavor_notes: Small Springfield suburb experiencing steady growth. Highway 160 corridor development. Residential driveways and small commercial projects. Close proximity to Springfield asphalt plants reduces haul costs.
+  
+  - location_id: loc-strafford-mo
+    name: Strafford
+    region: Greene County
+    state: MO
+    postal_code: "65757"
+    country: USA
+    geo_latitude: 37.2681
+    geo_longitude: -93.1185
+    population: 2400
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Small town, residential, agriculture
+    local_challenges:
+      - freeze_thaw
+      - temperature_fluctuation
+      - seasonal_moisture
+      - heavy_rainfall
+      - rural_community
+    nearby_location_ids:
+      - loc-springfield-mo
+      - loc-republic-mo
+    flavor_notes: Small town northeast of Springfield on Highway 65 corridor. Rural character with some suburban growth. Projects typically smaller residential and municipal maintenance work.
+  
+  - location_id: loc-nixa-mo
+    name: Nixa
+    region: Christian County
+    state: MO
+    postal_code: "65714"
+    country: USA
+    geo_latitude: 37.0434
+    geo_longitude: -93.2974
+    population: 23000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Suburban residential, retail growth, schools
+    local_challenges:
+      - freeze_thaw
+      - temperature_fluctuation
+      - seasonal_moisture
+      - heavy_rainfall
+      - rapid_residential_growth
+      - retail_development
+    nearby_location_ids:
+      - loc-springfield-mo
+      - loc-republic-mo
+      - loc-ozark-mo
+    flavor_notes: Rapidly expanding Springfield suburb with major residential development. One of Missouri's fastest-growing cities creates strong paving demand. Shopping center development along Highway 160. Mix of residential subdivisions and commercial retail projects.
+  
+  - location_id: loc-joplin-mo
+    name: Joplin
+    region: Jasper County
+    state: MO
+    postal_code: "64801"
+    country: USA
+    geo_latitude: 37.0842
+    geo_longitude: -94.5133
+    population: 51000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Healthcare, retail, distribution, regional center, post-tornado rebuilding
+    local_challenges:
+      - freeze_thaw
+      - temperature_fluctuation
+      - seasonal_moisture
+      - heavy_rainfall
+      - tornado_recovery
+      - commercial_development
+      - heavy_truck_traffic
+    nearby_location_ids:
+      - loc-neosho-mo
+      - loc-webb-city-mo
+      - loc-carthage-mo
+    flavor_notes: Southwest Missouri regional center rebuilding from 2011 EF5 tornado. Significant reconstruction and new development opportunities. I-44 corridor creates heavy truck traffic. Tri-state location (Missouri/Kansas/Oklahoma) expands market reach. Lead and zinc mining history creates occasional subgrade challenges requiring investigation.
+  
+  # ==========================================
+  # FLORIDA LOCATIONS - CENTRAL REGION
+  # Climate Zone: humid_subtropical (hot, humid, minimal freeze-thaw)
+  # ==========================================
+  
+  - location_id: loc-davenport-fl
     name: Davenport
     region: Polk County
     state: FL
     postal_code: "33896"
     country: USA
-    geo_latitude: 28.2590
+    geo_latitude: 28.1614
     geo_longitude: -81.6010
-    population: 35000
+    population: 7000
     climate_zone: humid_subtropical
-    landmark_ids:
-      - lmkt-mousemtn
-      - lmkt-mainst
-    economic_profile: Tourism, construction, local retail
+    landmark_ids: []
+    economic_profile: Tourism support (Orlando proximity), residential growth, vacation rentals
     local_challenges:
-      - heavy_truck_traffic
       - hot_weather
       - seasonal_rain
+      - rapid_aging
+      - rutting
+      - tourism_traffic
+      - no_freeze_thaw
     nearby_location_ids:
-      - loc-jacksonville
-      - loc-ocala
-    flavor_notes: Known for Mouse Mountain Dr and proximity to Orlando. Asphalt wears faster due to high summer temps.
+      - loc-haines-city-fl
+      - loc-kissimmee-fl
+    flavor_notes: Western Polk County community benefiting from Orlando tourism proximity. Vacation home development and short-term rental market. High heat requires PG 76-22 or higher binders for rutting resistance. Year-round paving season. Heavy summer rains create drainage design priority.
   
-  # Location Example 2
-  - location_id: loc-davenport2
-    name: Davenport
-    region: Polk County
+  - location_id: loc-jacksonville-fl
+    name: Jacksonville
+    region: Duval County
     state: FL
-    postal_code: "33896"
+    postal_code: "32099"
     country: USA
-    geo_latitude: 28.2590
-    geo_longitude: -81.6010
-    population: 35000
+    geo_latitude: 30.3322
+    geo_longitude: -81.6557
+    population: 950000
     climate_zone: humid_subtropical
-    landmark_ids:
-      - lmkt-mousemtn
-      - lmkt-mainst
-    economic_profile: Tourism, construction, local retail
+    landmark_ids: []
+    economic_profile: Military (Naval bases), port, healthcare, finance, insurance, regional center
     local_challenges:
-      - heavy_truck_traffic
       - hot_weather
       - seasonal_rain
+      - coastal_proximity
+      - hurricane_risk
+      - heavy_traffic
+      - port_industrial_loads
     nearby_location_ids:
-      - loc-jacksonville
-      - loc-ocala
-    flavor_notes: Known for Mouse Mountain Dr and proximity to Orlando. Asphalt wears faster due to high summer temps.
+      - loc-st-augustine-fl
+      - loc-orange-park-fl
+    flavor_notes: Florida's largest city by area. Major port creates heavy industrial traffic. Military installations provide steady government contract opportunities. Coastal location requires hurricane-resistant design considerations. Year-round construction season.
   
+  - location_id: loc-ocala-fl
+    name: Ocala
+    region: Marion County
+    state: FL
+    postal_code: "34470"
+    country: USA
+    geo_latitude: 29.1872
+    geo_longitude: -82.1401
+    population: 65000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Horse farming (Thoroughbreds), retirement community, healthcare, retail
+    local_challenges:
+      - hot_weather
+      - seasonal_rain
+      - equestrian_traffic
+      - retirement_development
+      - agricultural_loads
+    nearby_location_ids:
+      - loc-gainesville-fl
+      - loc-the-villages-fl
+    flavor_notes: 'Horse Capital of the World' with extensive equestrian facilities. Horse farm driveways and stable access roads specialized market. Growing retirement community. Central location on I-75 corridor. Limestone subgrade common requiring attention to base preparation.
+  
+  - location_id: loc-williston-fl
+    name: Williston
+    region: Levy County
+    state: FL
+    postal_code: "32696"
+    country: USA
+    geo_latitude: 29.3858
+    geo_longitude: -82.4467
+    population: 2800
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Small town, agriculture, rural residential
+    local_challenges:
+      - hot_weather
+      - seasonal_rain
+      - rural_isolation
+      - limited_market
+    nearby_location_ids:
+      - loc-ocala-fl
+      - loc-chiefland-fl
+    flavor_notes: Small rural Levy County community. Limited commercial paving market. Primarily residential driveways and small municipal work. Extended haul from asphalt plants.
+  
+  - location_id: loc-morriston-fl
+    name: Morriston
+    region: Levy County
+    state: FL
+    postal_code: "32668"
+    country: USA
+    geo_latitude: 29.3297
+    geo_longitude: -82.4487
+    population: 300
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Very small rural community, agriculture
+    local_challenges:
+      - hot_weather
+      - seasonal_rain
+      - very_rural
+      - minimal_market
+    nearby_location_ids:
+      - loc-williston-fl
+      - loc-ocala-fl
+    flavor_notes: Unincorporated community in rural Levy County. Very limited paving opportunities. Minimal market for commercial work.
+  
+  - location_id: loc-reddick-fl
+    name: Reddick
+    region: Marion County
+    state: FL
+    postal_code: "32686"
+    country: USA
+    geo_latitude: 29.3594
+    geo_longitude: -82.1928
+    population: 600
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Small rural community, horse farms
+    local_challenges:
+      - hot_weather
+      - seasonal_rain
+      - rural_location
+      - horse_farm_access
+    nearby_location_ids:
+      - loc-ocala-fl
+    flavor_notes: Small community in Marion County horse country. Some equestrian facility paving. Very limited commercial market.
+  
+  - location_id: loc-fellowship-fl
+    name: Fellowship
+    region: Marion County
+    state: FL
+    postal_code: "34470"
+    country: USA
+    geo_latitude: 29.0861
+    geo_longitude: -82.0681
+    population: 3000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Residential, retirement community
+    local_challenges:
+      - hot_weather
+      - seasonal_rain
+      - retirement_development
+      - residential_focus
+    nearby_location_ids:
+      - loc-ocala-fl
+      - loc-the-villages-fl
+    flavor_notes: Unincorporated area south of Ocala. Growing retirement and residential community. Primarily residential paving opportunities.
+  
+  - location_id: loc-crystal-river-fl
+    name: Crystal River
+    region: Citrus County
+    state: FL
+    postal_code: "34428"
+    country: USA
+    geo_latitude: 28.9031
+    geo_longitude: -82.5932
+    population: 3400
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Tourism (manatees), power plant, marine industry, retirement
+    local_challenges:
+      - hot_weather
+      - seasonal_rain
+      - coastal_environment
+      - tourist_traffic
+      - salt_exposure
+    nearby_location_ids:
+      - loc-homosassa-fl
+      - loc-inverness-fl
+    flavor_notes: Nature Coast city known for manatee tourism. Nuclear power plant provides industrial market. Coastal environment requires consideration of salt exposure. Tourist traffic seasonal. Marina and boat access paving specialized work.
+  
+  - location_id: loc-bushnell-fl
+    name: Bushnell
+    region: Sumter County
+    state: FL
+    postal_code: "33513"
+    country: USA
+    geo_latitude: 28.6669
+    geo_longitude: -82.1123
+    population: 3100
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: County seat, rural services, I-75 corridor
+    local_challenges:
+      - hot_weather
+      - seasonal_rain
+      - rural_location
+      - limited_development
+    nearby_location_ids:
+      - loc-the-villages-fl
+      - loc-wildwood-fl
+    flavor_notes: Sumter County seat on I-75 corridor. Small town with county government facilities. Limited commercial development. Proximity to The Villages creates some spillover opportunities.
+  
+  - location_id: loc-spring-hill-fl
+    name: Spring Hill
+    region: Hernando County
+    state: FL
+    postal_code: "34606"
+    country: USA
+    geo_latitude: 28.4803
+    geo_longitude: -82.5262
+    population: 113000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Residential growth, retirement, commercial retail
+    local_challenges:
+      - hot_weather
+      - seasonal_rain
+      - rapid_development
+      - residential_subdivisions
+      - commercial_growth
+    nearby_location_ids:
+      - loc-brooksville-fl
+      - loc-hudson-fl
+      - loc-clearwater-fl
+    flavor_notes: Large unincorporated community with massive residential growth. Major Tampa Bay commuter suburb. Extensive subdivision and commercial development. Strong paving market from new construction and infrastructure expansion.
+  
+  - location_id: loc-newport-fl
+    name: Newport
+    region: Wakulla County
+    state: FL
+    postal_code: "32321"
+    country: USA
+    geo_latitude: 30.1508
+    geo_longitude: -84.1377
+    population: 500
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Very small coastal community, residential
+    local_challenges:
+      - hot_weather
+      - seasonal_rain
+      - coastal_location
+      - minimal_market
+    nearby_location_ids:
+      - loc-st-marks-fl
+      - loc-crawfordville-fl
+    flavor_notes: Very small Wakulla County coastal community. Minimal paving market. Limited to small residential work.
+  
+  - location_id: loc-clearwater-fl
+    name: Clearwater
+    region: Pinellas County
+    state: FL
+    postal_code: "33755"
+    country: USA
+    geo_latitude: 27.9659
+    geo_longitude: -82.8001
+    population: 117000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Tourism (beaches), corporate headquarters, healthcare, retirement
+    local_challenges:
+      - hot_weather
+      - seasonal_rain
+      - heavy_tourism
+      - coastal_environment
+      - hurricane_risk
+      - salt_exposure
+    nearby_location_ids:
+      - loc-tampa-fl
+      - loc-st-petersburg-fl
+      - loc-dunedin-fl
+    flavor_notes: Major Gulf Coast tourism city with Clearwater Beach. Heavy seasonal tourism traffic. Corporate presence with tech companies. Coastal salt environment requires corrosion-resistant materials. Beach access parking lots see extreme summer heat and traffic loads.
+  
+  - location_id: loc-brandon-fl
+    name: Brandon
+    region: Hillsborough County
+    state: FL
+    postal_code: "33511"
+    country: USA
+    geo_latitude: 27.9378
+    geo_longitude: -82.2859
+    population: 114000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Major Tampa suburb, retail, commercial, residential growth
+    local_challenges:
+      - hot_weather
+      - seasonal_rain
+      - heavy_traffic
+      - commercial_development
+      - rapid_growth
+    nearby_location_ids:
+      - loc-tampa-fl
+      - loc-valrico-fl
+      - loc-riverview-fl
+    flavor_notes: One of Tampa Bay's largest suburbs with extensive commercial development. Major retail corridor. High-traffic commercial parking lots need rutting-resistant designs. Continuous residential subdivision development creates strong market.
+  
+  - location_id: loc-sarasota-fl
+    name: Sarasota
+    region: Sarasota County
+    state: FL
+    postal_code: "34230"
+    country: USA
+    geo_latitude: 27.3364
+    geo_longitude: -82.5307
+    population: 55000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Tourism, arts and culture, retirement, affluent residential, healthcare
+    local_challenges:
+      - hot_weather
+      - seasonal_rain
+      - coastal_environment
+      - hurricane_risk
+      - high_end_expectations
+      - salt_exposure
+    nearby_location_ids:
+      - loc-bradenton-fl
+      - loc-venice-fl
+      - loc-longboat-key-fl
+    flavor_notes: Affluent Gulf Coast city known for arts and culture. High-end residential and commercial projects demand premium quality. Coastal environment and beach proximity. Winter tourist season creates seasonal demand. Premium pricing market.
+  
+  - location_id: loc-venice-fl
+    name: Venice
+    region: Sarasota County
+    state: FL
+    postal_code: "34285"
+    country: USA
+    geo_latitude: 27.0998
+    geo_longitude: -82.4543
+    population: 24000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Retirement community, tourism, small business, beach access
+    local_challenges:
+      - hot_weather
+      - seasonal_rain
+      - retirement_focus
+      - coastal_environment
+      - seasonal_tourism
+    nearby_location_ids:
+      - loc-sarasota-fl
+      - loc-north-port-fl
+      - loc-englewood-fl
+    flavor_notes: 'Shark Tooth Capital of the World' with strong retiree population. Beach community with seasonal tourism. Primarily residential paving with some commercial. Golf course community development common.
+  
+  - location_id: loc-arcadia-fl
+    name: Arcadia
+    region: DeSoto County
+    state: FL
+    postal_code: "34266"
+    country: USA
+    geo_latitude: 27.2156
+    geo_longitude: -81.8584
+    population: 8300
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Agriculture (cattle), county seat, rural services
+    local_challenges:
+      - hot_weather
+      - seasonal_rain
+      - agricultural_traffic
+      - rural_location
+      - cattle_industry
+    nearby_location_ids:
+      - loc-punta-gorda-fl
+      - loc-port-charlotte-fl
+    flavor_notes: DeSoto County seat in cattle country. Agricultural and rural character. Cattle auctions and agricultural facilities create specialized paving needs. Small town market with limited commercial development.
+  
+  - location_id: loc-avon-park-fl
+    name: Avon Park
+    region: Highlands County
+    state: FL
+    postal_code: "33825"
+    country: USA
+    geo_latitude: 27.5959
+    geo_longitude: -81.5062
+    population: 10000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Agriculture (citrus), correctional facilities, retirement, small manufacturing
+    local_challenges:
+      - hot_weather
+      - seasonal_rain
+      - agricultural_base
+      - citrus_industry
+      - limited_growth
+    nearby_location_ids:
+      - loc-sebring-fl
+      - loc-lake-placid-fl
+    flavor_notes: Historic citrus town in Highlands County. Correctional facilities provide some government contract opportunities. Agriculture-focused economy. Limited commercial development. Rural character with small-town paving needs.
+  
+  - location_id: loc-melbourne-fl
+    name: Melbourne
+    region: Brevard County
+    state: FL
+    postal_code: "32901"
+    country: USA
+    geo_latitude: 28.0836
+    geo_longitude: -80.6081
+    population: 85000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Space industry (Kennedy Space Center proximity), technology, military, tourism
+    local_challenges:
+      - hot_weather
+      - seasonal_rain
+      - hurricane_risk
+      - coastal_proximity
+      - aerospace_traffic
+    nearby_location_ids:
+      - loc-palm-bay-fl
+      - loc-viera-fl
+      - loc-cocoa-fl
+    flavor_notes: Space Coast city benefiting from aerospace industry. Florida Tech and engineering firms. Beach proximity drives tourism element. Hurricane preparedness essential. Mix of high-tech industrial, commercial, and residential markets.
+  
+  # ==========================================
+  # FLORIDA LOCATIONS - TAMPA BAY REGION
+  # Climate Zone: humid_subtropical
+  # ==========================================
+  
+  - location_id: loc-tampa-fl
+    name: Tampa
+    region: Hillsborough County
+    state: FL
+    postal_code: "33602"
+    country: USA
+    geo_latitude: 27.9506
+    geo_longitude: -82.4572
+    population: 400000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Major city - port, finance, healthcare, technology, tourism, regional center
+    local_challenges:
+      - hot_weather
+      - seasonal_rain
+      - heavy_traffic
+      - urban_heat_island
+      - port_industrial
+      - commercial_density
+    nearby_location_ids:
+      - loc-brandon-fl
+      - loc-clearwater-fl
+      - loc-st-petersburg-fl
+      - loc-plant-city-fl
+    flavor_notes: Major metropolitan center with diverse paving market from high-rise parking to port industrial. Urban heat island intensifies rutting concerns. Year-round construction season. Port traffic creates heavy industrial loads. Downtown redevelopment constant. Major commercial and municipal opportunities.
+  
+  - location_id: loc-carrollwood-fl
+    name: Carrollwood
+    region: Hillsborough County
+    state: FL
+    postal_code: "33618"
+    country: USA
+    geo_latitude: 28.0528
+    geo_longitude: -82.5070
+    population: 36000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Suburban residential, retail, professional offices
+    local_challenges:
+      - hot_weather
+      - seasonal_rain
+      - established_community
+      - residential_maintenance
+    nearby_location_ids:
+      - loc-tampa-fl
+      - loc-westchase-fl
+      - loc-lutz-fl
+    flavor_notes: Established Tampa suburb north of downtown. Mix of residential resurfacing and commercial parking lot maintenance. Mature community with ongoing infrastructure needs.
+  
+  - location_id: loc-westchase-fl
+    name: Westchase
+    region: Hillsborough County
+    state: FL
+    postal_code: "33626"
+    country: USA
+    geo_latitude: 28.0528
+    geo_longitude: -82.6176
+    population: 24000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Planned community, residential, retail, professional offices
+    local_challenges:
+      - hot_weather
+      - seasonal_rain
+      - master_planned_community
+      - high_standards
+    nearby_location_ids:
+      - loc-tampa-fl
+      - loc-carrollwood-fl
+      - loc-oldsmar-fl
+    flavor_notes: Master-planned community with high aesthetic standards. HOA-driven maintenance and resurfacing. Premium residential market. Retail centers serving affluent residents.
+  
+  - location_id: loc-harbour-island-fl
+    name: Harbour Island
+    region: Hillsborough County
+    state: FL
+    postal_code: "33602"
+    country: USA
+    geo_latitude: 27.9447
+    geo_longitude: -82.4503
+    population: 2500
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Upscale residential, downtown Tampa waterfront
+    local_challenges:
+      - hot_weather
+      - seasonal_rain
+      - waterfront_location
+      - high_end_residential
+      - salt_exposure
+    nearby_location_ids:
+      - loc-tampa-fl
+      - loc-davis-islands-fl
+    flavor_notes: Upscale island community in downtown Tampa. Waterfront location requires salt-resistant considerations. Premium residential and limited commercial. Very high quality expectations.
+  
+  - location_id: loc-davis-islands-fl
+    name: Davis Islands
+    region: Hillsborough County
+    state: FL
+    postal_code: "33606"
+    country: USA
+    geo_latitude: 27.9097
+    geo_longitude: -82.4531
+    population: 5000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Affluent residential, marinas, airport
+    local_challenges:
+      - hot_weather
+      - seasonal_rain
+      - island_location
+      - waterfront_properties
+      - high_end_market
+      - salt_exposure
+    nearby_location_ids:
+      - loc-tampa-fl
+      - loc-harbour-island-fl
+    flavor_notes: Two man-made islands south of downtown Tampa with Peter O. Knight Airport. Affluent residential character. Waterfront properties and marina access. Premium market with high expectations. Salt exposure from bay location.
+  
+  - location_id: loc-riverview-fl
+    name: Riverview
+    region: Hillsborough County
+    state: FL
+    postal_code: "33569"
+    country: USA
+    geo_latitude: 27.8661
+    geo_longitude: -82.3265
+    population: 95000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Rapid residential growth, retail development, suburban expansion
+    local_challenges:
+      - hot_weather
+      - seasonal_rain
+      - explosive_growth
+      - new_subdivisions
+      - commercial_following_residential
+    nearby_location_ids:
+      - loc-brandon-fl
+      - loc-tampa-fl
+      - loc-apollo-beach-fl
+    flavor_notes: One of Florida's fastest-growing communities. Massive residential subdivision development. New schools and commercial following residential growth. Strong new construction paving market. Infrastructure constantly expanding.
+  
+  - location_id: loc-wesley-chapel-fl
+    name: Wesley Chapel
+    region: Pasco County
+    state: FL
+    postal_code: "33543"
+    country: USA
+    geo_latitude: 28.2400
+    geo_longitude: -82.3276
+    population: 65000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: New master-planned communities, retail, healthcare, education
+    local_challenges:
+      - hot_weather
+      - seasonal_rain
+      - rapid_development
+      - new_construction
+      - retail_centers
+    nearby_location_ids:
+      - loc-tampa-fl
+      - loc-lutz-fl
+      - loc-zephyrhills-fl
+    flavor_notes: Fast-growing Pasco County community with major master-planned developments. New hospital, retail, and residential. I-75 corridor location. Strong new construction market in all categories. High-quality expectations from new developments.
+  
+  - location_id: loc-valrico-fl
+    name: Valrico
+    region: Hillsborough County
+    state: FL
+    postal_code: "33594"
+    country: USA
+    geo_latitude: 27.9389
+    geo_longitude: -82.2381
+    population: 39000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Suburban residential, retail, small business
+    local_challenges:
+      - hot_weather
+      - seasonal_rain
+      - residential_maintenance
+      - retail_centers
+    nearby_location_ids:
+      - loc-brandon-fl
+      - loc-riverview-fl
+      - loc-plant-city-fl
+    flavor_notes: Unincorporated Tampa suburb east of Brandon. Mix of established and new residential. Retail corridor development. Both new construction and maintenance/resurfacing opportunities.
+  
+  - location_id: loc-lutz-fl
+    name: Lutz
+    region: Hillsborough County
+    state: FL
+    postal_code: "33549"
+    country: USA
+    geo_latitude: 28.1541
+    geo_longitude: -82.4612
+    population: 22000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Suburban residential, equestrian properties, small commercial
+    local_challenges:
+      - hot_weather
+      - seasonal_rain
+      - residential_mix
+      - equestrian_facilities
+    nearby_location_ids:
+      - loc-tampa-fl
+      - loc-wesley-chapel-fl
+      - loc-carrollwood-fl
+    flavor_notes: North Tampa suburb with mix of suburban and rural character. Some equestrian properties. Primarily residential with growing commercial. Access to Tampa makes this attractive bedroom community.
+  
+  - location_id: loc-seffner-fl
+    name: Seffner
+    region: Hillsborough County
+    state: FL
+    postal_code: "33584"
+    country: USA
+    geo_latitude: 27.9839
+    geo_longitude: -82.2756
+    population: 8000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Residential, small commercial, working class suburb
+    local_challenges:
+      - hot_weather
+      - seasonal_rain
+      - established_community
+      - maintenance_focus
+    nearby_location_ids:
+      - loc-brandon-fl
+      - loc-tampa-fl
+      - loc-plant-city-fl
+    flavor_notes: Working-class suburb between Tampa and Plant City. Established community with maintenance and resurfacing needs. Limited new development. Affordable housing market.
+  
+  - location_id: loc-plant-city-fl
+    name: Plant City
+    region: Hillsborough County
+    state: FL
+    postal_code: "33563"
+    country: USA
+    geo_latitude: 28.0186
+    geo_longitude: -82.1128
+    population: 40000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Agriculture (strawberries), distribution centers, I-4 corridor logistics
+    local_challenges:
+      - hot_weather
+      - seasonal_rain
+      - agricultural_traffic
+      - logistics_heavy_loads
+      - strawberry_season
+    nearby_location_ids:
+      - loc-brandon-fl
+      - loc-lakeland-fl
+      - loc-dover-fl
+    flavor_notes: 'Winter Strawberry Capital of the World' with strong agricultural base. I-4 corridor location creates major distribution center development. Heavy truck traffic from logistics and agriculture. Mix of agricultural, industrial, and growing residential.
+  
+  - location_id: loc-apollo-beach-fl
+    name: Apollo Beach
+    region: Hillsborough County
+    state: FL
+    postal_code: "33572"
+    country: USA
+    geo_latitude: 27.7731
+    geo_longitude: -82.4073
+    population: 17000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Residential waterfront community, power plant, marina
+    local_challenges:
+      - hot_weather
+      - seasonal_rain
+      - coastal_location
+      - waterfront_properties
+      - salt_exposure
+    nearby_location_ids:
+      - loc-riverview-fl
+      - loc-ruskin-fl
+      - loc-sun-city-center-fl
+    flavor_notes: Tampa Bay waterfront community with marina. Power plant creates some industrial element. Primarily residential with waterfront premium properties. Salt environment considerations. Boat and RV storage facilities common.
+  
+  - location_id: loc-odessa-fl
+    name: Odessa
+    region: Pasco County & Hillsborough County
+    state: FL
+    postal_code: "33556"
+    country: USA
+    geo_latitude: 28.1836
+    geo_longitude: -82.5826
+    population: 8500
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Rural residential, equestrian properties, small ranches
+    local_challenges:
+      - hot_weather
+      - seasonal_rain
+      - rural_character
+      - equestrian_access
+      - scattered_development
+    nearby_location_ids:
+      - loc-lutz-fl
+      - loc-wesley-chapel-fl
+      - loc-keystone-fl
+    flavor_notes: Rural community with equestrian and small ranch properties. Lower density residential. Driveways and farm access roads primary market. Limited commercial activity.
+  
+  - location_id: loc-beach-park-fl
+    name: Beach Park
+    region: Pinellas County
+    state: FL
+    postal_code: "33708"
+    country: USA
+    geo_latitude: 27.8475
+    geo_longitude: -82.7829
+    population: 8000
+    climate_zone: humid_subtropical
+    landmark_ids: []
+    economic_profile: Residential neighborhood within St. Petersburg
+    local_challenges:
+      - hot_weather
+      - seasonal_rain
+      - urban_residential
+      - coastal_proximity
+    nearby_location_ids:
+      - loc-st-petersburg-fl
+      - loc-clearwater-fl
+    flavor_notes: Residential neighborhood in St. Petersburg area. Primarily residential maintenance market. Coastal location with salt exposure considerations.
 
-# This is a comment at the end of the file.
+# End of comprehensive locations file

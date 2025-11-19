@@ -24,7 +24,7 @@ This source of truth, coupled with highly detailed SEO instructions for content 
 
 This process is expensive. In order to create the existing sources of truth, it took many hours (and tokens) worth of coding and processing time across two LLM systems (Claude and Perplexity).
 
-In order to generate each new blog or web page, the token cost alone is between $1-$2, and it takes about 20 minutes, not including the maintenance involved in managing the source content. Blogs written on the free tier of claude can be written in less than 5 minutes for free. 
+In order to generate each new blog or web page, the token cost alone is between $1-$3, and it takes about 20 minutes, not including the maintenance involved in managing the source content. Blogs written on the free tier of claude can be written in less than 5 minutes for free. 
 
 The system created is fairly technical, and hiring someone to manage the genertion process quickly becomes unscalable.
 

@@ -102,7 +102,7 @@ clients:
 
     client_size: small
     onboarding_date: "11-15-2025"
-    notes: Specializes in horse paving. sub account of Aarow asphalt
+    notes: Specializes in horse paving. 
   
   - customer_id: client-midwest-wi
     name: Midwest Asphalt Wisconsin
@@ -181,7 +181,7 @@ clients:
       - srv-surface-cleaning-sweeping
     client_size: small
     onboarding_date: "07-15-2025"
-    notes: startup expanding into multiple offseason states and trying to grow
+    notes: 
     
   - customer_id: client-midwest-mo
     name: Midwest Asphalt Missouri
@@ -257,7 +257,7 @@ clients:
       - srv-surface-cleaning-sweeping
     client_size: small
     onboarding_date: "07-15-2025"
-    notes: off season Ozarks expansion of midwest asphalt wisconsin
+    notes: 
 
   - customer_id: client-aarow-wi
     name: Aarow Asphalt
@@ -273,7 +273,7 @@ clients:
     # tbd
     client_size: medium
     onboarding_date: "12-15-2024"
-    notes: Established asphalt company, only takes medium to large jobs. will not do small jobs like crack filling and seal coating
+    notes: 
 
   - customer_id: client-wells-wi
     name: Wells Asphalt Paving
@@ -390,7 +390,7 @@ clients:
       - srv-surface-cleaning-sweeping
     client_size: large
     onboarding_date: "11-15-2024"
-    notes: family business located out of baraboo, wi. has two google my business locations - madison and baraboo
+    notes: 
 
   - customer_id: client-wells-fl
     name: Wells Asphalt Paving Florida
@@ -471,7 +471,7 @@ clients:
       - srv-surface-cleaning-sweeping
     client_size: small
     onboarding_date: "11-15-2024"
-    notes: Expansion of wells asphalt paving in madison. small startup in the tampa bay area
+    notes: 
   
 
 # This is a comment at the end of the file.

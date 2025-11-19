@@ -14,17 +14,17 @@
 
 ### Content Generation Prompts:
 - **user-prompt**: The user prompt will provide the specific variables that need to be used for generating the content that is described in the educational blog generator prompt
-- **educational-blog-generator**: This provides a description of your role, voice, and detailed instructions for writing the blog. It assumes that you are taking input variables from the user-prompt, and only use the sources of truth for technical asphalt details, services offered, and client specifics. Location flavor uses the location data as a guideline for what kind of information we are looking for, that is, information that is of interest to asphalt customers and contractors in regards to asphalt paving services
-- **quality-control-checklist**: this provides detailed instructions for a professional reviewer agent to read through the blog and make sure it passes our rigourous content guildelines.
+- **educational-blog-generator.md**: This provides a description of your role, voice, and detailed instructions for writing the blog. It assumes that you are taking input variables from the user-prompt, and only use the sources of truth for technical asphalt details, services offered, and client specifics. Location flavor uses the location data as a guideline for what kind of information we are looking for, that is, information that is of interest to asphalt customers and contractors in regards to asphalt paving services
+- **quality-control-checklist.md**: this provides detailed instructions for a professional reviewer agent to read through the blog and make sure it passes our rigourous content guildelines.
 
 
 ### Instruction Flow
-1. **follow the educational-blog-generator**: this is your core instruction set for blog writing. The user-prompt will provide you with the specific variables that you will need to create this blog. Utilize sources of truth documents for informational content. 
+1. **follow the educational-blog-generator**: this is your core instruction set for blog writing. my user-prompt (included below) will provide you with the specific variables that you will need to create this blog. Utilize sources of truth documents for informational content. 
 2. **generate first draft**: generate a first draft of this document and append -draft to the end of the file
-5. **quality check Phase**: Verify accuracy, local specificity, and semantic variety
+3. **quality check Phase**: Verify accuracy, local specificity, and semantic variety.
+4. **generate quality checked blog**: if you needed to make any changes in step 3, provide a fresh copy of the blog with -fixed appened to the end, and at the top of the file i want you to list out all the changes you made and why so i can compare the two versions and evaluate your reasoning
 
-
-Here is the user-prompt:
+Here is the user-prompt i want you to use:
 
 ## User Prompt - wells asphalt paving florida | wesley chapel | hot climate paving | informational
 

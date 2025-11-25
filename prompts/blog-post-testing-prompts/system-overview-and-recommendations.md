@@ -2,15 +2,7 @@
 ## Hyper-Local Asphalt Contractor Content System
 
 ---
-
-## Table of Contents
-1. [System Overview](#system-overview)
-2. [Core Prompt: Educational Blog Generator](#educational-blog-generator)
-3. [User Prompt Template](#user-prompt-template)
-4. [Quality Control Checklist](#quality-control-checklist)
-
----
-
+S
 ## System Overview
 
 ### Architecture
@@ -27,16 +19,6 @@ This content generation system leverages:
 3. **Content Structuring**: Generate outline based on content type template
 4. **Generation Phase**: Create draft with technical accuracy and local relevance
 5. **Optimization Phase**: Verify accuracy, local specificity, and semantic variety
-
----
-
-
-
-
-
-
----
-
 
 ---
 

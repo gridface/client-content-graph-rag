@@ -63,3 +63,5 @@ Before publishing any generated content, verify:
 - [ ] Verify all client-specific details accurate
 - [ ] Check for duplicate content or filler
 - [ ] Ensure content provides genuine value
+- [ ] The content should not be too technical as this is for customers
+- [ ] Make sure the blog is speaking effectively to residential and/or commercial customers, not asphalt industry experts

@@ -73,7 +73,7 @@ topic_angle: "Florida's third-largest city, diverse commercial needs"
   notes: Typical design is 3-5 inches asphalt over 6-10 inches aggregate base for standard parking. Loading dock areas and heavy traffic require 6-8 inches asphalt with higher grade binder. Emphasize proper drainage, ADA compliance, and maintenance plans in proposals.
 
 ### RAG Information
-blogger-wells-fl-1-rag.md
+
 
 
 

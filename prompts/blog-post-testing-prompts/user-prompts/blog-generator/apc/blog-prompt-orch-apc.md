@@ -7,12 +7,12 @@
 
 There are three files I have attached for you to create a blog post for my client. i will list each out here at the top then describe them in detail further down. lastly i will provide the instruction flow showing how to use these files to create the Blog post output.
 
-1. Source of truth file: this is the the attached markdown file has a naming pattern of 'blogger-wells-fl-" as a prefix followed by a number that corresponds to a blog number system i have determined elsewhere. For instance, 'blogger-wells-fl-1.md','blogger-wells-fl-2.md', etc
+1. Source of truth file: this is the the attached markdown file has a naming pattern of 'blogger-apc-" as a prefix followed by a number that corresponds to a blog number system i have determined elsewhere. For instance, 'blogger-apc-1.md','blogger-apc-2.md', etc
 2. educational blog generator: educational-blog-generator.md
 3. quality control checklist: quality-control-checklist.md
 
 ### Source of Truth:
-the attached markdown file has a naming pattern of 'blogger-wells-fl-" as a prefix followed by a number that corresponds to a blog number system i have determined elsewhere. For instance, 'blogger-wells-fl-1.md','blogger-wells-fl-2.md', etc
+the attached markdown file has a naming pattern of 'blogger-apc-" as a prefix followed by a number that corresponds to a blog number system i have determined elsewhere. For instance, 'blogger-apc-1.md','blogger-apc-2.md', etc
 
 Inside this file there are several items that determine title, description, and data source of truth for the blog that needs to be generated. 
 

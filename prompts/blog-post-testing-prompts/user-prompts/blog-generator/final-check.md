@@ -1,0 +1,1 @@
+this is good, but maybe just a tad too technical. maybe through a little more storybrand type story telling for the customer. also remove all references to price as these prices fluctuate quite a bit

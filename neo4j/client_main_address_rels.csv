@@ -1,0 +1,7 @@
+:START_ID(Client),:END_ID(Location),:TYPE
+client-apc,loc-davenport-fl,HAS_MAIN_ADDRESS
+client-midwest-wi,loc-marshfield-wi,HAS_MAIN_ADDRESS
+client-midwest-mo,loc-carthage-mo,HAS_MAIN_ADDRESS
+client-aarow-wi,loc-rochester-mn,HAS_MAIN_ADDRESS
+client-wells-wi,loc-madison-wi,HAS_MAIN_ADDRESS
+client-wells-fl,loc-tampa-fl,HAS_MAIN_ADDRESS

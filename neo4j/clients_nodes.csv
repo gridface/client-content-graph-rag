@@ -1,0 +1,7 @@
+customerId:ID(Client),name,businessType,owner,industry,websiteUrl,contactPhone,clientSize,onboardingDate,notes,:LABEL
+client-apc,APC Asphalt Paving,asphalt_contractor,John Wells,asphalt,https://apcasphaltpaving.com,800-779-0767,small,11-15-2025,Specializes in horse paving.,Client
+client-midwest-wi,Midwest Asphalt Wisconsin,asphalt_contractor,Justin Williams,asphalt,https://midwestasphaltwi.com/,715-710-1172,small,07-15-2025,,Client
+client-midwest-mo,Midwest Asphalt Missouri,asphalt_contractor,Justin Williams,asphalt,https://midwestasphaltwi.com/,417-623-9472,small,07-15-2025,,Client
+client-aarow-wi,Aarow Asphalt,asphalt_contractor,Bob Wells,asphalt,https://www.aarowasphalt.com/,507-316-6265,medium,12-15-2024,,Client
+client-wells-wi,Wells Asphalt Paving,asphalt_contractor,Louie Wells,asphalt,https://www.wellsasphaltpaving.com/,608-912-3772,large,11-15-2024,,Client
+client-wells-fl,Wells Asphalt Paving Florida,asphalt_contractor,Louie Wells,asphalt,http://www.wellsasphaltpavingflorida.com,813-519-4382,small,11-15-2024,,Client

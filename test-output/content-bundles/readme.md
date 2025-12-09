@@ -1,0 +1,1 @@
+this folder includes the new bundles that combine blog, gmb update, and facebook post
